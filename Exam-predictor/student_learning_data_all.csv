@@ -1,0 +1,1001 @@
+Student_ID,Session_ID,Emotional_State,Focus_Level,Quiz_1_Marks,Quiz_2_Marks,Quiz_3_Marks,Quiz_4_Marks,Quiz_5_Marks,Course_Name,Time_Spent_Studying,Cumulative_Average_Quiz_Score,Recent_Quiz_Trend,Predicted_Focus_Level,Exam_Score,new_exam_score,task_to_take
+77,371,Neutral,100,98,68,53,51,87,Introduction to Software Engineering,3 hours,71.4,Improving,109,79,85,Task Group 2
+59,448,Sad,54,91,73,93,60,92,Data Structures,2 hours,81.8,Improving,53,80,89,Task Group 3
+16,44,Sad,83,90,61,62,57,76,Database Systems,1 hours,69.2,Improving,79,71,81,Task Group 1
+43,121,Sad,76,76,70,98,52,81,Database Systems,2 hours,75.4,Improving,85,83,91,Task Group 2
+1,410,Sad,63,85,93,99,69,70,Algorithms,5 hours,83.2,Improving,58,84,92,Task Group 5
+27,455,Anxious,55,64,86,67,82,56,Data Structures,3 hours,71.0,Declining,50,74,84,Task Group 2
+61,463,Tired,80,67,62,62,70,69,Database Systems,3 hours,66.0,Declining,87,56,65,Task Group 4
+24,44,Frustrated,91,83,98,76,51,76,Algorithms,3 hours,76.8,Improving,83,74,82,Task Group 4
+61,494,Anxious,89,89,92,60,72,80,Database Systems,3 hours,78.6,Improving,96,76,83,Task Group 4
+35,386,Anxious,82,87,96,99,97,65,Database Systems,1 hours,88.8,Declining,76,88,98,Task Group 5
+82,224,Frustrated,53,90,50,57,67,52,Algorithms,1 hours,63.2,Declining,50,68,77,Task Group 2
+52,258,Excited,80,67,51,70,86,53,Database Systems,3 hours,65.4,Declining,70,56,63,Task Group 3
+78,152,Neutral,97,91,55,81,98,76,Data Structures,5 hours,80.2,Declining,99,86,93,Task Group 5
+30,151,Sad,56,85,68,64,54,99,Database Systems,5 hours,74.0,Improving,55,68,76,Task Group 4
+11,311,Tired,61,62,100,62,87,81,Data Structures,4 hours,78.4,Declining,60,76,84,Task Group 3
+16,39,Anxious,50,55,54,54,94,77,Algorithms,4 hours,66.8,Declining,57,61,67,Task Group 4
+2,191,Happy,88,63,82,66,71,50,Introduction to Software Engineering,1 hours,66.4,Declining,94,57,64,Task Group 2
+57,282,Neutral,89,99,85,89,65,59,Database Systems,4 hours,79.4,Declining,79,70,76,Task Group 2
+49,151,Happy,56,87,64,85,58,88,Data Structures,2 hours,76.4,Improving,58,75,83,Task Group 3
+14,208,Neutral,50,50,97,89,90,71,Introduction to Software Engineering,2 hours,79.4,Declining,50,88,95,Task Group 2
+74,408,Sad,88,95,71,82,59,79,Algorithms,4 hours,77.2,Improving,96,68,77,Task Group 3
+64,300,Frustrated,68,93,65,84,63,51,Data Structures,2 hours,71.2,Declining,68,70,75,Task Group 5
+24,416,Excited,92,76,68,62,77,57,Introduction to Software Engineering,2 hours,68.0,Declining,92,69,78,Task Group 3
+92,11,Tired,93,93,63,89,89,87,Algorithms,1 hours,84.2,Declining,90,74,83,Task Group 4
+19,406,Frustrated,68,62,91,53,76,72,Database Systems,4 hours,70.8,Declining,70,66,75,Task Group 3
+84,193,Neutral,72,97,80,66,73,99,Database Systems,4 hours,83.0,Improving,64,88,98,Task Group 2
+40,368,Happy,61,57,78,63,89,56,Database Systems,5 hours,68.6,Declining,70,65,74,Task Group 4
+80,17,Frustrated,54,50,85,67,61,63,Database Systems,3 hours,65.2,Improving,59,62,72,Task Group 4
+53,325,Excited,55,79,50,82,71,68,Database Systems,5 hours,70.0,Declining,64,61,70,Task Group 5
+45,420,Excited,74,87,93,76,100,98,Algorithms,3 hours,90.8,Declining,83,98,98,Task Group 2
+1,212,Tired,94,81,50,91,74,79,Database Systems,3 hours,75.0,Improving,85,85,92,Task Group 3
+64,263,Excited,98,88,76,86,74,51,Introduction to Software Engineering,4 hours,75.0,Declining,89,85,93,Task Group 5
+56,151,Neutral,89,95,90,74,72,69,Introduction to Software Engineering,3 hours,80.0,Declining,96,90,95,Task Group 4
+83,243,Neutral,79,85,90,86,99,71,Introduction to Software Engineering,4 hours,86.2,Declining,72,93,98,Task Group 3
+61,73,Excited,63,92,55,57,51,57,Database Systems,5 hours,62.4,Improving,67,56,62,Task Group 4
+68,496,Tired,63,89,54,70,77,74,Introduction to Software Engineering,1 hours,72.8,Declining,57,76,85,Task Group 4
+46,431,Anxious,98,71,76,65,73,53,Algorithms,4 hours,67.6,Declining,106,63,71,Task Group 3
+14,247,Happy,89,77,77,93,51,55,Introduction to Software Engineering,3 hours,70.6,Improving,81,61,70,Task Group 5
+42,229,Sad,70,78,99,69,60,90,Database Systems,3 hours,79.2,Improving,70,73,78,Task Group 1
+68,235,Frustrated,75,91,64,93,65,62,Data Structures,4 hours,75.0,Declining,68,71,78,Task Group 5
+52,56,Neutral,93,63,63,95,67,62,Algorithms,5 hours,70.0,Declining,93,80,89,Task Group 4
+73,120,Anxious,69,95,72,77,95,51,Data Structures,5 hours,78.0,Declining,68,86,94,Task Group 1
+11,453,Sad,68,69,55,61,83,79,Algorithms,1 hours,69.4,Declining,70,70,79,Task Group 1
+12,68,Frustrated,82,72,58,88,80,87,Introduction to Software Engineering,5 hours,77.0,Improving,77,81,89,Task Group 4
+18,253,Neutral,83,100,96,55,71,87,Data Structures,2 hours,81.8,Improving,86,84,89,Task Group 2
+72,266,Excited,57,62,79,98,59,69,Algorithms,2 hours,73.4,Improving,59,70,76,Task Group 2
+22,149,Frustrated,57,61,70,88,95,89,Database Systems,3 hours,80.6,Declining,60,88,94,Task Group 5
+29,223,Excited,64,94,74,68,51,97,Introduction to Software Engineering,2 hours,76.8,Improving,68,67,73,Task Group 1
+54,270,Frustrated,59,74,76,66,76,56,Algorithms,4 hours,69.6,Declining,59,67,76,Task Group 1
+33,146,Anxious,92,90,84,59,72,96,Database Systems,2 hours,80.2,Improving,88,79,85,Task Group 4
+53,183,Excited,84,74,91,52,54,61,Introduction to Software Engineering,4 hours,66.4,Improving,94,75,82,Task Group 5
+15,34,Sad,77,83,59,99,54,69,Algorithms,4 hours,72.8,Improving,73,72,78,Task Group 1
+35,449,Neutral,53,78,57,59,90,77,Algorithms,2 hours,72.2,Declining,59,80,85,Task Group 5
+7,378,Sad,71,70,69,72,57,86,Algorithms,1 hours,70.8,Improving,70,62,70,Task Group 2
+37,27,Frustrated,92,95,70,54,61,77,Data Structures,3 hours,71.4,Improving,94,69,79,Task Group 1
+53,410,Sad,61,74,83,77,54,78,Introduction to Software Engineering,4 hours,73.2,Improving,62,80,88,Task Group 4
+75,494,Tired,90,82,81,98,95,95,Database Systems,2 hours,90.2,Stable,88,88,98,Task Group 4
+20,303,Happy,88,82,55,50,98,60,Introduction to Software Engineering,2 hours,69.0,Declining,90,60,65,Task Group 2
+26,205,Neutral,63,88,86,71,60,95,Introduction to Software Engineering,4 hours,80.0,Improving,68,79,84,Task Group 1
+53,238,Happy,65,56,69,57,65,89,Database Systems,4 hours,67.2,Improving,73,65,74,Task Group 1
+98,44,Excited,68,64,86,52,71,70,Introduction to Software Engineering,4 hours,68.6,Declining,58,68,76,Task Group 3
+37,37,Tired,55,73,85,80,61,73,Introduction to Software Engineering,4 hours,74.4,Improving,54,71,80,Task Group 5
+12,383,Frustrated,79,55,53,55,60,69,Introduction to Software Engineering,5 hours,58.4,Improving,69,66,75,Task Group 3
+24,29,Happy,86,85,62,58,53,76,Data Structures,4 hours,66.8,Improving,87,59,67,Task Group 3
+18,414,Happy,64,64,89,94,93,53,Data Structures,4 hours,78.6,Declining,60,74,80,Task Group 2
+84,373,Tired,57,97,85,60,73,74,Algorithms,1 hours,77.8,Improving,63,83,92,Task Group 5
+64,440,Excited,56,71,59,68,61,52,Introduction to Software Engineering,2 hours,62.2,Declining,51,64,73,Task Group 2
+55,299,Tired,78,66,52,84,72,98,Data Structures,5 hours,74.4,Improving,71,83,91,Task Group 4
+33,33,Frustrated,93,80,62,93,62,88,Data Structures,3 hours,77.0,Improving,94,74,83,Task Group 3
+72,442,Happy,51,56,84,76,79,90,Data Structures,1 hours,77.0,Improving,50,67,76,Task Group 3
+65,98,Tired,82,86,97,93,63,66,Algorithms,2 hours,81.0,Improving,90,78,87,Task Group 2
+100,379,Excited,79,89,74,56,74,65,Data Structures,4 hours,71.6,Declining,76,63,69,Task Group 4
+82,411,Frustrated,83,67,93,76,53,58,Algorithms,4 hours,69.4,Improving,79,78,87,Task Group 5
+96,461,Neutral,59,89,90,73,76,88,Data Structures,2 hours,83.2,Improving,56,76,85,Task Group 3
+2,176,Neutral,63,77,99,75,59,88,Database Systems,4 hours,79.6,Improving,59,85,90,Task Group 3
+73,411,Anxious,73,72,95,81,70,100,Algorithms,3 hours,83.6,Improving,72,91,97,Task Group 3
+87,498,Sad,94,93,98,85,76,100,Algorithms,2 hours,90.4,Improving,90,80,90,Task Group 2
+17,265,Sad,55,64,65,87,63,55,Algorithms,2 hours,66.8,Declining,52,68,73,Task Group 4
+18,468,Sad,66,75,64,96,96,79,Algorithms,1 hours,82.0,Declining,66,89,97,Task Group 4
+81,29,Frustrated,97,72,94,65,76,78,Database Systems,2 hours,77.0,Improving,93,68,78,Task Group 5
+59,170,Happy,68,85,52,80,86,65,Introduction to Software Engineering,5 hours,73.6,Declining,72,82,91,Task Group 1
+9,308,Sad,77,53,82,86,62,66,Introduction to Software Engineering,1 hours,69.8,Improving,85,76,83,Task Group 3
+38,387,Excited,57,83,92,55,75,54,Introduction to Software Engineering,2 hours,71.8,Declining,58,80,89,Task Group 1
+78,163,Anxious,97,70,91,59,60,81,Algorithms,1 hours,72.2,Improving,104,72,81,Task Group 1
+73,232,Happy,58,89,75,90,70,97,Data Structures,5 hours,84.2,Improving,52,92,97,Task Group 2
+62,303,Tired,59,80,72,66,88,58,Data Structures,3 hours,72.8,Declining,57,81,86,Task Group 5
+10,271,Sad,85,60,69,65,53,60,Algorithms,2 hours,61.4,Improving,83,60,70,Task Group 1
+60,110,Sad,52,60,92,58,72,71,Database Systems,5 hours,70.6,Declining,55,65,71,Task Group 4
+26,181,Excited,99,70,87,53,84,54,Database Systems,3 hours,69.6,Declining,109,79,86,Task Group 4
+100,451,Frustrated,71,67,93,75,81,68,Algorithms,4 hours,76.8,Declining,68,86,96,Task Group 5
+58,374,Excited,57,52,55,63,87,55,Data Structures,2 hours,62.4,Declining,64,66,71,Task Group 5
+80,323,Anxious,96,59,60,85,94,51,Algorithms,2 hours,69.8,Declining,102,74,82,Task Group 5
+52,435,Neutral,77,62,72,86,58,57,Database Systems,5 hours,67.0,Declining,75,67,73,Task Group 3
+13,387,Frustrated,56,81,100,69,96,96,Data Structures,3 hours,88.4,Stable,50,79,87,Task Group 4
+41,104,Anxious,65,84,78,53,57,85,Database Systems,4 hours,71.4,Improving,61,72,78,Task Group 3
+28,369,Neutral,83,60,54,75,59,88,Data Structures,1 hours,67.2,Improving,86,72,77,Task Group 2
+84,370,Sad,75,65,92,58,93,84,Data Structures,5 hours,78.4,Declining,83,78,85,Task Group 1
+33,380,Happy,78,86,97,78,84,86,Database Systems,5 hours,86.2,Improving,70,95,95,Task Group 2
+15,123,Happy,68,51,66,67,62,64,Data Structures,5 hours,62.0,Improving,78,61,68,Task Group 1
+51,447,Neutral,76,60,73,79,50,54,Database Systems,5 hours,63.2,Improving,85,53,59,Task Group 3
+6,171,Frustrated,52,93,84,95,60,73,Data Structures,4 hours,81.0,Improving,60,91,96,Task Group 4
+17,353,Anxious,57,68,61,55,98,62,Algorithms,4 hours,68.8,Declining,51,65,72,Task Group 5
+71,83,Sad,61,96,50,64,95,64,Data Structures,3 hours,73.8,Declining,68,79,84,Task Group 2
+48,51,Happy,76,81,61,80,56,52,Algorithms,3 hours,66.0,Declining,77,70,79,Task Group 2
+40,496,Excited,53,51,61,52,74,97,Introduction to Software Engineering,4 hours,67.0,Improving,57,75,83,Task Group 5
+62,412,Excited,88,92,71,85,91,66,Introduction to Software Engineering,2 hours,81.0,Declining,78,82,90,Task Group 2
+28,163,Happy,75,90,83,61,83,95,Introduction to Software Engineering,5 hours,82.4,Improving,79,76,82,Task Group 3
+94,108,Sad,61,77,71,94,56,98,Database Systems,2 hours,79.2,Improving,56,81,87,Task Group 5
+78,182,Excited,95,51,89,71,93,54,Database Systems,5 hours,71.6,Declining,98,79,84,Task Group 1
+38,446,Anxious,98,86,99,99,51,60,Database Systems,2 hours,79.0,Improving,98,76,83,Task Group 2
+98,194,Sad,56,66,78,65,54,92,Data Structures,4 hours,71.0,Improving,50,70,79,Task Group 5
+49,458,Frustrated,51,81,66,92,52,99,Introduction to Software Engineering,1 hours,78.0,Improving,51,83,91,Task Group 5
+48,191,Happy,50,74,62,87,82,65,Algorithms,2 hours,74.0,Declining,50,69,76,Task Group 3
+88,307,Happy,78,88,95,76,95,82,Algorithms,2 hours,87.2,Declining,79,83,92,Task Group 4
+21,116,Sad,81,55,92,72,90,73,Data Structures,2 hours,76.4,Declining,91,74,80,Task Group 4
+73,366,Tired,95,60,68,97,61,50,Algorithms,5 hours,67.2,Declining,105,61,69,Task Group 4
+65,427,Tired,80,54,80,98,68,57,Introduction to Software Engineering,1 hours,71.4,Declining,71,69,74,Task Group 4
+75,91,Sad,85,94,85,82,80,72,Algorithms,4 hours,82.6,Declining,83,82,89,Task Group 3
+95,480,Frustrated,82,85,99,84,67,77,Data Structures,1 hours,82.4,Improving,86,90,98,Task Group 2
+60,214,Neutral,92,100,74,93,72,83,Database Systems,3 hours,84.4,Improving,84,74,79,Task Group 1
+44,116,Frustrated,70,67,98,67,57,59,Introduction to Software Engineering,4 hours,69.6,Improving,60,68,76,Task Group 2
+1,146,Frustrated,58,74,97,59,52,58,Database Systems,1 hours,68.0,Improving,55,62,70,Task Group 1
+65,240,Anxious,98,95,63,55,58,79,Algorithms,1 hours,70.0,Improving,107,63,72,Task Group 1
+14,457,Sad,56,61,84,77,95,62,Introduction to Software Engineering,3 hours,75.8,Declining,53,80,88,Task Group 2
+71,133,Excited,84,52,62,61,62,73,Algorithms,5 hours,62.0,Improving,92,59,69,Task Group 3
+76,20,Tired,75,62,55,71,65,54,Algorithms,2 hours,61.4,Declining,65,51,56,Task Group 2
+56,368,Excited,65,78,74,78,72,70,Database Systems,2 hours,74.4,Declining,69,70,76,Task Group 3
+90,479,Excited,61,61,65,94,65,74,Algorithms,5 hours,71.8,Improving,59,67,77,Task Group 3
+17,335,Neutral,80,89,58,54,81,54,Database Systems,5 hours,67.2,Declining,72,76,85,Task Group 5
+52,88,Happy,92,97,54,83,78,91,Data Structures,5 hours,80.6,Improving,99,70,80,Task Group 3
+78,420,Frustrated,90,73,65,52,56,64,Introduction to Software Engineering,4 hours,62.0,Improving,95,64,72,Task Group 3
+100,262,Neutral,76,67,64,84,67,57,Algorithms,4 hours,67.8,Declining,84,77,85,Task Group 2
+16,291,Frustrated,88,51,78,85,66,99,Database Systems,4 hours,75.8,Improving,92,85,90,Task Group 1
+63,73,Tired,54,63,68,88,71,59,Data Structures,1 hours,69.8,Declining,60,61,70,Task Group 2
+84,371,Excited,90,65,50,89,98,74,Algorithms,1 hours,75.2,Declining,91,84,91,Task Group 2
+11,162,Frustrated,100,86,66,68,68,100,Database Systems,1 hours,77.6,Improving,106,82,88,Task Group 5
+31,469,Sad,70,78,96,50,87,65,Database Systems,1 hours,75.2,Declining,66,73,79,Task Group 3
+47,172,Neutral,55,97,69,68,63,86,Introduction to Software Engineering,2 hours,76.6,Improving,51,77,83,Task Group 2
+16,26,Excited,97,52,90,81,95,79,Data Structures,1 hours,79.4,Declining,103,83,91,Task Group 5
+23,441,Tired,64,50,69,54,77,55,Algorithms,4 hours,61.0,Declining,68,60,65,Task Group 4
+65,4,Neutral,93,52,60,59,77,94,Algorithms,5 hours,68.4,Improving,90,69,76,Task Group 3
+90,260,Tired,82,50,79,86,95,70,Data Structures,5 hours,76.0,Declining,73,74,84,Task Group 3
+50,389,Anxious,50,83,93,97,92,58,Data Structures,2 hours,84.6,Declining,56,83,88,Task Group 3
+58,86,Sad,80,80,83,90,74,53,Algorithms,2 hours,76.0,Declining,76,75,83,Task Group 1
+26,271,Frustrated,87,54,77,90,87,83,Introduction to Software Engineering,4 hours,78.2,Declining,78,85,92,Task Group 5
+92,425,Anxious,77,97,61,85,93,75,Data Structures,3 hours,82.2,Declining,76,72,79,Task Group 3
+19,10,Excited,56,72,81,78,99,69,Introduction to Software Engineering,2 hours,79.8,Declining,61,84,89,Task Group 2
+2,179,Sad,93,87,99,80,83,61,Algorithms,1 hours,82.0,Declining,95,80,86,Task Group 2
+79,293,Neutral,50,100,53,82,63,76,Database Systems,3 hours,74.8,Improving,50,76,82,Task Group 4
+67,177,Excited,83,92,57,54,83,87,Database Systems,2 hours,74.6,Improving,88,70,79,Task Group 2
+100,124,Anxious,56,96,85,93,65,72,Database Systems,4 hours,82.2,Improving,59,87,94,Task Group 4
+22,72,Neutral,78,57,79,90,90,94,Introduction to Software Engineering,3 hours,82.0,Improving,83,86,92,Task Group 5
+19,129,Happy,74,76,80,99,75,57,Algorithms,1 hours,77.4,Declining,81,67,73,Task Group 4
+45,459,Tired,91,58,80,77,98,77,Introduction to Software Engineering,5 hours,78.0,Declining,85,71,80,Task Group 3
+12,362,Anxious,71,67,73,88,82,53,Introduction to Software Engineering,2 hours,72.6,Declining,78,75,81,Task Group 5
+70,283,Happy,96,69,57,98,97,67,Introduction to Software Engineering,2 hours,77.6,Declining,104,71,80,Task Group 1
+56,375,Sad,64,94,87,77,50,100,Introduction to Software Engineering,3 hours,81.6,Improving,62,74,82,Task Group 2
+13,154,Tired,82,67,88,52,57,100,Algorithms,2 hours,72.8,Improving,73,65,74,Task Group 4
+60,442,Sad,51,98,56,57,62,81,Database Systems,1 hours,70.8,Improving,53,71,77,Task Group 2
+92,421,Frustrated,87,82,94,97,55,51,Data Structures,4 hours,75.8,Declining,88,70,79,Task Group 2
+4,434,Frustrated,93,64,86,75,81,79,Data Structures,5 hours,77.0,Declining,101,73,78,Task Group 4
+100,358,Frustrated,56,51,97,73,83,57,Data Structures,5 hours,72.2,Declining,61,76,81,Task Group 4
+27,284,Sad,64,66,67,58,90,94,Database Systems,1 hours,75.0,Improving,58,66,75,Task Group 4
+52,182,Neutral,55,91,75,100,92,86,Algorithms,3 hours,88.8,Declining,53,96,96,Task Group 4
+73,347,Anxious,90,75,63,75,79,71,Algorithms,5 hours,72.6,Declining,93,82,90,Task Group 3
+72,159,Neutral,94,57,85,53,65,50,Introduction to Software Engineering,2 hours,62.0,Declining,92,62,70,Task Group 5
+11,266,Tired,74,81,66,74,80,72,Database Systems,3 hours,74.6,Declining,79,75,82,Task Group 2
+49,275,Anxious,71,89,74,68,84,85,Algorithms,3 hours,80.0,Improving,73,75,82,Task Group 3
+96,178,Tired,94,93,78,90,86,52,Introduction to Software Engineering,4 hours,79.8,Declining,104,87,97,Task Group 1
+54,121,Happy,51,54,97,82,65,73,Data Structures,3 hours,74.2,Improving,61,84,92,Task Group 3
+83,396,Neutral,90,56,64,76,65,61,Data Structures,1 hours,64.4,Declining,83,63,73,Task Group 4
+78,435,Tired,100,65,80,73,90,81,Data Structures,3 hours,77.8,Declining,90,74,84,Task Group 3
+72,97,Tired,53,75,72,86,76,67,Introduction to Software Engineering,5 hours,75.2,Declining,54,82,88,Task Group 5
+76,22,Happy,77,79,51,94,72,87,Database Systems,2 hours,76.6,Improving,80,75,83,Task Group 3
+60,472,Tired,77,99,99,68,97,53,Data Structures,3 hours,83.2,Declining,74,89,95,Task Group 4
+30,496,Anxious,88,69,68,92,99,80,Introduction to Software Engineering,3 hours,81.6,Declining,83,73,80,Task Group 4
+48,401,Excited,51,56,99,86,79,71,Database Systems,2 hours,78.2,Declining,50,85,90,Task Group 3
+22,409,Happy,81,51,100,82,94,69,Introduction to Software Engineering,3 hours,79.2,Declining,87,85,91,Task Group 5
+54,371,Neutral,94,90,98,70,91,52,Data Structures,2 hours,80.2,Declining,95,73,80,Task Group 3
+12,227,Neutral,55,78,79,64,52,67,Introduction to Software Engineering,1 hours,68.0,Improving,63,60,67,Task Group 2
+66,480,Anxious,85,90,53,71,82,90,Data Structures,5 hours,77.2,Improving,93,77,87,Task Group 1
+32,309,Excited,58,88,64,76,92,56,Database Systems,5 hours,75.2,Declining,50,82,88,Task Group 1
+97,171,Neutral,52,92,85,72,51,66,Algorithms,2 hours,73.2,Improving,55,68,77,Task Group 3
+25,425,Anxious,95,86,74,92,78,52,Algorithms,4 hours,76.4,Declining,95,67,77,Task Group 1
+53,375,Sad,94,90,68,77,63,87,Data Structures,1 hours,77.0,Improving,103,84,90,Task Group 3
+68,467,Neutral,67,76,68,83,97,57,Algorithms,3 hours,76.2,Declining,65,77,83,Task Group 5
+24,104,Frustrated,55,65,51,51,70,76,Algorithms,5 hours,62.6,Improving,62,66,72,Task Group 4
+98,464,Sad,99,97,66,75,90,96,Introduction to Software Engineering,3 hours,84.8,Improving,90,86,95,Task Group 1
+42,90,Excited,97,98,55,82,66,69,Introduction to Software Engineering,4 hours,74.0,Improving,103,79,89,Task Group 2
+56,495,Excited,55,61,77,89,59,52,Data Structures,4 hours,67.6,Declining,57,71,77,Task Group 2
+79,367,Tired,60,65,96,93,79,70,Algorithms,4 hours,80.6,Declining,57,82,91,Task Group 4
+74,225,Tired,96,69,93,92,100,77,Data Structures,1 hours,86.2,Declining,96,87,97,Task Group 5
+90,294,Happy,55,75,86,63,91,75,Introduction to Software Engineering,4 hours,78.0,Declining,61,78,83,Task Group 5
+41,474,Sad,90,71,51,82,95,81,Database Systems,3 hours,76.0,Declining,95,74,79,Task Group 5
+35,261,Neutral,75,62,59,55,99,79,Database Systems,4 hours,70.8,Declining,67,69,75,Task Group 2
+41,181,Neutral,59,84,87,89,96,71,Algorithms,3 hours,85.4,Declining,68,91,97,Task Group 2
+57,292,Tired,59,80,99,91,62,66,Data Structures,5 hours,79.6,Improving,50,74,83,Task Group 1
+15,493,Anxious,86,50,89,90,99,70,Data Structures,1 hours,79.6,Declining,83,78,84,Task Group 5
+59,267,Tired,61,57,75,84,73,95,Algorithms,1 hours,76.8,Improving,53,69,78,Task Group 2
+39,88,Anxious,88,77,64,98,60,59,Algorithms,1 hours,71.6,Declining,92,66,72,Task Group 2
+20,77,Anxious,98,79,51,93,59,86,Database Systems,5 hours,73.6,Improving,89,78,87,Task Group 4
+46,95,Excited,61,76,58,94,89,50,Data Structures,1 hours,73.4,Declining,56,72,81,Task Group 3
+100,149,Excited,51,83,61,61,77,63,Database Systems,5 hours,69.0,Declining,50,61,71,Task Group 2
+35,125,Happy,73,80,94,65,58,77,Algorithms,5 hours,74.8,Improving,76,79,84,Task Group 2
+39,33,Anxious,68,54,85,83,59,80,Database Systems,2 hours,72.2,Improving,71,82,91,Task Group 4
+7,6,Neutral,77,73,93,62,77,60,Database Systems,2 hours,73.0,Declining,81,66,72,Task Group 2
+22,491,Tired,61,62,77,69,54,68,Database Systems,5 hours,66.0,Improving,63,71,76,Task Group 1
+55,129,Frustrated,60,91,84,70,67,65,Introduction to Software Engineering,4 hours,75.4,Declining,52,70,78,Task Group 3
+61,378,Anxious,100,52,74,79,85,89,Introduction to Software Engineering,1 hours,75.8,Improving,92,80,87,Task Group 5
+19,58,Happy,70,82,71,84,68,50,Introduction to Software Engineering,3 hours,71.0,Declining,71,76,82,Task Group 5
+94,243,Frustrated,98,73,79,82,54,81,Data Structures,1 hours,73.8,Improving,93,76,84,Task Group 1
+8,53,Tired,74,82,87,50,100,96,Data Structures,3 hours,83.0,Declining,82,75,82,Task Group 1
+62,54,Sad,61,91,56,85,98,71,Data Structures,4 hours,80.2,Declining,57,79,87,Task Group 2
+66,274,Neutral,95,77,96,89,98,95,Database Systems,3 hours,91.0,Declining,101,92,97,Task Group 3
+78,14,Tired,74,64,52,55,58,100,Data Structures,3 hours,65.8,Improving,79,75,82,Task Group 1
+92,383,Neutral,70,57,96,58,96,63,Introduction to Software Engineering,1 hours,74.0,Declining,70,81,91,Task Group 3
+35,11,Frustrated,78,76,96,95,68,74,Database Systems,4 hours,81.8,Improving,70,85,95,Task Group 2
+17,251,Anxious,67,83,55,58,76,74,Data Structures,1 hours,69.2,Declining,77,70,76,Task Group 3
+6,283,Frustrated,80,75,68,54,90,98,Data Structures,4 hours,77.0,Improving,81,74,82,Task Group 3
+15,191,Frustrated,52,52,50,55,59,99,Database Systems,1 hours,63.0,Improving,53,53,61,Task Group 4
+91,59,Neutral,82,61,64,90,51,77,Database Systems,2 hours,68.6,Improving,90,75,80,Task Group 4
+73,81,Frustrated,100,95,51,61,77,53,Algorithms,1 hours,67.4,Declining,105,77,84,Task Group 2
+87,14,Anxious,52,85,64,79,99,68,Database Systems,5 hours,79.0,Declining,52,76,85,Task Group 4
+1,435,Anxious,78,55,59,61,82,58,Algorithms,2 hours,63.0,Declining,73,64,73,Task Group 4
+66,399,Frustrated,96,60,61,86,67,80,Database Systems,1 hours,70.8,Improving,91,71,80,Task Group 5
+68,469,Sad,62,93,81,71,73,93,Algorithms,4 hours,82.2,Improving,56,76,84,Task Group 3
+97,435,Anxious,70,83,79,94,98,51,Data Structures,5 hours,81.0,Declining,66,82,92,Task Group 5
+41,106,Neutral,85,58,61,87,95,76,Algorithms,5 hours,75.4,Declining,82,80,90,Task Group 3
+62,255,Sad,67,51,50,64,99,59,Algorithms,2 hours,64.6,Declining,58,68,74,Task Group 1
+34,302,Happy,79,92,77,84,71,64,Data Structures,5 hours,77.6,Declining,88,79,89,Task Group 5
+6,253,Sad,95,56,65,96,76,69,Introduction to Software Engineering,4 hours,72.4,Declining,97,78,83,Task Group 1
+29,478,Neutral,52,78,77,94,70,74,Algorithms,4 hours,78.6,Improving,50,75,80,Task Group 3
+47,120,Happy,95,80,50,95,77,61,Introduction to Software Engineering,1 hours,72.6,Declining,92,68,78,Task Group 5
+64,321,Sad,66,84,70,53,96,57,Algorithms,5 hours,72.0,Declining,74,75,80,Task Group 5
+8,4,Happy,53,72,75,71,97,86,Data Structures,2 hours,80.2,Declining,50,75,84,Task Group 4
+9,148,Anxious,58,82,59,90,81,72,Database Systems,4 hours,76.8,Declining,64,74,83,Task Group 4
+54,293,Frustrated,64,93,63,79,81,74,Database Systems,3 hours,78.0,Declining,66,68,77,Task Group 3
+17,203,Excited,61,72,96,95,66,65,Algorithms,2 hours,78.8,Declining,68,79,87,Task Group 2
+45,128,Tired,60,67,61,71,52,95,Database Systems,3 hours,69.2,Improving,63,79,87,Task Group 3
+80,477,Sad,53,93,62,92,59,85,Introduction to Software Engineering,4 hours,78.2,Improving,56,75,81,Task Group 2
+10,317,Sad,94,91,69,72,77,87,Introduction to Software Engineering,2 hours,79.2,Improving,96,70,78,Task Group 2
+93,498,Sad,62,73,78,61,89,95,Data Structures,5 hours,79.2,Improving,52,87,92,Task Group 2
+70,435,Excited,75,92,92,52,54,60,Data Structures,1 hours,70.0,Improving,81,61,67,Task Group 1
+80,404,Sad,83,54,62,56,88,60,Introduction to Software Engineering,4 hours,64.0,Declining,80,72,77,Task Group 4
+48,156,Anxious,69,86,100,72,98,73,Introduction to Software Engineering,3 hours,85.8,Declining,59,93,98,Task Group 4
+99,290,Sad,72,88,62,76,60,87,Data Structures,2 hours,74.6,Improving,72,66,74,Task Group 4
+63,282,Frustrated,79,82,85,99,62,71,Database Systems,3 hours,79.8,Improving,73,77,84,Task Group 4
+61,425,Frustrated,88,74,50,64,58,99,Introduction to Software Engineering,3 hours,69.0,Improving,92,71,76,Task Group 4
+68,134,Anxious,56,95,88,66,81,81,Algorithms,2 hours,82.2,Stable,60,79,86,Task Group 3
+31,256,Sad,78,86,78,58,65,86,Data Structures,5 hours,74.6,Improving,83,72,82,Task Group 3
+95,266,Anxious,56,88,68,69,90,60,Introduction to Software Engineering,4 hours,75.0,Declining,50,81,89,Task Group 2
+57,205,Frustrated,50,78,88,82,77,100,Data Structures,3 hours,85.0,Improving,50,94,94,Task Group 1
+32,332,Sad,94,99,65,79,52,52,Data Structures,1 hours,69.4,Stable,101,72,78,Task Group 5
+6,385,Happy,71,76,96,96,93,74,Introduction to Software Engineering,2 hours,87.0,Declining,74,81,86,Task Group 1
+70,187,Frustrated,51,51,61,54,54,64,Algorithms,3 hours,56.8,Improving,53,53,59,Task Group 3
+26,292,Neutral,99,58,88,74,66,65,Database Systems,1 hours,70.2,Declining,96,77,87,Task Group 3
+40,290,Sad,85,90,61,50,80,93,Data Structures,5 hours,74.8,Improving,76,71,81,Task Group 5
+81,337,Frustrated,58,78,67,80,83,63,Algorithms,1 hours,74.2,Declining,56,80,89,Task Group 3
+33,360,Anxious,69,70,94,69,77,56,Database Systems,4 hours,73.2,Declining,63,80,89,Task Group 1
+69,95,Tired,92,59,75,64,100,73,Data Structures,1 hours,74.2,Declining,100,79,89,Task Group 3
+80,499,Neutral,50,99,66,83,50,61,Data Structures,1 hours,71.8,Improving,50,64,71,Task Group 1
+77,183,Neutral,66,70,55,54,96,93,Database Systems,4 hours,73.6,Declining,61,76,82,Task Group 1
+52,113,Excited,80,51,97,74,78,66,Data Structures,3 hours,73.2,Declining,72,63,72,Task Group 5
+43,415,Excited,91,65,81,62,95,69,Introduction to Software Engineering,1 hours,74.4,Declining,98,82,87,Task Group 4
+82,268,Neutral,58,67,75,88,98,68,Algorithms,4 hours,79.2,Declining,55,70,80,Task Group 3
+91,272,Neutral,59,65,90,51,52,74,Algorithms,3 hours,66.4,Improving,50,71,76,Task Group 2
+39,202,Happy,65,60,60,99,80,57,Algorithms,4 hours,71.2,Declining,64,63,72,Task Group 5
+36,229,Sad,78,86,58,84,58,82,Database Systems,3 hours,73.6,Improving,80,74,80,Task Group 1
+47,242,Neutral,50,62,73,70,84,63,Introduction to Software Engineering,2 hours,70.4,Declining,50,68,74,Task Group 4
+95,12,Tired,93,86,61,77,87,50,Algorithms,1 hours,72.2,Declining,94,82,90,Task Group 2
+24,231,Sad,93,83,80,80,74,92,Data Structures,2 hours,81.8,Improving,100,88,96,Task Group 3
+25,24,Frustrated,63,87,77,61,59,97,Introduction to Software Engineering,4 hours,76.2,Improving,57,76,81,Task Group 2
+41,161,Frustrated,92,94,63,86,57,57,Database Systems,3 hours,71.4,Stable,98,70,75,Task Group 1
+53,484,Sad,92,73,64,60,99,79,Database Systems,1 hours,75.0,Declining,85,65,73,Task Group 2
+50,106,Frustrated,53,54,66,74,51,54,Algorithms,4 hours,59.8,Improving,51,52,59,Task Group 5
+3,132,Tired,81,80,94,99,82,88,Introduction to Software Engineering,2 hours,88.6,Improving,87,94,94,Task Group 3
+11,59,Neutral,52,96,89,84,97,87,Database Systems,3 hours,90.6,Declining,50,88,97,Task Group 4
+6,235,Neutral,55,79,93,75,94,52,Database Systems,4 hours,78.6,Declining,60,72,77,Task Group 3
+66,223,Neutral,54,92,96,64,50,55,Data Structures,2 hours,71.4,Improving,50,76,86,Task Group 1
+68,32,Anxious,79,54,68,52,96,83,Database Systems,5 hours,70.6,Declining,77,73,82,Task Group 2
+41,177,Sad,78,62,71,57,61,92,Introduction to Software Engineering,5 hours,68.6,Improving,68,65,72,Task Group 1
+88,431,Happy,63,78,55,81,86,84,Introduction to Software Engineering,1 hours,76.8,Declining,54,73,80,Task Group 3
+51,186,Tired,50,90,93,80,84,70,Database Systems,3 hours,83.4,Declining,50,82,92,Task Group 2
+39,221,Anxious,55,88,63,63,60,93,Database Systems,4 hours,73.4,Improving,50,76,86,Task Group 4
+99,130,Frustrated,83,100,69,97,70,77,Introduction to Software Engineering,5 hours,82.6,Improving,93,80,88,Task Group 2
+13,79,Tired,74,84,76,65,53,67,Introduction to Software Engineering,3 hours,69.0,Improving,66,73,78,Task Group 5
+16,416,Happy,56,79,100,86,66,66,Introduction to Software Engineering,5 hours,79.4,Stable,57,85,91,Task Group 5
+59,274,Sad,95,95,65,84,74,64,Database Systems,1 hours,76.4,Declining,97,66,71,Task Group 5
+2,19,Excited,57,74,83,90,78,77,Data Structures,2 hours,80.4,Declining,65,79,85,Task Group 4
+23,119,Excited,67,51,50,64,75,57,Algorithms,4 hours,59.4,Declining,70,66,74,Task Group 2
+92,166,Happy,59,81,51,82,85,79,Algorithms,5 hours,75.6,Declining,50,66,72,Task Group 5
+81,20,Happy,73,83,71,99,74,76,Database Systems,1 hours,80.6,Improving,78,78,83,Task Group 2
+72,427,Anxious,84,97,90,72,86,66,Data Structures,4 hours,82.2,Declining,86,78,88,Task Group 4
+30,188,Sad,89,89,98,82,66,97,Algorithms,3 hours,86.4,Improving,83,86,95,Task Group 5
+50,450,Anxious,75,94,89,62,79,76,Algorithms,3 hours,80.0,Declining,84,82,90,Task Group 1
+13,145,Anxious,95,82,81,63,73,67,Algorithms,2 hours,73.2,Declining,88,63,68,Task Group 5
+1,178,Neutral,74,94,81,69,89,77,Data Structures,4 hours,82.0,Declining,72,73,78,Task Group 5
+64,466,Tired,53,76,67,94,77,59,Introduction to Software Engineering,4 hours,74.6,Declining,51,75,80,Task Group 3
+84,146,Happy,67,95,78,59,83,79,Data Structures,4 hours,78.8,Declining,66,77,82,Task Group 3
+29,493,Frustrated,66,75,63,92,100,82,Database Systems,4 hours,82.4,Declining,71,84,94,Task Group 5
+90,20,Neutral,62,87,84,90,69,93,Database Systems,1 hours,84.6,Improving,72,86,94,Task Group 4
+10,417,Excited,71,95,75,91,70,96,Introduction to Software Engineering,5 hours,85.4,Improving,67,80,86,Task Group 1
+18,216,Neutral,67,81,63,69,91,66,Algorithms,1 hours,74.0,Declining,73,74,81,Task Group 2
+88,67,Anxious,57,55,76,62,86,84,Algorithms,4 hours,72.6,Declining,65,81,89,Task Group 5
+33,271,Tired,96,68,75,51,61,93,Algorithms,3 hours,69.6,Improving,103,60,67,Task Group 5
+79,50,Tired,64,73,82,54,94,83,Introduction to Software Engineering,3 hours,77.2,Declining,56,83,90,Task Group 3
+44,460,Neutral,68,54,79,50,84,90,Database Systems,2 hours,71.4,Improving,72,79,87,Task Group 4
+5,5,Sad,59,83,65,92,87,80,Introduction to Software Engineering,4 hours,81.4,Declining,64,75,85,Task Group 5
+49,151,Tired,81,99,56,83,64,65,Data Structures,1 hours,73.4,Improving,74,76,82,Task Group 4
+67,383,Anxious,86,72,68,59,96,91,Algorithms,4 hours,77.2,Declining,91,73,80,Task Group 4
+35,59,Frustrated,60,77,96,93,80,73,Introduction to Software Engineering,2 hours,83.8,Declining,62,81,91,Task Group 1
+16,306,Anxious,55,86,83,71,71,100,Database Systems,4 hours,82.2,Improving,50,77,86,Task Group 2
+28,350,Sad,56,79,63,62,99,75,Data Structures,1 hours,75.6,Declining,63,71,76,Task Group 3
+96,298,Excited,60,86,95,66,71,60,Introduction to Software Engineering,5 hours,75.6,Declining,61,84,91,Task Group 4
+45,337,Sad,53,55,76,84,83,75,Data Structures,2 hours,74.6,Declining,50,69,78,Task Group 3
+92,239,Frustrated,71,79,62,64,50,58,Algorithms,5 hours,62.6,Improving,73,70,78,Task Group 1
+62,213,Tired,86,71,80,56,99,79,Database Systems,3 hours,77.0,Declining,96,83,89,Task Group 2
+82,447,Sad,67,76,50,89,93,58,Algorithms,2 hours,73.2,Declining,72,78,85,Task Group 4
+54,250,Happy,80,83,61,87,85,88,Database Systems,3 hours,80.8,Improving,86,82,88,Task Group 3
+80,256,Excited,74,90,61,89,88,68,Database Systems,2 hours,79.2,Declining,67,87,95,Task Group 5
+1,475,Excited,95,65,96,54,78,57,Data Structures,1 hours,70.0,Declining,92,61,66,Task Group 5
+66,5,Sad,89,66,79,60,90,59,Database Systems,1 hours,70.8,Declining,91,64,70,Task Group 2
+15,151,Tired,82,74,69,63,92,54,Database Systems,2 hours,70.4,Declining,91,62,69,Task Group 1
+32,349,Anxious,65,80,83,80,64,75,Introduction to Software Engineering,5 hours,76.4,Improving,66,77,85,Task Group 5
+55,103,Anxious,62,58,73,53,93,84,Introduction to Software Engineering,4 hours,72.2,Declining,63,71,79,Task Group 5
+97,255,Excited,80,92,100,50,62,71,Algorithms,5 hours,75.0,Improving,88,71,78,Task Group 5
+44,311,Neutral,50,59,99,56,65,98,Algorithms,3 hours,75.4,Improving,57,65,72,Task Group 4
+17,360,Sad,63,65,92,72,61,64,Algorithms,2 hours,70.8,Improving,55,70,75,Task Group 5
+34,272,Excited,71,65,85,81,50,60,Database Systems,2 hours,68.2,Improving,64,77,85,Task Group 5
+97,259,Anxious,85,96,80,54,52,52,Algorithms,4 hours,66.8,Stable,85,70,77,Task Group 3
+24,436,Neutral,100,94,79,50,85,78,Introduction to Software Engineering,3 hours,77.2,Declining,91,81,86,Task Group 4
+57,127,Tired,72,67,93,57,77,52,Data Structures,5 hours,69.2,Declining,62,78,88,Task Group 3
+25,166,Tired,75,50,70,82,86,72,Database Systems,2 hours,72.0,Declining,66,73,83,Task Group 5
+30,174,Sad,64,68,91,56,81,88,Algorithms,2 hours,76.8,Improving,72,73,83,Task Group 5
+41,151,Neutral,99,89,79,52,73,97,Algorithms,5 hours,78.0,Improving,93,69,76,Task Group 1
+8,293,Neutral,81,83,51,81,66,83,Database Systems,5 hours,72.8,Improving,73,76,81,Task Group 5
+43,185,Tired,86,70,94,68,61,99,Data Structures,1 hours,78.4,Improving,82,70,76,Task Group 3
+30,129,Tired,71,69,87,83,98,79,Algorithms,3 hours,83.2,Declining,67,74,83,Task Group 5
+36,42,Tired,70,60,86,55,87,87,Database Systems,2 hours,75.0,Stable,67,76,85,Task Group 5
+13,199,Tired,95,84,73,82,74,75,Data Structures,4 hours,77.6,Improving,86,74,83,Task Group 3
+34,474,Sad,54,82,77,69,98,65,Data Structures,1 hours,78.2,Declining,60,84,89,Task Group 5
+72,162,Happy,74,77,59,52,74,90,Data Structures,2 hours,70.4,Improving,68,68,76,Task Group 4
+99,428,Anxious,89,76,57,91,50,51,Data Structures,5 hours,65.0,Improving,94,60,65,Task Group 5
+98,148,Frustrated,70,71,88,77,68,70,Database Systems,5 hours,74.8,Improving,70,82,91,Task Group 2
+30,65,Frustrated,95,68,100,50,63,66,Algorithms,3 hours,69.4,Improving,98,77,86,Task Group 5
+64,333,Sad,83,61,85,79,63,96,Introduction to Software Engineering,1 hours,76.8,Improving,74,75,84,Task Group 4
+80,402,Frustrated,74,76,97,60,77,51,Introduction to Software Engineering,2 hours,72.2,Declining,71,67,75,Task Group 2
+69,121,Excited,77,72,100,100,92,50,Algorithms,1 hours,82.8,Declining,80,92,97,Task Group 2
+47,360,Anxious,53,58,71,91,51,68,Data Structures,5 hours,67.8,Improving,61,64,70,Task Group 5
+98,153,Anxious,63,57,99,53,82,66,Database Systems,5 hours,71.4,Declining,55,75,85,Task Group 2
+8,270,Happy,66,56,55,54,95,75,Data Structures,1 hours,67.0,Declining,69,64,72,Task Group 4
+51,44,Neutral,81,53,100,99,88,95,Introduction to Software Engineering,1 hours,87.0,Improving,83,95,95,Task Group 2
+83,224,Tired,57,53,74,99,56,71,Data Structures,3 hours,70.6,Improving,63,77,86,Task Group 4
+78,437,Tired,62,66,96,64,72,69,Data Structures,5 hours,73.4,Declining,63,76,85,Task Group 3
+72,274,Happy,60,72,73,62,88,52,Database Systems,3 hours,69.4,Declining,64,74,83,Task Group 3
+72,52,Sad,53,76,59,90,61,62,Introduction to Software Engineering,3 hours,69.6,Improving,63,70,77,Task Group 3
+46,110,Tired,75,65,52,81,76,90,Data Structures,5 hours,72.8,Improving,81,77,86,Task Group 5
+56,23,Tired,92,77,90,90,61,98,Data Structures,5 hours,83.2,Improving,84,88,93,Task Group 1
+2,266,Sad,52,88,90,76,63,99,Database Systems,3 hours,83.2,Improving,61,75,81,Task Group 4
+38,94,Frustrated,81,68,58,94,73,83,Algorithms,1 hours,75.2,Improving,80,73,82,Task Group 4
+84,145,Sad,74,58,56,60,91,85,Introduction to Software Engineering,1 hours,70.0,Declining,77,74,83,Task Group 2
+48,481,Frustrated,82,51,84,86,68,93,Database Systems,1 hours,76.4,Improving,72,84,92,Task Group 1
+18,62,Tired,77,58,57,83,91,54,Data Structures,3 hours,68.6,Declining,87,77,82,Task Group 2
+84,288,Neutral,52,68,96,77,62,80,Introduction to Software Engineering,3 hours,76.6,Improving,50,79,84,Task Group 1
+22,38,Anxious,74,63,92,81,98,74,Introduction to Software Engineering,1 hours,81.6,Declining,82,83,93,Task Group 3
+34,107,Frustrated,63,51,56,70,66,70,Data Structures,1 hours,62.6,Improving,65,59,67,Task Group 4
+43,13,Anxious,53,68,69,99,75,65,Algorithms,3 hours,75.2,Declining,50,70,77,Task Group 1
+11,29,Tired,76,83,60,88,70,72,Data Structures,5 hours,74.6,Improving,86,84,93,Task Group 5
+15,69,Excited,86,100,75,95,93,57,Data Structures,3 hours,84.0,Declining,77,90,97,Task Group 3
+21,445,Frustrated,84,53,50,90,90,57,Algorithms,4 hours,68.0,Declining,87,62,72,Task Group 1
+59,416,Sad,78,97,98,56,77,65,Algorithms,4 hours,78.6,Declining,68,83,91,Task Group 5
+44,208,Neutral,67,82,100,50,60,70,Introduction to Software Engineering,3 hours,72.4,Improving,62,62,71,Task Group 1
+14,206,Excited,64,74,53,85,82,87,Algorithms,5 hours,76.2,Improving,56,84,89,Task Group 5
+46,12,Happy,70,95,93,54,63,98,Database Systems,5 hours,80.6,Improving,72,88,94,Task Group 4
+46,364,Happy,91,80,84,99,61,92,Introduction to Software Engineering,3 hours,83.2,Improving,88,92,98,Task Group 2
+37,231,Sad,54,86,58,92,67,67,Data Structures,3 hours,74.0,Stable,50,82,90,Task Group 2
+63,162,Anxious,72,83,71,80,54,61,Algorithms,2 hours,69.8,Improving,64,62,69,Task Group 3
+18,305,Neutral,81,55,71,51,75,62,Database Systems,5 hours,62.8,Declining,71,63,69,Task Group 4
+84,240,Anxious,71,73,80,84,55,57,Introduction to Software Engineering,5 hours,69.8,Improving,68,73,82,Task Group 2
+61,215,Excited,88,90,93,62,76,53,Algorithms,4 hours,74.8,Declining,93,76,84,Task Group 5
+31,166,Neutral,70,95,62,99,94,75,Data Structures,1 hours,85.0,Declining,62,88,93,Task Group 4
+44,14,Excited,78,70,60,84,55,80,Database Systems,1 hours,69.8,Improving,88,62,69,Task Group 1
+14,168,Neutral,54,68,64,52,81,97,Algorithms,1 hours,72.4,Improving,58,73,81,Task Group 3
+15,326,Sad,90,88,65,64,59,62,Database Systems,5 hours,67.6,Improving,82,76,84,Task Group 3
+10,67,Happy,61,66,99,64,70,61,Data Structures,1 hours,72.0,Declining,68,73,78,Task Group 4
+69,206,Frustrated,65,73,69,74,85,85,Introduction to Software Engineering,2 hours,77.2,Stable,56,73,78,Task Group 5
+82,264,Happy,73,67,54,90,93,97,Algorithms,4 hours,80.2,Improving,64,81,86,Task Group 3
+11,226,Sad,87,71,86,57,53,85,Algorithms,2 hours,70.4,Improving,83,75,81,Task Group 5
+94,243,Anxious,76,53,96,66,60,50,Data Structures,3 hours,65.0,Declining,72,64,72,Task Group 4
+43,5,Frustrated,73,89,85,73,73,51,Algorithms,2 hours,74.2,Declining,70,78,88,Task Group 3
+58,430,Happy,99,62,91,88,64,77,Introduction to Software Engineering,3 hours,76.4,Improving,94,75,85,Task Group 5
+29,121,Excited,85,76,95,75,70,92,Algorithms,4 hours,81.6,Improving,91,85,91,Task Group 4
+84,359,Neutral,50,58,74,89,99,77,Database Systems,1 hours,79.4,Declining,50,83,88,Task Group 4
+30,336,Happy,84,84,66,90,75,74,Algorithms,5 hours,77.8,Declining,79,70,80,Task Group 3
+82,257,Neutral,78,72,83,53,64,55,Algorithms,5 hours,65.4,Declining,73,56,63,Task Group 4
+89,488,Tired,91,65,91,66,52,65,Algorithms,3 hours,67.8,Improving,87,71,77,Task Group 5
+33,184,Sad,77,84,85,88,59,75,Data Structures,2 hours,78.2,Improving,87,88,94,Task Group 3
+85,230,Sad,59,77,84,72,87,77,Introduction to Software Engineering,4 hours,79.4,Declining,63,73,79,Task Group 2
+93,55,Frustrated,100,79,55,70,60,67,Algorithms,5 hours,66.2,Improving,102,70,76,Task Group 3
+94,477,Excited,81,73,71,54,52,54,Introduction to Software Engineering,5 hours,60.8,Improving,86,53,62,Task Group 2
+92,418,Tired,53,78,58,82,78,55,Introduction to Software Engineering,1 hours,70.2,Declining,56,77,86,Task Group 4
+26,347,Sad,86,80,86,86,91,72,Introduction to Software Engineering,3 hours,83.0,Declining,91,89,94,Task Group 3
+8,255,Tired,67,57,71,71,91,79,Data Structures,3 hours,73.8,Declining,72,69,78,Task Group 4
+94,360,Sad,98,100,96,52,96,84,Data Structures,3 hours,85.6,Declining,97,91,98,Task Group 3
+73,409,Frustrated,71,75,62,96,87,50,Algorithms,1 hours,74.0,Declining,65,80,88,Task Group 4
+23,152,Sad,66,100,89,58,54,98,Database Systems,2 hours,79.8,Improving,56,86,92,Task Group 4
+67,135,Frustrated,82,82,83,100,71,66,Database Systems,5 hours,80.4,Declining,74,85,95,Task Group 3
+64,336,Neutral,63,84,79,80,59,59,Database Systems,3 hours,72.2,Stable,53,63,71,Task Group 3
+26,270,Neutral,65,55,54,93,88,53,Algorithms,3 hours,68.6,Declining,70,58,68,Task Group 4
+67,84,Neutral,58,64,93,63,72,98,Algorithms,5 hours,78.0,Improving,67,72,79,Task Group 5
+38,222,Sad,56,54,100,51,53,57,Data Structures,1 hours,63.0,Improving,50,65,71,Task Group 3
+45,14,Neutral,59,84,92,74,56,68,Algorithms,5 hours,74.8,Improving,64,80,88,Task Group 5
+51,267,Happy,66,84,67,96,82,72,Algorithms,3 hours,80.2,Declining,68,90,98,Task Group 3
+64,422,Frustrated,56,89,54,84,74,93,Data Structures,5 hours,78.8,Improving,54,79,87,Task Group 3
+29,275,Neutral,60,76,52,83,51,79,Algorithms,3 hours,68.2,Improving,55,72,82,Task Group 2
+1,160,Frustrated,89,72,50,88,58,81,Algorithms,4 hours,69.8,Improving,86,75,83,Task Group 4
+4,229,Sad,86,55,71,57,65,85,Introduction to Software Engineering,3 hours,66.6,Improving,83,57,66,Task Group 2
+51,440,Sad,56,60,62,89,55,93,Database Systems,5 hours,71.8,Improving,66,62,71,Task Group 2
+68,380,Tired,88,65,82,81,53,95,Algorithms,2 hours,75.2,Improving,85,65,70,Task Group 4
+1,495,Excited,62,55,64,93,61,88,Data Structures,4 hours,72.2,Improving,66,78,86,Task Group 1
+21,71,Neutral,72,62,75,79,62,93,Introduction to Software Engineering,3 hours,74.2,Improving,81,64,72,Task Group 3
+41,380,Happy,67,94,71,76,76,71,Database Systems,3 hours,77.6,Declining,70,75,81,Task Group 4
+42,358,Neutral,90,77,70,68,91,79,Database Systems,4 hours,77.0,Declining,95,74,81,Task Group 3
+16,488,Anxious,61,76,82,63,80,53,Introduction to Software Engineering,5 hours,70.8,Declining,57,71,77,Task Group 5
+1,37,Tired,79,82,77,53,96,98,Data Structures,1 hours,81.2,Improving,82,74,84,Task Group 1
+29,268,Happy,93,68,80,71,94,86,Introduction to Software Engineering,5 hours,79.8,Declining,89,89,98,Task Group 5
+17,233,Anxious,96,91,98,72,100,91,Algorithms,4 hours,90.4,Declining,106,82,92,Task Group 5
+8,126,Sad,55,64,55,54,68,83,Introduction to Software Engineering,4 hours,64.8,Improving,60,61,68,Task Group 5
+89,131,Sad,52,60,98,63,59,90,Database Systems,2 hours,74.0,Improving,50,80,87,Task Group 1
+39,92,Happy,92,52,66,69,95,51,Algorithms,5 hours,66.6,Declining,91,73,78,Task Group 1
+59,266,Frustrated,64,64,93,67,89,62,Introduction to Software Engineering,3 hours,75.0,Declining,71,73,79,Task Group 2
+96,377,Happy,77,99,78,93,54,61,Introduction to Software Engineering,4 hours,77.0,Improving,81,79,84,Task Group 5
+53,248,Sad,88,55,100,56,66,72,Algorithms,2 hours,69.8,Improving,94,59,65,Task Group 5
+83,21,Tired,79,55,74,56,61,82,Database Systems,3 hours,65.6,Improving,70,59,64,Task Group 4
+16,409,Frustrated,79,100,100,85,99,98,Introduction to Software Engineering,1 hours,96.4,Declining,87,100,100,Task Group 3
+76,298,Excited,60,77,100,72,94,99,Algorithms,3 hours,88.4,Improving,56,95,95,Task Group 1
+9,86,Anxious,55,84,68,78,88,57,Introduction to Software Engineering,1 hours,75.0,Declining,50,76,83,Task Group 3
+23,371,Sad,94,98,79,75,64,65,Algorithms,2 hours,76.2,Improving,93,85,94,Task Group 5
+85,236,Frustrated,89,77,98,82,62,74,Data Structures,3 hours,78.6,Improving,96,77,86,Task Group 1
+6,426,Anxious,82,61,91,73,78,68,Database Systems,1 hours,74.2,Declining,82,68,73,Task Group 3
+80,425,Tired,59,72,60,72,76,84,Data Structures,5 hours,72.8,Improving,66,71,81,Task Group 5
+88,388,Happy,92,78,71,86,92,57,Data Structures,2 hours,76.8,Declining,86,73,81,Task Group 5
+38,211,Sad,76,63,79,72,91,51,Data Structures,5 hours,71.2,Declining,86,74,79,Task Group 3
+22,352,Tired,92,82,60,52,58,87,Database Systems,3 hours,67.8,Improving,82,58,68,Task Group 3
+51,223,Sad,98,69,76,89,91,92,Database Systems,2 hours,83.4,Improving,99,75,84,Task Group 5
+1,19,Anxious,55,62,50,85,58,94,Algorithms,4 hours,69.8,Improving,50,75,82,Task Group 2
+89,89,Frustrated,80,60,70,85,93,74,Data Structures,4 hours,76.4,Declining,86,73,82,Task Group 5
+92,480,Anxious,87,81,90,50,89,78,Data Structures,3 hours,77.6,Declining,96,81,87,Task Group 4
+89,439,Neutral,76,80,63,91,71,70,Data Structures,2 hours,75.0,Declining,66,71,78,Task Group 5
+90,264,Frustrated,67,94,72,68,50,71,Database Systems,1 hours,71.0,Improving,77,73,81,Task Group 2
+2,81,Tired,76,56,54,57,82,68,Database Systems,2 hours,63.4,Declining,86,54,61,Task Group 1
+46,213,Sad,72,51,70,95,83,52,Database Systems,4 hours,70.2,Declining,76,77,83,Task Group 5
+38,133,Neutral,100,79,79,67,77,74,Algorithms,5 hours,75.2,Declining,106,70,80,Task Group 3
+50,177,Tired,99,84,66,98,50,91,Algorithms,3 hours,77.8,Improving,94,72,77,Task Group 4
+13,246,Tired,96,82,96,93,75,56,Algorithms,2 hours,80.4,Declining,93,84,93,Task Group 5
+25,329,Sad,55,95,56,100,99,99,Data Structures,2 hours,89.8,Stable,61,80,87,Task Group 3
+79,203,Neutral,82,100,90,63,80,87,Introduction to Software Engineering,2 hours,84.0,Improving,86,74,81,Task Group 4
+52,176,Anxious,97,88,89,97,53,100,Data Structures,1 hours,85.4,Improving,99,81,91,Task Group 1
+23,281,Frustrated,50,51,79,55,57,90,Algorithms,2 hours,66.4,Improving,50,72,78,Task Group 5
+6,202,Tired,56,88,80,72,54,60,Database Systems,2 hours,70.8,Improving,61,72,81,Task Group 4
+32,332,Anxious,62,54,65,52,62,56,Data Structures,5 hours,57.8,Declining,72,50,59,Task Group 4
+34,429,Frustrated,61,55,77,60,54,76,Algorithms,2 hours,64.4,Improving,54,61,70,Task Group 1
+82,349,Tired,72,95,97,66,66,81,Database Systems,5 hours,81.0,Improving,82,71,78,Task Group 1
+20,14,Excited,55,92,96,78,81,96,Data Structures,2 hours,88.6,Improving,60,81,89,Task Group 2
+61,82,Neutral,87,100,60,96,96,86,Introduction to Software Engineering,1 hours,87.6,Declining,94,92,98,Task Group 4
+77,84,Anxious,88,59,92,80,56,67,Database Systems,2 hours,70.8,Improving,87,75,85,Task Group 3
+54,188,Neutral,53,58,99,62,68,93,Data Structures,2 hours,76.0,Improving,50,83,88,Task Group 4
+89,487,Frustrated,100,67,99,87,61,94,Algorithms,4 hours,81.6,Improving,100,76,84,Task Group 4
+53,288,Sad,79,52,81,67,92,50,Database Systems,1 hours,68.4,Declining,80,64,69,Task Group 5
+27,208,Anxious,64,53,99,92,67,100,Data Structures,4 hours,82.2,Improving,59,72,77,Task Group 1
+14,187,Anxious,80,60,91,73,62,64,Database Systems,2 hours,70.0,Improving,71,77,84,Task Group 4
+98,476,Anxious,54,95,81,86,61,61,Database Systems,1 hours,76.8,Stable,58,84,91,Task Group 4
+24,128,Neutral,83,69,95,64,82,79,Data Structures,5 hours,77.8,Declining,82,67,77,Task Group 4
+6,389,Neutral,50,91,75,72,88,88,Data Structures,2 hours,82.8,Stable,50,81,87,Task Group 2
+75,115,Happy,83,66,76,76,55,100,Database Systems,5 hours,74.6,Improving,87,81,86,Task Group 4
+4,92,Sad,67,62,100,66,74,63,Data Structures,5 hours,73.0,Declining,65,76,83,Task Group 1
+31,360,Anxious,100,72,87,57,60,76,Data Structures,2 hours,70.4,Improving,93,69,79,Task Group 1
+99,377,Sad,83,76,74,59,64,87,Data Structures,5 hours,72.0,Improving,91,78,86,Task Group 3
+70,41,Tired,66,72,87,59,71,67,Database Systems,2 hours,71.2,Declining,70,61,66,Task Group 5
+43,228,Excited,53,75,59,99,65,89,Introduction to Software Engineering,5 hours,77.4,Improving,50,87,93,Task Group 3
+63,133,Tired,77,62,87,60,94,96,Introduction to Software Engineering,5 hours,79.8,Improving,84,71,80,Task Group 2
+54,151,Happy,65,100,94,82,93,62,Algorithms,1 hours,86.2,Declining,71,93,98,Task Group 3
+22,167,Excited,68,60,95,60,77,73,Introduction to Software Engineering,4 hours,73.0,Declining,70,78,86,Task Group 4
+44,136,Excited,65,86,64,85,54,99,Data Structures,4 hours,77.6,Improving,64,73,80,Task Group 1
+41,152,Anxious,98,71,68,76,86,51,Database Systems,2 hours,70.4,Declining,90,68,75,Task Group 5
+65,288,Happy,85,94,55,74,57,53,Database Systems,3 hours,66.6,Declining,79,75,82,Task Group 5
+6,200,Excited,74,54,70,65,61,55,Data Structures,5 hours,61.0,Declining,79,67,75,Task Group 3
+6,132,Neutral,60,56,74,75,98,95,Introduction to Software Engineering,1 hours,79.6,Declining,63,81,91,Task Group 3
+35,406,Anxious,66,98,67,82,63,87,Data Structures,5 hours,79.4,Improving,72,80,89,Task Group 1
+57,302,Sad,92,89,75,66,73,94,Database Systems,3 hours,79.4,Improving,102,81,91,Task Group 5
+30,61,Excited,88,53,77,58,58,82,Introduction to Software Engineering,4 hours,65.6,Improving,95,59,69,Task Group 2
+38,41,Tired,94,66,59,65,80,82,Introduction to Software Engineering,4 hours,70.4,Improving,86,67,75,Task Group 5
+64,374,Sad,76,72,78,67,69,90,Data Structures,5 hours,75.2,Improving,67,65,75,Task Group 5
+72,416,Excited,85,83,81,83,73,83,Algorithms,2 hours,80.6,Improving,77,72,77,Task Group 3
+19,476,Sad,52,62,55,64,80,91,Introduction to Software Engineering,5 hours,70.4,Improving,50,65,75,Task Group 2
+93,416,Frustrated,90,71,50,99,76,92,Algorithms,5 hours,77.6,Improving,80,84,92,Task Group 5
+83,100,Tired,89,58,65,66,66,61,Database Systems,1 hours,63.2,Declining,99,62,68,Task Group 5
+100,209,Tired,51,94,91,73,90,53,Algorithms,3 hours,80.2,Declining,56,85,91,Task Group 5
+95,486,Anxious,96,69,82,53,77,50,Introduction to Software Engineering,3 hours,66.2,Declining,97,73,79,Task Group 3
+75,125,Neutral,72,100,75,87,68,97,Introduction to Software Engineering,4 hours,85.4,Improving,80,90,98,Task Group 4
+88,192,Happy,56,75,50,95,63,81,Database Systems,5 hours,72.8,Improving,50,70,79,Task Group 3
+89,71,Neutral,84,57,67,68,60,77,Introduction to Software Engineering,2 hours,65.8,Improving,77,75,82,Task Group 4
+23,380,Frustrated,88,93,83,62,86,71,Data Structures,5 hours,79.0,Declining,95,70,79,Task Group 2
+35,35,Sad,93,55,97,71,100,78,Database Systems,4 hours,80.2,Declining,91,80,88,Task Group 5
+13,477,Anxious,76,68,92,76,53,82,Database Systems,2 hours,74.2,Improving,69,71,81,Task Group 4
+59,313,Excited,55,84,74,57,50,73,Introduction to Software Engineering,3 hours,67.6,Improving,57,65,70,Task Group 5
+39,194,Tired,71,90,59,63,75,97,Introduction to Software Engineering,1 hours,76.8,Improving,68,79,87,Task Group 3
+50,222,Anxious,66,77,89,96,78,91,Introduction to Software Engineering,1 hours,86.2,Improving,62,79,85,Task Group 4
+54,275,Excited,93,75,83,78,89,92,Data Structures,4 hours,83.4,Improving,96,78,85,Task Group 5
+42,441,Sad,84,90,81,79,84,95,Introduction to Software Engineering,2 hours,85.8,Improving,75,85,95,Task Group 2
+58,261,Tired,100,85,83,89,100,56,Database Systems,5 hours,82.6,Declining,110,92,97,Task Group 5
+71,363,Neutral,97,84,94,97,76,100,Database Systems,2 hours,90.2,Improving,96,92,97,Task Group 5
+39,136,Anxious,64,85,53,65,58,84,Database Systems,4 hours,69.0,Improving,66,71,80,Task Group 5
+86,245,Happy,80,83,76,59,70,62,Database Systems,1 hours,70.0,Declining,84,77,86,Task Group 1
+86,472,Sad,85,79,73,61,69,76,Database Systems,2 hours,71.6,Improving,91,69,77,Task Group 1
+71,241,Excited,65,60,99,61,73,69,Data Structures,4 hours,72.4,Declining,70,70,80,Task Group 5
+71,164,Excited,88,63,82,82,66,93,Algorithms,1 hours,77.2,Improving,91,83,90,Task Group 5
+37,449,Sad,84,75,90,91,74,73,Database Systems,5 hours,80.6,Declining,88,76,81,Task Group 4
+36,275,Anxious,63,72,64,62,92,98,Database Systems,5 hours,77.6,Improving,68,74,81,Task Group 3
+21,105,Happy,65,75,58,86,80,100,Database Systems,1 hours,79.8,Improving,55,72,77,Task Group 4
+19,7,Neutral,86,62,69,67,85,99,Introduction to Software Engineering,5 hours,76.4,Improving,89,86,94,Task Group 3
+36,440,Happy,88,78,92,81,75,55,Database Systems,4 hours,76.2,Declining,85,84,94,Task Group 2
+53,224,Happy,75,76,84,100,100,64,Algorithms,5 hours,84.8,Declining,84,87,97,Task Group 2
+77,222,Tired,57,94,81,86,72,88,Data Structures,5 hours,84.2,Improving,59,78,85,Task Group 5
+76,437,Anxious,96,61,94,96,88,66,Data Structures,1 hours,81.0,Declining,98,89,95,Task Group 1
+88,271,Neutral,77,76,86,94,81,78,Algorithms,4 hours,83.0,Declining,78,78,85,Task Group 4
+1,122,Neutral,97,99,55,67,97,72,Data Structures,2 hours,78.0,Declining,92,78,87,Task Group 1
+65,136,Excited,55,91,87,86,90,55,Data Structures,2 hours,81.8,Declining,54,72,82,Task Group 1
+82,92,Sad,83,96,76,66,59,93,Data Structures,2 hours,78.0,Improving,83,80,88,Task Group 5
+97,385,Sad,64,66,57,59,95,79,Database Systems,5 hours,71.2,Declining,71,64,74,Task Group 4
+30,83,Excited,54,52,68,88,99,97,Introduction to Software Engineering,2 hours,80.8,Declining,55,88,96,Task Group 2
+51,66,Neutral,67,53,67,76,54,67,Introduction to Software Engineering,1 hours,63.4,Improving,61,68,74,Task Group 1
+49,478,Happy,66,80,54,79,91,96,Data Structures,5 hours,80.0,Improving,67,90,97,Task Group 1
+77,454,Neutral,95,65,50,71,86,94,Introduction to Software Engineering,4 hours,73.2,Improving,104,67,77,Task Group 5
+80,238,Tired,88,51,87,66,95,81,Algorithms,3 hours,76.0,Declining,84,80,89,Task Group 1
+78,97,Happy,57,96,64,82,91,85,Algorithms,5 hours,83.6,Declining,58,85,91,Task Group 4
+21,134,Sad,62,64,91,86,56,100,Introduction to Software Engineering,3 hours,79.4,Improving,57,74,80,Task Group 2
+87,375,Tired,94,75,93,99,97,68,Data Structures,3 hours,86.4,Declining,87,80,90,Task Group 4
+73,346,Happy,59,86,89,65,96,84,Data Structures,3 hours,84.0,Declining,60,84,93,Task Group 4
+99,223,Tired,65,58,83,81,70,83,Data Structures,3 hours,75.0,Improving,67,72,79,Task Group 4
+18,29,Frustrated,90,83,62,71,80,78,Introduction to Software Engineering,5 hours,74.8,Declining,100,76,81,Task Group 1
+65,234,Sad,50,80,98,100,86,62,Algorithms,1 hours,85.2,Declining,58,85,90,Task Group 4
+98,361,Tired,53,72,79,90,99,100,Database Systems,2 hours,88.0,Improving,56,84,90,Task Group 4
+57,219,Tired,55,90,84,50,56,52,Data Structures,3 hours,66.4,Declining,64,73,79,Task Group 1
+98,272,Tired,98,89,67,68,53,53,Algorithms,2 hours,66.0,Stable,91,75,82,Task Group 5
+10,117,Frustrated,65,62,59,62,72,88,Algorithms,1 hours,68.6,Improving,71,76,84,Task Group 3
+11,479,Neutral,80,92,74,81,95,100,Data Structures,5 hours,88.4,Improving,89,93,98,Task Group 4
+87,378,Neutral,68,64,91,77,80,52,Data Structures,3 hours,72.8,Declining,65,64,73,Task Group 1
+53,455,Tired,64,98,53,91,88,64,Database Systems,2 hours,78.8,Declining,72,82,89,Task Group 2
+74,496,Happy,65,67,98,56,55,91,Database Systems,1 hours,73.4,Improving,71,76,82,Task Group 2
+43,386,Neutral,81,56,52,52,55,68,Database Systems,2 hours,56.6,Improving,84,57,62,Task Group 5
+28,278,Frustrated,98,70,58,61,85,66,Data Structures,1 hours,68.0,Declining,104,70,77,Task Group 5
+52,460,Sad,74,63,62,74,63,91,Database Systems,3 hours,70.6,Improving,73,64,70,Task Group 4
+99,491,Anxious,60,59,99,52,73,81,Database Systems,4 hours,72.8,Improving,60,72,80,Task Group 1
+4,214,Sad,91,71,86,54,91,52,Database Systems,4 hours,70.8,Declining,92,78,87,Task Group 1
+43,411,Anxious,82,97,100,82,79,56,Database Systems,4 hours,82.8,Declining,84,92,97,Task Group 5
+48,153,Neutral,65,65,73,55,67,96,Data Structures,5 hours,71.2,Improving,55,64,72,Task Group 1
+22,98,Tired,67,58,68,59,72,71,Introduction to Software Engineering,2 hours,65.6,Declining,65,73,80,Task Group 5
+82,276,Excited,67,81,71,89,74,67,Database Systems,4 hours,76.4,Declining,74,72,79,Task Group 4
+33,351,Neutral,96,52,95,68,85,65,Database Systems,3 hours,73.0,Declining,95,73,79,Task Group 3
+7,110,Neutral,78,51,55,76,53,84,Algorithms,2 hours,63.8,Improving,71,59,64,Task Group 5
+64,477,Anxious,86,93,55,95,92,74,Introduction to Software Engineering,2 hours,81.8,Declining,94,75,81,Task Group 2
+38,118,Tired,94,63,65,54,64,74,Algorithms,5 hours,64.0,Improving,102,58,63,Task Group 1
+27,276,Anxious,74,94,55,99,53,89,Introduction to Software Engineering,5 hours,78.0,Improving,80,69,77,Task Group 4
+66,157,Frustrated,92,82,71,82,68,75,Data Structures,4 hours,75.6,Improving,82,66,71,Task Group 4
+71,473,Neutral,83,76,73,62,68,90,Database Systems,1 hours,73.8,Improving,73,69,79,Task Group 3
+32,435,Frustrated,91,68,81,83,59,98,Data Structures,5 hours,77.8,Improving,99,79,86,Task Group 2
+63,219,Excited,99,54,97,77,53,67,Data Structures,4 hours,69.6,Improving,95,78,85,Task Group 2
+68,424,Sad,88,80,93,76,90,88,Introduction to Software Engineering,3 hours,85.4,Declining,95,89,98,Task Group 4
+46,117,Anxious,99,54,57,79,78,90,Introduction to Software Engineering,5 hours,71.6,Improving,109,68,77,Task Group 1
+74,152,Sad,61,98,61,71,85,69,Algorithms,1 hours,76.8,Declining,54,77,86,Task Group 5
+92,392,Sad,61,67,74,86,68,52,Algorithms,1 hours,69.4,Declining,63,78,84,Task Group 1
+11,91,Frustrated,63,58,61,98,68,94,Data Structures,4 hours,75.8,Improving,65,79,88,Task Group 2
+23,155,Neutral,99,93,89,93,91,95,Algorithms,3 hours,92.2,Improving,107,84,89,Task Group 5
+98,233,Happy,79,77,54,81,65,71,Introduction to Software Engineering,1 hours,69.6,Improving,88,78,83,Task Group 3
+17,104,Sad,69,84,94,80,98,78,Algorithms,2 hours,86.8,Declining,66,76,84,Task Group 4
+74,451,Neutral,93,59,68,63,82,96,Introduction to Software Engineering,1 hours,73.6,Improving,97,70,77,Task Group 1
+42,60,Frustrated,58,80,64,51,57,52,Data Structures,3 hours,60.8,Declining,68,56,61,Task Group 5
+69,118,Happy,75,82,77,71,83,76,Database Systems,5 hours,77.8,Declining,72,74,79,Task Group 1
+52,365,Sad,52,76,92,51,89,58,Algorithms,5 hours,73.2,Declining,54,73,83,Task Group 1
+92,207,Sad,66,70,85,50,96,75,Data Structures,1 hours,75.2,Declining,63,77,86,Task Group 3
+2,47,Tired,70,100,51,100,97,97,Database Systems,1 hours,89.0,Stable,63,93,98,Task Group 2
+20,124,Sad,60,88,57,66,52,93,Database Systems,5 hours,71.2,Improving,51,76,83,Task Group 2
+61,80,Sad,64,51,54,74,52,87,Database Systems,5 hours,63.6,Improving,54,55,64,Task Group 3
+52,460,Excited,61,73,78,79,62,57,Database Systems,3 hours,69.8,Declining,57,74,79,Task Group 1
+55,327,Tired,74,81,67,50,84,53,Introduction to Software Engineering,5 hours,67.0,Declining,81,77,83,Task Group 3
+18,315,Anxious,53,92,57,61,80,96,Algorithms,5 hours,77.2,Improving,50,71,79,Task Group 5
+73,204,Happy,58,50,57,61,59,63,Introduction to Software Engineering,4 hours,58.0,Improving,54,50,55,Task Group 2
+33,57,Excited,50,70,88,71,82,66,Data Structures,3 hours,75.4,Declining,57,65,74,Task Group 4
+69,491,Happy,62,96,67,82,58,100,Data Structures,2 hours,80.6,Improving,61,75,82,Task Group 5
+70,274,Happy,85,68,81,62,78,72,Data Structures,5 hours,72.2,Declining,89,70,76,Task Group 5
+3,211,Frustrated,86,77,63,78,98,54,Introduction to Software Engineering,4 hours,74.0,Declining,81,68,74,Task Group 1
+49,102,Sad,63,98,98,76,65,74,Introduction to Software Engineering,2 hours,82.2,Improving,71,89,96,Task Group 3
+38,47,Neutral,50,100,96,71,76,85,Database Systems,4 hours,85.6,Improving,50,88,94,Task Group 3
+59,411,Tired,79,89,83,94,51,84,Database Systems,5 hours,80.2,Improving,78,83,92,Task Group 1
+33,274,Frustrated,76,79,96,76,86,55,Database Systems,2 hours,78.4,Declining,67,86,92,Task Group 5
+50,4,Excited,91,89,57,93,57,56,Algorithms,3 hours,70.4,Declining,87,61,68,Task Group 5
+14,63,Sad,98,88,62,64,56,92,Database Systems,5 hours,72.4,Improving,90,79,84,Task Group 1
+34,114,Frustrated,90,98,86,78,94,90,Database Systems,3 hours,89.2,Declining,99,92,97,Task Group 1
+68,416,Neutral,69,88,69,88,57,67,Data Structures,4 hours,73.8,Improving,78,74,80,Task Group 4
+76,310,Sad,92,79,79,97,82,93,Database Systems,5 hours,86.0,Improving,98,82,91,Task Group 2
+8,265,Frustrated,96,91,99,85,90,76,Algorithms,2 hours,88.2,Declining,106,78,86,Task Group 2
+63,471,Neutral,61,56,86,95,62,88,Algorithms,3 hours,77.4,Improving,58,79,86,Task Group 1
+58,304,Tired,57,60,82,72,88,51,Data Structures,1 hours,70.6,Declining,50,78,87,Task Group 1
+81,97,Sad,61,64,55,72,68,57,Algorithms,5 hours,63.2,Declining,63,66,75,Task Group 4
+75,105,Neutral,52,53,84,69,51,99,Data Structures,2 hours,71.2,Improving,59,65,75,Task Group 5
+57,479,Happy,73,51,68,80,69,50,Algorithms,2 hours,63.6,Declining,75,63,68,Task Group 5
+58,349,Excited,56,82,58,68,60,70,Algorithms,3 hours,67.6,Improving,56,70,77,Task Group 3
+43,20,Excited,88,66,68,53,57,78,Introduction to Software Engineering,5 hours,64.4,Improving,78,68,77,Task Group 2
+7,440,Frustrated,97,91,58,85,78,96,Database Systems,5 hours,81.6,Improving,87,74,83,Task Group 1
+38,11,Tired,89,78,56,82,96,100,Database Systems,2 hours,82.4,Improving,84,72,82,Task Group 2
+54,253,Sad,95,94,52,87,100,87,Data Structures,2 hours,84.0,Declining,98,89,95,Task Group 1
+56,367,Anxious,84,92,64,88,89,60,Data Structures,1 hours,78.6,Declining,79,80,85,Task Group 4
+5,54,Tired,83,66,92,50,57,95,Algorithms,5 hours,72.0,Improving,75,66,75,Task Group 2
+83,326,Tired,97,75,99,72,72,86,Algorithms,5 hours,80.8,Improving,91,89,95,Task Group 1
+91,189,Happy,57,74,54,79,98,89,Data Structures,1 hours,78.8,Declining,50,69,75,Task Group 4
+54,408,Anxious,69,84,100,74,70,94,Database Systems,2 hours,84.4,Improving,77,81,90,Task Group 3
+90,458,Anxious,85,64,92,88,51,89,Introduction to Software Engineering,2 hours,76.8,Improving,91,77,87,Task Group 5
+89,186,Anxious,70,93,84,79,94,57,Introduction to Software Engineering,3 hours,81.4,Declining,77,90,95,Task Group 3
+24,180,Tired,83,90,53,97,53,100,Algorithms,1 hours,78.6,Improving,89,74,81,Task Group 4
+6,17,Neutral,56,54,93,87,92,96,Database Systems,2 hours,84.4,Improving,50,78,85,Task Group 3
+56,315,Neutral,68,99,76,51,100,85,Algorithms,4 hours,82.2,Declining,69,76,83,Task Group 3
+25,296,Happy,54,58,51,66,53,72,Algorithms,3 hours,60.0,Improving,54,57,67,Task Group 5
+10,439,Frustrated,83,99,90,63,60,63,Data Structures,1 hours,75.0,Improving,91,82,91,Task Group 5
+3,131,Anxious,74,52,78,100,88,65,Database Systems,5 hours,76.6,Declining,79,67,74,Task Group 3
+96,410,Tired,54,64,97,84,90,96,Data Structures,3 hours,86.2,Improving,63,87,97,Task Group 4
+61,383,Tired,60,89,53,79,88,68,Introduction to Software Engineering,3 hours,75.4,Declining,70,65,70,Task Group 2
+37,132,Happy,98,62,71,97,71,87,Database Systems,2 hours,77.6,Improving,97,78,85,Task Group 5
+49,376,Frustrated,94,76,77,53,91,82,Database Systems,2 hours,75.8,Declining,86,73,82,Task Group 2
+90,18,Neutral,51,89,84,88,71,54,Data Structures,4 hours,77.2,Declining,51,71,77,Task Group 4
+34,130,Sad,73,82,52,61,55,50,Algorithms,4 hours,60.0,Declining,80,51,60,Task Group 5
+88,33,Neutral,96,88,95,63,85,56,Data Structures,5 hours,77.4,Declining,101,79,85,Task Group 3
+61,377,Neutral,96,86,74,94,69,84,Database Systems,5 hours,81.4,Improving,98,89,98,Task Group 5
+11,372,Tired,90,87,68,96,81,65,Algorithms,2 hours,79.4,Declining,91,89,95,Task Group 4
+19,244,Tired,76,92,58,92,87,76,Database Systems,5 hours,81.0,Declining,78,78,86,Task Group 4
+50,208,Tired,72,79,75,79,66,97,Database Systems,1 hours,79.2,Improving,67,73,78,Task Group 4
+49,424,Sad,88,62,84,53,85,71,Data Structures,3 hours,71.0,Declining,88,78,88,Task Group 2
+34,448,Sad,90,83,59,80,94,67,Algorithms,2 hours,76.6,Declining,95,76,82,Task Group 4
+89,101,Neutral,77,84,88,66,54,83,Data Structures,1 hours,75.0,Improving,75,78,88,Task Group 3
+55,280,Sad,75,84,67,56,68,67,Database Systems,1 hours,68.4,Declining,79,75,80,Task Group 2
+20,319,Sad,54,92,89,84,99,62,Introduction to Software Engineering,2 hours,85.2,Declining,59,84,91,Task Group 1
+90,492,Happy,98,67,87,53,100,68,Data Structures,4 hours,75.0,Declining,99,77,86,Task Group 2
+39,153,Anxious,79,58,64,82,85,99,Introduction to Software Engineering,2 hours,77.6,Improving,84,67,72,Task Group 1
+86,95,Neutral,77,96,65,61,68,66,Introduction to Software Engineering,3 hours,71.2,Declining,76,72,78,Task Group 1
+43,161,Frustrated,94,57,77,69,52,90,Algorithms,3 hours,69.0,Improving,89,79,85,Task Group 1
+40,124,Neutral,68,85,77,99,75,65,Database Systems,1 hours,80.2,Declining,61,80,89,Task Group 3
+79,352,Excited,51,50,86,71,85,86,Database Systems,3 hours,75.6,Improving,50,81,86,Task Group 3
+56,365,Happy,51,85,68,51,66,85,Data Structures,1 hours,71.0,Improving,50,72,78,Task Group 3
+20,330,Anxious,60,75,79,82,79,52,Algorithms,1 hours,73.4,Declining,52,71,78,Task Group 1
+3,13,Neutral,97,62,93,87,63,81,Algorithms,3 hours,77.2,Improving,91,68,75,Task Group 3
+84,232,Excited,69,99,72,70,76,55,Algorithms,3 hours,74.4,Declining,71,74,79,Task Group 2
+37,138,Neutral,52,82,54,52,73,52,Data Structures,5 hours,62.6,Declining,52,60,66,Task Group 1
+13,113,Neutral,67,83,50,79,93,100,Data Structures,4 hours,81.0,Improving,68,91,98,Task Group 1
+38,8,Happy,82,65,76,62,90,72,Data Structures,4 hours,73.0,Declining,83,67,73,Task Group 3
+58,480,Neutral,52,67,95,50,52,57,Database Systems,5 hours,64.2,Improving,56,74,80,Task Group 5
+50,486,Neutral,100,62,54,77,63,80,Database Systems,1 hours,67.2,Improving,107,60,65,Task Group 4
+43,471,Frustrated,66,83,70,73,50,81,Introduction to Software Engineering,2 hours,71.4,Improving,63,72,79,Task Group 3
+66,347,Sad,52,78,64,72,86,76,Algorithms,4 hours,75.2,Declining,50,81,88,Task Group 4
+39,74,Neutral,81,67,74,90,88,79,Algorithms,5 hours,79.6,Declining,75,86,92,Task Group 3
+9,453,Neutral,76,67,90,100,70,71,Data Structures,3 hours,79.6,Improving,86,81,88,Task Group 4
+99,256,Happy,96,90,55,71,87,90,Algorithms,3 hours,78.6,Improving,86,77,86,Task Group 4
+36,344,Tired,71,91,77,71,85,75,Algorithms,5 hours,79.8,Declining,80,89,98,Task Group 4
+42,234,Sad,71,90,62,96,56,64,Data Structures,1 hours,73.6,Improving,79,80,87,Task Group 3
+41,158,Anxious,97,60,85,68,90,54,Database Systems,4 hours,71.4,Declining,98,72,78,Task Group 5
+6,282,Excited,63,84,80,84,83,55,Algorithms,2 hours,77.2,Declining,54,78,83,Task Group 5
+75,61,Tired,91,79,70,78,81,93,Database Systems,2 hours,80.2,Improving,84,79,86,Task Group 3
+100,259,Neutral,62,67,64,51,72,74,Data Structures,5 hours,65.6,Improving,72,66,72,Task Group 5
+7,323,Frustrated,94,70,90,78,61,100,Database Systems,1 hours,79.8,Improving,98,79,88,Task Group 4
+39,208,Frustrated,71,66,65,95,52,98,Algorithms,4 hours,75.2,Improving,74,81,91,Task Group 1
+12,94,Tired,90,73,58,81,56,89,Database Systems,2 hours,71.4,Improving,88,78,88,Task Group 4
+9,423,Neutral,98,62,90,75,51,86,Algorithms,4 hours,72.8,Improving,92,74,82,Task Group 3
+45,83,Neutral,52,100,94,86,74,59,Algorithms,5 hours,82.6,Declining,50,90,98,Task Group 3
+39,15,Happy,86,53,67,69,98,78,Database Systems,4 hours,73.0,Declining,85,65,70,Task Group 4
+92,428,Tired,57,95,60,52,80,83,Algorithms,2 hours,74.0,Improving,62,67,76,Task Group 2
+41,197,Excited,80,58,77,86,60,77,Data Structures,4 hours,71.6,Improving,78,62,71,Task Group 3
+48,259,Frustrated,72,60,50,80,89,50,Data Structures,1 hours,65.8,Declining,67,70,78,Task Group 2
+22,293,Excited,71,85,72,78,94,97,Data Structures,5 hours,85.2,Improving,65,79,84,Task Group 1
+11,339,Excited,77,64,87,64,78,51,Introduction to Software Engineering,1 hours,68.8,Declining,69,71,76,Task Group 3
+94,117,Excited,80,92,95,75,54,91,Database Systems,1 hours,81.4,Improving,80,76,83,Task Group 3
+40,435,Tired,73,90,67,52,54,68,Algorithms,5 hours,66.2,Improving,77,66,76,Task Group 4
+24,16,Tired,85,92,81,76,77,77,Data Structures,2 hours,80.6,Stable,84,74,82,Task Group 5
+58,436,Excited,51,82,55,87,91,72,Data Structures,3 hours,77.4,Declining,59,78,85,Task Group 3
+31,30,Frustrated,59,62,81,78,67,100,Data Structures,2 hours,77.6,Improving,55,78,87,Task Group 4
+3,373,Happy,60,59,100,67,91,53,Data Structures,2 hours,74.0,Declining,64,72,79,Task Group 4
+77,497,Neutral,57,66,90,93,50,84,Data Structures,2 hours,76.6,Improving,56,84,93,Task Group 4
+55,69,Happy,100,73,99,79,52,94,Algorithms,2 hours,79.4,Improving,91,71,78,Task Group 3
+64,448,Sad,50,58,63,83,91,65,Database Systems,5 hours,72.0,Declining,50,72,78,Task Group 4
+10,499,Frustrated,91,50,92,66,69,51,Introduction to Software Engineering,1 hours,65.6,Declining,98,67,75,Task Group 4
+25,225,Anxious,69,65,98,77,60,89,Database Systems,5 hours,77.8,Improving,71,69,79,Task Group 4
+9,455,Tired,57,74,72,93,78,62,Database Systems,5 hours,75.8,Declining,59,83,91,Task Group 1
+42,391,Sad,85,97,100,71,85,83,Introduction to Software Engineering,2 hours,87.2,Declining,77,96,96,Task Group 4
+84,288,Excited,98,83,81,74,71,71,Introduction to Software Engineering,4 hours,76.0,Stable,101,83,90,Task Group 2
+54,267,Happy,75,59,56,94,50,64,Introduction to Software Engineering,5 hours,64.6,Improving,66,54,59,Task Group 5
+9,5,Excited,80,79,75,96,65,61,Algorithms,2 hours,75.2,Declining,76,76,82,Task Group 1
+8,214,Neutral,52,91,59,75,77,57,Database Systems,1 hours,71.8,Declining,56,61,71,Task Group 4
+50,203,Frustrated,83,84,95,96,69,94,Algorithms,4 hours,87.6,Improving,86,94,94,Task Group 2
+82,445,Anxious,63,83,76,51,100,80,Algorithms,3 hours,78.0,Declining,61,68,76,Task Group 5
+21,224,Frustrated,51,77,75,62,68,78,Data Structures,1 hours,72.0,Improving,50,69,79,Task Group 4
+47,409,Excited,64,97,69,61,75,96,Data Structures,4 hours,79.6,Improving,56,85,91,Task Group 4
+22,60,Neutral,91,56,88,67,77,92,Database Systems,2 hours,76.0,Improving,100,81,88,Task Group 1
+72,231,Frustrated,75,81,51,81,57,64,Introduction to Software Engineering,3 hours,66.8,Improving,73,56,63,Task Group 1
+7,476,Neutral,71,95,84,64,58,80,Introduction to Software Engineering,4 hours,76.2,Improving,62,66,72,Task Group 4
+65,336,Happy,67,55,87,77,53,55,Data Structures,3 hours,65.4,Improving,77,72,79,Task Group 5
+11,132,Happy,60,77,54,62,82,97,Introduction to Software Engineering,1 hours,74.4,Improving,69,77,83,Task Group 3
+43,377,Anxious,55,80,71,59,95,60,Data Structures,5 hours,73.0,Declining,50,74,81,Task Group 1
+66,333,Excited,51,96,85,82,53,88,Introduction to Software Engineering,1 hours,80.8,Improving,50,87,96,Task Group 5
+22,301,Neutral,95,65,50,88,83,60,Database Systems,4 hours,69.2,Declining,90,73,83,Task Group 2
+90,28,Anxious,93,53,56,87,64,55,Introduction to Software Engineering,3 hours,63.0,Declining,101,73,80,Task Group 2
+30,93,Anxious,81,63,81,67,68,64,Data Structures,5 hours,68.6,Declining,87,65,75,Task Group 2
+13,64,Neutral,57,85,66,51,89,62,Algorithms,2 hours,70.6,Declining,62,60,70,Task Group 5
+93,317,Anxious,93,60,72,69,52,52,Data Structures,2 hours,61.0,Stable,86,53,61,Task Group 4
+28,316,Anxious,75,72,89,84,74,84,Data Structures,4 hours,80.6,Improving,70,81,87,Task Group 5
+26,355,Excited,94,87,100,56,55,88,Database Systems,4 hours,77.2,Improving,96,71,78,Task Group 2
+54,345,Neutral,80,94,86,87,74,71,Introduction to Software Engineering,2 hours,82.4,Declining,90,79,85,Task Group 3
+91,60,Excited,84,52,85,72,86,61,Database Systems,5 hours,71.2,Declining,80,66,75,Task Group 4
+68,197,Frustrated,73,87,92,97,90,84,Introduction to Software Engineering,1 hours,90.0,Declining,73,90,97,Task Group 1
+1,193,Frustrated,64,57,93,80,74,85,Introduction to Software Engineering,3 hours,77.8,Improving,57,74,84,Task Group 2
+69,457,Excited,66,61,77,79,54,61,Data Structures,5 hours,66.4,Improving,65,63,73,Task Group 1
+14,143,Anxious,76,93,53,63,85,65,Database Systems,5 hours,71.8,Declining,70,69,75,Task Group 5
+38,362,Happy,93,92,62,95,78,61,Data Structures,5 hours,77.6,Declining,101,69,74,Task Group 2
+60,120,Sad,69,70,76,76,77,64,Algorithms,5 hours,72.6,Declining,60,69,76,Task Group 5
+27,272,Neutral,53,84,50,65,57,94,Introduction to Software Engineering,4 hours,70.0,Improving,61,79,88,Task Group 5
+19,361,Anxious,92,95,88,74,83,71,Data Structures,5 hours,82.2,Declining,99,79,87,Task Group 1
+59,382,Anxious,94,66,89,63,74,95,Data Structures,4 hours,77.4,Improving,94,76,83,Task Group 3
+97,434,Excited,92,83,70,67,97,86,Introduction to Software Engineering,5 hours,80.6,Declining,89,79,88,Task Group 4
+86,356,Neutral,98,64,63,65,50,65,Data Structures,2 hours,61.4,Improving,98,64,69,Task Group 2
+84,21,Neutral,71,77,79,97,87,94,Introduction to Software Engineering,4 hours,86.8,Improving,72,83,88,Task Group 3
+66,416,Tired,98,57,65,98,94,82,Database Systems,2 hours,79.2,Declining,96,74,83,Task Group 4
+9,298,Frustrated,66,80,50,69,52,72,Database Systems,1 hours,64.6,Improving,64,73,80,Task Group 1
+14,190,Neutral,55,97,76,62,73,87,Data Structures,2 hours,79.0,Improving,54,71,80,Task Group 1
+78,163,Anxious,58,67,98,59,85,56,Algorithms,2 hours,73.0,Declining,64,76,86,Task Group 4
+6,494,Happy,67,81,88,78,91,87,Introduction to Software Engineering,5 hours,85.0,Declining,73,77,84,Task Group 4
+96,281,Anxious,94,80,96,59,80,55,Introduction to Software Engineering,2 hours,74.0,Declining,92,77,84,Task Group 5
+82,347,Frustrated,78,95,73,90,65,97,Data Structures,4 hours,84.0,Improving,87,89,97,Task Group 5
+89,212,Happy,81,68,62,88,64,68,Data Structures,4 hours,70.0,Improving,84,61,69,Task Group 1
+77,376,Excited,59,78,80,97,74,73,Algorithms,5 hours,80.4,Declining,57,78,87,Task Group 4
+43,382,Anxious,72,56,66,86,91,55,Data Structures,1 hours,70.8,Declining,78,71,79,Task Group 3
+20,362,Frustrated,65,57,98,54,94,76,Database Systems,4 hours,75.8,Declining,55,81,86,Task Group 5
+58,257,Frustrated,76,66,59,95,93,50,Database Systems,5 hours,72.6,Declining,76,76,85,Task Group 2
+48,435,Anxious,100,64,83,77,63,76,Data Structures,3 hours,72.6,Improving,91,79,86,Task Group 2
+79,40,Neutral,63,79,66,51,71,73,Algorithms,1 hours,68.0,Improving,62,58,65,Task Group 4
+24,237,Sad,72,51,97,87,72,60,Algorithms,1 hours,73.4,Declining,70,69,74,Task Group 5
+66,8,Frustrated,64,57,92,81,78,56,Introduction to Software Engineering,2 hours,72.8,Declining,56,71,78,Task Group 3
+86,164,Happy,62,90,95,62,56,82,Database Systems,4 hours,77.0,Improving,68,84,92,Task Group 5
+48,179,Excited,60,70,67,98,97,51,Data Structures,5 hours,76.6,Declining,51,67,74,Task Group 1
+43,74,Neutral,57,77,90,72,76,69,Data Structures,2 hours,76.8,Declining,66,73,82,Task Group 5
+67,489,Frustrated,74,58,94,52,87,97,Database Systems,2 hours,77.6,Improving,71,80,87,Task Group 2
+65,297,Anxious,58,65,57,86,66,53,Database Systems,5 hours,65.4,Declining,58,68,78,Task Group 2
+7,31,Frustrated,80,76,81,83,93,59,Algorithms,2 hours,78.4,Declining,83,70,78,Task Group 4
+79,193,Tired,58,86,83,83,94,91,Introduction to Software Engineering,4 hours,87.4,Declining,65,79,89,Task Group 1
+27,445,Happy,87,78,60,74,50,57,Database Systems,5 hours,63.8,Improving,91,61,70,Task Group 3
+46,190,Frustrated,57,84,95,77,96,87,Database Systems,3 hours,87.8,Declining,56,92,98,Task Group 3
+55,371,Happy,96,70,88,90,69,71,Data Structures,4 hours,77.6,Improving,104,73,82,Task Group 3
+40,459,Tired,64,84,58,55,90,80,Introduction to Software Engineering,4 hours,73.4,Declining,55,72,77,Task Group 1
+6,57,Excited,94,100,50,72,70,64,Algorithms,1 hours,71.2,Declining,88,76,81,Task Group 3
+88,177,Sad,98,78,67,65,52,72,Introduction to Software Engineering,5 hours,66.8,Improving,99,73,83,Task Group 1
+44,373,Excited,86,61,97,84,78,59,Data Structures,2 hours,75.8,Declining,89,76,85,Task Group 2
+30,222,Tired,94,81,60,68,97,81,Database Systems,5 hours,77.4,Declining,99,82,88,Task Group 1
+19,202,Frustrated,96,63,59,87,55,65,Database Systems,4 hours,65.8,Improving,100,66,71,Task Group 3
+52,300,Happy,87,70,64,64,92,86,Data Structures,2 hours,75.2,Declining,91,76,81,Task Group 1
+43,432,Anxious,67,70,99,54,74,71,Data Structures,1 hours,73.6,Declining,67,71,79,Task Group 5
+11,435,Excited,57,78,86,96,72,79,Data Structures,5 hours,82.2,Improving,57,78,85,Task Group 2
+63,280,Happy,89,70,72,62,83,60,Introduction to Software Engineering,1 hours,69.4,Declining,84,70,77,Task Group 5
+80,442,Excited,88,51,77,87,58,70,Database Systems,4 hours,68.6,Improving,81,75,84,Task Group 5
+73,135,Anxious,88,64,57,62,72,62,Database Systems,3 hours,63.4,Declining,91,60,67,Task Group 3
+67,351,Anxious,72,94,72,76,59,84,Introduction to Software Engineering,3 hours,77.0,Improving,81,72,77,Task Group 5
+49,288,Tired,59,83,63,87,80,81,Database Systems,1 hours,78.8,Improving,59,71,81,Task Group 1
+9,287,Happy,76,89,90,58,60,73,Introduction to Software Engineering,3 hours,74.0,Improving,70,76,86,Task Group 2
+83,396,Frustrated,61,95,69,86,98,72,Data Structures,2 hours,84.0,Declining,51,74,81,Task Group 3
+76,452,Excited,75,89,55,81,55,58,Introduction to Software Engineering,3 hours,67.6,Improving,72,61,68,Task Group 1
+13,115,Frustrated,82,90,67,74,100,80,Introduction to Software Engineering,2 hours,82.2,Declining,73,81,91,Task Group 3
+32,262,Neutral,57,72,96,88,75,51,Introduction to Software Engineering,5 hours,76.4,Declining,50,84,90,Task Group 5
+83,15,Frustrated,67,96,68,62,61,99,Introduction to Software Engineering,2 hours,77.2,Improving,74,68,76,Task Group 5
+92,127,Happy,89,96,100,86,86,85,Data Structures,4 hours,90.6,Declining,93,85,94,Task Group 2
+87,3,Frustrated,91,62,67,97,86,88,Data Structures,2 hours,80.0,Improving,95,72,82,Task Group 2
+97,203,Excited,92,56,90,92,75,66,Data Structures,5 hours,75.8,Declining,86,70,80,Task Group 5
+92,313,Happy,95,54,83,55,73,50,Database Systems,5 hours,63.0,Declining,94,70,79,Task Group 5
+20,52,Tired,57,62,99,64,79,53,Algorithms,5 hours,71.4,Declining,64,62,70,Task Group 1
+22,390,Happy,76,75,63,93,72,76,Database Systems,1 hours,75.8,Improving,67,68,73,Task Group 4
+13,357,Happy,77,53,74,79,77,72,Algorithms,1 hours,71.0,Declining,69,65,74,Task Group 3
+13,316,Happy,73,63,84,68,51,58,Algorithms,3 hours,64.8,Improving,68,56,62,Task Group 5
+70,99,Happy,53,92,100,77,66,95,Algorithms,2 hours,86.0,Improving,59,94,94,Task Group 1
+48,72,Happy,78,82,70,63,71,56,Data Structures,1 hours,68.4,Declining,74,60,66,Task Group 3
+64,251,Frustrated,78,57,96,72,95,73,Algorithms,5 hours,78.6,Declining,68,87,94,Task Group 1
+91,20,Neutral,89,65,54,96,65,60,Data Structures,4 hours,68.0,Declining,91,73,81,Task Group 1
+51,478,Anxious,52,83,85,57,74,69,Algorithms,5 hours,73.6,Declining,50,77,84,Task Group 2
+23,190,Sad,83,51,90,94,71,68,Data Structures,5 hours,74.8,Declining,93,68,77,Task Group 5
+59,269,Excited,77,54,73,62,55,89,Introduction to Software Engineering,4 hours,66.6,Improving,74,75,83,Task Group 4
+10,148,Tired,55,57,98,80,100,54,Algorithms,4 hours,77.8,Declining,54,76,81,Task Group 2
+47,88,Neutral,98,80,82,74,84,52,Data Structures,4 hours,74.4,Declining,107,67,76,Task Group 3
+47,228,Anxious,86,53,70,51,66,95,Introduction to Software Engineering,2 hours,67.0,Improving,87,67,75,Task Group 5
+76,22,Anxious,61,74,74,95,55,84,Data Structures,1 hours,76.4,Improving,56,77,86,Task Group 5
+37,28,Excited,74,69,90,84,90,92,Introduction to Software Engineering,3 hours,85.0,Improving,73,80,88,Task Group 3
+57,68,Frustrated,97,78,84,91,73,53,Data Structures,5 hours,75.8,Declining,96,84,90,Task Group 5
+54,39,Happy,83,54,69,71,74,52,Database Systems,5 hours,64.0,Declining,78,57,66,Task Group 1
+34,291,Neutral,88,92,53,62,95,98,Database Systems,3 hours,80.0,Improving,86,90,96,Task Group 2
+58,306,Sad,66,61,89,52,69,79,Data Structures,2 hours,70.0,Improving,74,70,80,Task Group 5
+74,61,Anxious,95,89,88,94,98,76,Database Systems,4 hours,89.0,Declining,99,97,97,Task Group 2
+52,271,Excited,54,98,66,92,81,97,Database Systems,5 hours,86.8,Improving,59,91,98,Task Group 4
+97,150,Excited,80,74,84,93,70,71,Introduction to Software Engineering,1 hours,78.4,Improving,77,74,83,Task Group 5
+43,261,Excited,100,84,98,76,95,72,Algorithms,4 hours,85.0,Declining,105,87,96,Task Group 4
+38,52,Excited,57,94,62,60,51,81,Data Structures,2 hours,69.6,Improving,53,67,72,Task Group 2
+87,428,Excited,70,97,60,60,73,66,Introduction to Software Engineering,2 hours,71.2,Declining,80,67,72,Task Group 4
+60,245,Tired,62,58,74,78,89,73,Database Systems,5 hours,74.4,Declining,62,64,69,Task Group 5
+3,367,Happy,82,68,53,56,84,95,Introduction to Software Engineering,3 hours,71.2,Improving,90,72,80,Task Group 1
+89,222,Tired,59,85,57,82,68,80,Database Systems,3 hours,74.4,Improving,66,74,82,Task Group 1
+84,453,Sad,72,69,68,78,92,60,Algorithms,1 hours,73.4,Declining,76,83,92,Task Group 2
+73,363,Frustrated,52,60,89,65,60,80,Data Structures,1 hours,70.8,Improving,58,77,82,Task Group 1
+88,424,Happy,75,73,100,58,98,91,Database Systems,3 hours,84.0,Declining,68,92,98,Task Group 4
+1,456,Happy,100,86,83,70,75,60,Data Structures,2 hours,74.8,Declining,100,75,84,Task Group 3
+82,5,Neutral,96,84,88,84,58,68,Database Systems,3 hours,76.4,Improving,96,83,91,Task Group 1
+13,111,Tired,73,54,76,96,63,97,Introduction to Software Engineering,4 hours,77.2,Improving,69,77,84,Task Group 5
+32,293,Neutral,96,54,84,84,100,80,Database Systems,3 hours,80.4,Declining,100,82,89,Task Group 5
+9,315,Sad,87,67,65,84,89,57,Data Structures,1 hours,72.4,Declining,77,74,81,Task Group 1
+81,485,Excited,71,88,84,84,98,62,Data Structures,5 hours,83.2,Declining,81,74,83,Task Group 1
+86,50,Tired,73,65,72,83,99,85,Introduction to Software Engineering,5 hours,80.8,Declining,82,82,89,Task Group 4
+33,292,Happy,97,99,89,93,90,93,Algorithms,3 hours,92.8,Improving,104,91,97,Task Group 5
+95,215,Happy,77,94,58,85,60,98,Introduction to Software Engineering,2 hours,79.0,Improving,87,85,90,Task Group 3
+67,407,Tired,52,71,60,52,67,100,Introduction to Software Engineering,5 hours,70.0,Improving,61,73,83,Task Group 5
+15,28,Neutral,83,82,61,51,100,75,Data Structures,2 hours,73.8,Declining,81,75,85,Task Group 1
+89,258,Tired,61,77,62,96,70,93,Data Structures,2 hours,79.6,Improving,70,89,97,Task Group 1
+10,11,Happy,67,87,64,69,55,64,Data Structures,4 hours,67.8,Improving,63,67,74,Task Group 1
+53,331,Neutral,64,73,71,91,99,75,Database Systems,2 hours,81.8,Declining,66,77,85,Task Group 3
+82,304,Happy,99,73,54,87,97,90,Algorithms,2 hours,80.2,Declining,94,81,91,Task Group 3
+63,97,Happy,86,55,73,90,79,66,Algorithms,3 hours,72.6,Declining,79,69,74,Task Group 4
+17,203,Excited,57,69,75,77,62,67,Data Structures,4 hours,70.0,Improving,62,73,78,Task Group 5
+93,384,Sad,81,62,80,68,90,55,Algorithms,5 hours,71.0,Declining,72,81,86,Task Group 4
+89,223,Happy,90,93,92,66,93,82,Introduction to Software Engineering,4 hours,85.2,Declining,91,94,94,Task Group 3
+85,24,Excited,84,55,50,97,89,67,Introduction to Software Engineering,5 hours,71.6,Declining,79,70,80,Task Group 3
+47,153,Neutral,59,57,98,56,88,82,Introduction to Software Engineering,2 hours,76.2,Declining,62,83,91,Task Group 1
+74,107,Neutral,74,64,100,87,74,77,Introduction to Software Engineering,4 hours,80.4,Improving,74,77,87,Task Group 5
+56,414,Excited,70,98,71,78,58,60,Database Systems,4 hours,73.0,Improving,72,64,69,Task Group 3
+55,101,Happy,94,97,90,69,78,96,Algorithms,1 hours,86.0,Improving,91,95,95,Task Group 1
+23,29,Anxious,65,81,67,75,78,61,Introduction to Software Engineering,4 hours,72.4,Declining,58,75,83,Task Group 2
+28,443,Anxious,51,74,61,66,62,73,Data Structures,2 hours,67.2,Improving,52,61,68,Task Group 5
+92,58,Happy,78,92,80,58,54,58,Database Systems,2 hours,68.4,Improving,70,71,79,Task Group 5
+27,272,Excited,56,78,91,59,63,66,Data Structures,2 hours,71.4,Improving,50,80,90,Task Group 5
+98,380,Excited,55,61,100,69,56,75,Data Structures,1 hours,72.2,Improving,61,76,85,Task Group 5
+98,39,Happy,87,81,67,68,94,58,Introduction to Software Engineering,3 hours,73.6,Declining,93,78,84,Task Group 3
+79,98,Happy,81,68,73,56,96,69,Data Structures,5 hours,72.4,Declining,91,71,80,Task Group 5
+92,452,Sad,87,66,53,57,61,52,Algorithms,1 hours,57.8,Declining,95,58,68,Task Group 5
+77,243,Neutral,58,81,58,56,85,65,Data Structures,1 hours,69.0,Declining,63,69,79,Task Group 5
+93,324,Excited,71,73,89,93,52,76,Data Structures,2 hours,76.6,Improving,71,67,75,Task Group 4
+9,408,Happy,93,97,50,58,53,82,Database Systems,1 hours,68.0,Improving,103,61,68,Task Group 2
+2,82,Sad,75,68,65,67,63,58,Database Systems,2 hours,64.2,Declining,83,72,81,Task Group 1
+86,188,Neutral,94,72,79,90,60,54,Introduction to Software Engineering,4 hours,71.0,Declining,100,76,81,Task Group 5
+85,405,Happy,76,85,82,94,58,93,Introduction to Software Engineering,4 hours,82.4,Improving,85,81,88,Task Group 1
+43,134,Frustrated,64,67,83,54,84,67,Database Systems,3 hours,71.0,Declining,64,66,76,Task Group 4
+40,403,Happy,93,52,68,53,64,89,Introduction to Software Engineering,4 hours,65.2,Improving,88,57,62,Task Group 5
+26,293,Sad,69,100,59,69,80,87,Database Systems,3 hours,79.0,Improving,62,78,88,Task Group 5
+42,383,Sad,61,86,66,97,72,73,Database Systems,3 hours,78.8,Improving,55,81,90,Task Group 4
+45,255,Sad,64,69,70,51,50,83,Database Systems,2 hours,64.6,Improving,69,73,82,Task Group 4
+16,222,Sad,86,94,90,94,71,99,Database Systems,5 hours,89.6,Improving,91,86,93,Task Group 1
+2,484,Neutral,97,57,82,78,99,85,Database Systems,4 hours,80.2,Declining,103,89,95,Task Group 2
+69,22,Excited,82,92,54,56,81,96,Algorithms,3 hours,75.8,Improving,86,80,89,Task Group 3
+42,257,Excited,50,88,86,52,98,98,Data Structures,3 hours,84.4,Stable,58,84,93,Task Group 3
+71,287,Frustrated,80,76,98,85,71,99,Introduction to Software Engineering,3 hours,85.8,Improving,88,80,89,Task Group 4
+16,439,Happy,88,76,75,66,71,83,Database Systems,3 hours,74.2,Improving,80,74,80,Task Group 1
+72,202,Sad,59,69,57,81,61,63,Data Structures,2 hours,66.2,Improving,63,56,63,Task Group 2
+28,254,Happy,50,57,99,67,91,77,Algorithms,1 hours,78.2,Declining,50,75,82,Task Group 5
+34,76,Sad,55,76,70,100,59,96,Algorithms,2 hours,80.2,Improving,64,85,95,Task Group 4
+69,425,Neutral,79,76,59,64,77,51,Database Systems,2 hours,65.4,Declining,77,63,69,Task Group 2
+32,38,Happy,78,91,91,70,59,83,Algorithms,3 hours,78.8,Improving,85,79,84,Task Group 4
+41,53,Tired,95,65,52,97,83,91,Algorithms,1 hours,77.6,Improving,87,85,94,Task Group 4
+82,165,Happy,67,54,87,61,73,63,Data Structures,3 hours,67.6,Declining,62,60,67,Task Group 4
+66,136,Anxious,53,94,70,69,60,70,Algorithms,2 hours,72.6,Improving,59,78,85,Task Group 2
+29,27,Excited,85,61,69,63,52,60,Introduction to Software Engineering,1 hours,61.0,Improving,82,67,75,Task Group 3
+33,320,Tired,50,67,73,57,59,96,Algorithms,3 hours,70.4,Improving,55,66,71,Task Group 3
+45,287,Excited,80,78,92,85,96,76,Data Structures,4 hours,85.4,Declining,80,85,92,Task Group 4
+51,397,Frustrated,51,53,70,76,64,98,Data Structures,1 hours,72.2,Improving,54,82,92,Task Group 3
+47,17,Sad,70,70,76,62,88,99,Introduction to Software Engineering,2 hours,79.0,Improving,67,79,84,Task Group 5
+32,306,Neutral,76,68,57,100,50,53,Database Systems,2 hours,65.6,Improving,68,68,77,Task Group 2
+17,498,Sad,60,67,51,54,65,92,Database Systems,5 hours,65.8,Improving,56,63,71,Task Group 5
+63,416,Sad,96,88,80,93,83,74,Introduction to Software Engineering,2 hours,83.6,Declining,88,87,95,Task Group 3
+19,313,Anxious,100,88,77,86,85,100,Introduction to Software Engineering,5 hours,87.2,Improving,103,93,98,Task Group 4
+13,92,Sad,92,97,63,98,81,71,Algorithms,4 hours,82.0,Declining,98,88,93,Task Group 4
+28,410,Sad,82,77,78,52,92,60,Algorithms,5 hours,71.8,Declining,91,72,81,Task Group 4
+67,49,Frustrated,63,53,57,96,71,80,Data Structures,4 hours,71.4,Improving,65,73,78,Task Group 3
+22,452,Sad,55,63,62,65,93,57,Algorithms,4 hours,68.0,Declining,62,71,81,Task Group 1
+63,62,Tired,69,87,97,81,81,69,Database Systems,3 hours,83.0,Declining,60,90,97,Task Group 3
+39,184,Neutral,76,79,52,94,79,89,Algorithms,1 hours,78.6,Improving,77,87,92,Task Group 4
+89,343,Neutral,97,69,70,93,81,100,Data Structures,4 hours,82.6,Improving,105,73,78,Task Group 2
+23,220,Tired,61,90,60,88,56,92,Database Systems,4 hours,77.2,Improving,54,72,81,Task Group 2
+66,163,Excited,75,59,89,59,57,86,Data Structures,2 hours,70.0,Improving,73,63,69,Task Group 2
+35,246,Excited,63,79,68,97,57,63,Database Systems,3 hours,72.8,Improving,71,76,81,Task Group 2
+70,47,Anxious,54,51,98,61,72,73,Database Systems,3 hours,71.0,Improving,57,73,79,Task Group 1
+100,216,Sad,88,78,65,58,94,83,Data Structures,5 hours,75.6,Declining,87,66,75,Task Group 3
+60,101,Happy,89,50,92,76,97,71,Algorithms,3 hours,77.2,Declining,95,78,84,Task Group 1
+67,62,Sad,84,70,73,78,66,80,Introduction to Software Engineering,4 hours,73.4,Improving,87,83,89,Task Group 5
+95,270,Excited,59,71,51,98,59,54,Database Systems,2 hours,66.6,Declining,61,75,84,Task Group 5
+63,230,Neutral,96,65,92,56,81,79,Introduction to Software Engineering,4 hours,74.6,Declining,103,82,88,Task Group 1
+46,332,Happy,54,58,99,62,58,65,Algorithms,1 hours,68.4,Improving,60,70,76,Task Group 5
+44,62,Sad,82,91,69,68,83,92,Data Structures,3 hours,80.6,Improving,74,73,80,Task Group 2
+76,346,Anxious,70,69,96,79,82,94,Database Systems,4 hours,84.0,Improving,74,76,81,Task Group 2
+24,477,Anxious,50,68,79,73,60,50,Database Systems,2 hours,66.0,Declining,55,58,68,Task Group 2
+25,26,Neutral,99,72,98,99,61,67,Introduction to Software Engineering,2 hours,79.4,Improving,103,88,96,Task Group 1
+62,78,Sad,95,57,65,98,57,96,Algorithms,2 hours,74.6,Improving,105,76,81,Task Group 5
+71,18,Anxious,92,72,92,60,55,74,Algorithms,3 hours,70.6,Improving,94,72,77,Task Group 5
+42,489,Anxious,90,91,91,61,94,67,Algorithms,4 hours,80.8,Declining,80,72,77,Task Group 2
+5,36,Happy,69,93,95,84,64,53,Introduction to Software Engineering,2 hours,77.8,Declining,72,67,73,Task Group 1
+13,252,Anxious,70,98,82,92,85,85,Data Structures,5 hours,88.4,Stable,61,96,96,Task Group 5
+42,420,Anxious,61,69,84,55,96,55,Introduction to Software Engineering,1 hours,71.8,Declining,69,64,69,Task Group 1
+31,108,Frustrated,57,83,88,78,75,70,Database Systems,4 hours,78.8,Declining,51,77,84,Task Group 1
+56,59,Happy,79,84,95,76,70,50,Algorithms,2 hours,75.0,Declining,81,78,85,Task Group 1
+3,396,Frustrated,67,60,62,89,54,66,Introduction to Software Engineering,3 hours,66.2,Improving,76,63,73,Task Group 4
+23,263,Sad,82,98,50,73,59,98,Database Systems,3 hours,75.6,Improving,85,80,86,Task Group 3
+56,224,Neutral,86,96,69,97,100,69,Database Systems,2 hours,86.2,Declining,78,76,85,Task Group 1
+35,2,Sad,68,82,100,80,59,60,Database Systems,4 hours,76.2,Improving,68,81,89,Task Group 1
+46,491,Anxious,65,77,89,61,85,87,Introduction to Software Engineering,1 hours,79.8,Improving,57,69,76,Task Group 1
+81,453,Anxious,68,76,58,100,83,58,Introduction to Software Engineering,1 hours,75.0,Declining,72,77,82,Task Group 5
+6,250,Sad,99,78,65,63,83,92,Data Structures,4 hours,76.2,Improving,109,72,78,Task Group 4
+55,407,Happy,56,77,71,75,66,100,Algorithms,3 hours,77.8,Improving,63,82,87,Task Group 3
+56,34,Excited,52,97,92,99,59,94,Algorithms,2 hours,88.2,Improving,62,90,96,Task Group 3
+49,98,Tired,70,78,80,76,87,57,Data Structures,3 hours,75.6,Declining,62,72,82,Task Group 4
+22,479,Anxious,60,60,97,50,80,90,Database Systems,5 hours,75.4,Improving,52,79,85,Task Group 1
+76,470,Excited,80,75,91,63,100,79,Algorithms,4 hours,81.6,Declining,78,90,95,Task Group 2
+38,137,Neutral,98,68,57,85,73,51,Data Structures,1 hours,66.8,Declining,98,56,64,Task Group 5
+32,303,Sad,52,98,62,66,91,56,Database Systems,5 hours,74.6,Declining,50,71,80,Task Group 1
+43,437,Sad,75,67,64,71,96,65,Introduction to Software Engineering,1 hours,72.6,Declining,81,79,88,Task Group 3
+97,481,Excited,80,85,70,68,94,78,Database Systems,3 hours,79.0,Declining,87,69,78,Task Group 4
+70,114,Tired,69,74,54,59,82,64,Database Systems,1 hours,66.6,Declining,70,57,67,Task Group 5
+11,265,Happy,52,82,57,80,79,100,Introduction to Software Engineering,5 hours,79.6,Improving,50,75,84,Task Group 5
+67,264,Frustrated,76,92,66,64,66,69,Algorithms,4 hours,71.4,Improving,80,80,89,Task Group 2
+50,114,Sad,96,75,56,93,90,96,Data Structures,5 hours,82.0,Improving,105,91,97,Task Group 1
+70,129,Frustrated,78,59,54,94,97,51,Algorithms,3 hours,71.0,Declining,85,72,77,Task Group 2
+85,290,Neutral,90,93,63,71,66,70,Data Structures,2 hours,72.6,Improving,96,66,73,Task Group 1
+48,199,Tired,73,100,51,70,88,94,Introduction to Software Engineering,3 hours,80.6,Improving,74,88,96,Task Group 4
+40,192,Neutral,98,94,67,61,85,71,Data Structures,5 hours,75.6,Declining,108,72,82,Task Group 2
+47,84,Neutral,61,100,85,64,59,73,Introduction to Software Engineering,5 hours,76.2,Improving,63,81,86,Task Group 5
+52,343,Anxious,83,94,61,95,58,72,Algorithms,2 hours,76.0,Improving,93,83,90,Task Group 1
+42,485,Frustrated,72,82,72,63,93,87,Introduction to Software Engineering,3 hours,79.4,Declining,78,80,86,Task Group 5
+90,140,Tired,76,72,92,96,85,71,Algorithms,3 hours,83.2,Declining,83,87,92,Task Group 3
+55,169,Tired,63,72,61,82,92,76,Introduction to Software Engineering,1 hours,76.6,Declining,63,83,92,Task Group 3
+78,491,Neutral,53,52,73,67,59,54,Data Structures,4 hours,61.0,Declining,56,55,61,Task Group 4
+4,397,Anxious,97,50,69,55,82,53,Algorithms,4 hours,61.8,Declining,105,62,69,Task Group 4
+36,102,Happy,54,92,95,58,51,55,Introduction to Software Engineering,4 hours,70.2,Improving,50,65,75,Task Group 4
+72,396,Sad,81,70,98,62,54,83,Algorithms,5 hours,73.4,Improving,86,64,69,Task Group 4
+13,68,Excited,51,55,73,69,65,68,Database Systems,2 hours,66.0,Improving,58,73,83,Task Group 5
+13,376,Happy,56,85,99,57,76,81,Algorithms,5 hours,79.6,Improving,60,70,77,Task Group 1
+71,480,Neutral,52,51,84,82,67,85,Introduction to Software Engineering,2 hours,73.8,Improving,54,82,89,Task Group 4
+88,220,Excited,58,78,62,82,79,68,Database Systems,1 hours,73.8,Declining,62,79,87,Task Group 4
+71,380,Excited,91,93,59,58,83,51,Database Systems,5 hours,68.8,Declining,84,75,81,Task Group 4
+23,283,Frustrated,50,68,81,79,71,95,Algorithms,3 hours,78.8,Improving,53,85,90,Task Group 1
+16,185,Happy,75,81,96,59,76,77,Database Systems,5 hours,77.8,Improving,71,72,79,Task Group 2
+88,377,Excited,89,62,52,71,98,75,Database Systems,2 hours,71.6,Declining,85,69,76,Task Group 3
+31,179,Excited,60,75,66,95,72,56,Algorithms,2 hours,72.8,Declining,60,76,84,Task Group 3
+68,380,Anxious,56,66,68,76,100,88,Data Structures,5 hours,79.6,Declining,61,87,96,Task Group 1
+58,105,Frustrated,57,77,62,83,89,59,Data Structures,3 hours,74.0,Declining,56,67,73,Task Group 3
+47,10,Tired,96,85,87,72,62,89,Introduction to Software Engineering,3 hours,79.0,Improving,87,73,83,Task Group 4
+26,143,Neutral,80,50,58,91,97,81,Introduction to Software Engineering,5 hours,75.4,Declining,90,82,92,Task Group 2
+4,205,Happy,82,65,61,62,63,63,Introduction to Software Engineering,4 hours,62.8,Stable,81,67,76,Task Group 2
+45,137,Frustrated,62,93,50,61,95,63,Algorithms,5 hours,72.4,Declining,52,79,88,Task Group 3
+50,37,Anxious,71,96,77,65,62,95,Database Systems,3 hours,79.0,Improving,66,69,78,Task Group 4
+88,281,Excited,93,64,99,100,76,95,Introduction to Software Engineering,3 hours,86.8,Improving,102,92,97,Task Group 5
+5,189,Happy,69,76,92,56,84,99,Database Systems,2 hours,81.4,Improving,73,88,96,Task Group 1
+9,442,Anxious,62,56,93,68,84,70,Introduction to Software Engineering,3 hours,74.2,Declining,60,84,90,Task Group 1
+33,151,Frustrated,95,85,58,63,79,65,Data Structures,1 hours,70.0,Declining,100,75,81,Task Group 4
+39,253,Sad,100,83,100,74,62,84,Introduction to Software Engineering,4 hours,80.6,Improving,105,82,88,Task Group 3
+26,405,Anxious,51,97,73,97,99,80,Data Structures,4 hours,89.2,Declining,50,90,95,Task Group 5
+41,419,Tired,79,94,70,81,68,99,Database Systems,4 hours,82.4,Improving,80,72,79,Task Group 5
+67,321,Happy,66,90,100,80,66,70,Database Systems,4 hours,81.2,Improving,67,75,80,Task Group 3
+1,85,Tired,58,53,59,76,76,92,Data Structures,2 hours,71.2,Improving,60,62,69,Task Group 5
+28,303,Frustrated,80,95,88,61,98,62,Algorithms,3 hours,80.8,Declining,84,85,90,Task Group 5
+97,386,Neutral,79,90,93,76,71,85,Algorithms,1 hours,83.0,Improving,86,84,89,Task Group 5
+3,89,Tired,64,55,77,53,68,93,Data Structures,2 hours,69.2,Improving,55,76,85,Task Group 1
+21,264,Happy,66,51,67,99,71,87,Algorithms,1 hours,75.0,Improving,58,80,85,Task Group 4
+16,116,Sad,99,63,71,65,50,97,Database Systems,1 hours,69.2,Improving,97,66,75,Task Group 2
+84,339,Frustrated,92,85,77,65,71,80,Data Structures,1 hours,75.6,Improving,90,72,77,Task Group 2
+73,161,Frustrated,74,77,100,100,52,72,Database Systems,5 hours,80.2,Improving,82,78,87,Task Group 3
+56,224,Happy,80,63,69,100,70,72,Algorithms,1 hours,74.8,Improving,90,67,75,Task Group 3
+28,136,Happy,85,60,68,99,77,75,Database Systems,3 hours,75.8,Declining,82,67,72,Task Group 4
+73,312,Sad,71,77,87,60,80,68,Data Structures,3 hours,74.4,Declining,66,64,72,Task Group 3
+100,25,Tired,79,61,96,97,55,92,Database Systems,3 hours,80.2,Improving,78,82,88,Task Group 5
+29,33,Tired,79,100,65,98,59,87,Database Systems,5 hours,81.8,Improving,83,81,89,Task Group 3
+59,76,Sad,60,93,98,52,69,89,Data Structures,1 hours,80.2,Improving,55,82,91,Task Group 3
+53,1,Neutral,68,94,85,71,99,81,Algorithms,4 hours,86.0,Declining,75,91,98,Task Group 5
+24,496,Anxious,74,81,76,75,81,95,Introduction to Software Engineering,2 hours,81.6,Improving,84,89,97,Task Group 1
+6,456,Tired,87,70,69,72,89,55,Data Structures,2 hours,71.0,Declining,96,61,71,Task Group 2
+10,255,Happy,98,57,50,87,96,61,Data Structures,5 hours,70.2,Declining,98,68,76,Task Group 2
+75,437,Neutral,62,80,79,78,65,52,Data Structures,2 hours,70.8,Declining,71,66,75,Task Group 1
+84,353,Happy,64,89,56,89,100,91,Database Systems,2 hours,85.0,Declining,55,89,95,Task Group 4
+97,257,Sad,72,95,70,67,50,53,Algorithms,4 hours,67.0,Improving,78,57,62,Task Group 4
+18,490,Tired,98,56,97,91,82,75,Database Systems,5 hours,80.2,Declining,99,72,81,Task Group 1
+50,136,Frustrated,80,82,61,60,64,66,Data Structures,4 hours,66.6,Improving,71,63,73,Task Group 5
+82,99,Frustrated,61,73,87,86,56,75,Data Structures,4 hours,75.4,Improving,59,65,72,Task Group 1
+79,441,Frustrated,98,76,61,92,64,59,Database Systems,1 hours,70.4,Declining,93,76,82,Task Group 4
+28,132,Frustrated,61,67,82,60,89,79,Introduction to Software Engineering,5 hours,75.4,Declining,70,75,82,Task Group 5
+6,38,Excited,85,64,77,52,84,84,Introduction to Software Engineering,5 hours,72.2,Stable,84,81,86,Task Group 5
+46,336,Frustrated,72,54,83,63,84,76,Data Structures,4 hours,72.0,Declining,65,64,69,Task Group 5
+34,82,Tired,57,91,71,89,93,91,Database Systems,3 hours,87.0,Declining,60,92,98,Task Group 2
+28,356,Excited,100,69,82,84,52,82,Algorithms,2 hours,73.8,Improving,103,75,85,Task Group 4
+67,33,Happy,93,98,66,97,92,79,Introduction to Software Engineering,1 hours,86.4,Declining,84,95,95,Task Group 2
+76,152,Neutral,58,95,78,91,95,98,Database Systems,4 hours,91.4,Improving,54,91,96,Task Group 2
+65,488,Frustrated,67,63,82,68,77,77,Introduction to Software Engineering,3 hours,73.4,Stable,74,76,86,Task Group 3
+13,192,Sad,62,64,99,59,57,55,Database Systems,1 hours,66.8,Declining,61,65,71,Task Group 2
+70,458,Anxious,54,87,73,82,58,77,Introduction to Software Engineering,1 hours,75.4,Improving,64,77,82,Task Group 2
+85,167,Frustrated,98,53,99,65,63,98,Algorithms,2 hours,75.6,Improving,104,77,87,Task Group 3
+24,303,Neutral,87,100,69,62,54,77,Data Structures,2 hours,72.4,Improving,91,62,68,Task Group 4
+16,80,Anxious,55,83,68,84,50,56,Data Structures,5 hours,68.2,Improving,50,67,72,Task Group 2
+21,294,Sad,75,91,94,51,84,59,Data Structures,1 hours,75.8,Declining,73,66,71,Task Group 3

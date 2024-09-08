@@ -1,0 +1,43 @@
+version: "3"
+services:
+  backend:
+    build: ./BrainStation-Backend
+    container_name: brainstation_backend
+    ports:
+      - "3000:3000"
+
+  frontend:
+    build: ./BrainStation-Frontend
+    container_name: brainstation_frontend
+    ports:
+      - "5173:5173"
+
+  content_chunking:
+    build: ./Content-chunking
+    container_name: content_chunking
+    ports:
+      - "9000:9000"
+
+  emotion_detection:
+    build: ./Emotion-detection
+    container_name: emotion_detection
+    ports:
+      - "9001:9001"
+
+  exam_prediction:
+    build: ./Exam-predictor
+    container_name: exam_prediction
+    ports:
+      - "9002:9002"
+
+  question_generation:
+    build: ./Question-generation
+    container_name: question_generation
+    ports:
+      - "9003:9003"
+
+  generate_ontology:
+    build: ./Generate-ontology
+    container_name: generate_ontology
+    ports:
+      - "9004:9004"

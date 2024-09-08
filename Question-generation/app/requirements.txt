@@ -1,0 +1,10 @@
+http://download.pytorch.org/whl/cpu/torch-1.7.1%2Bcpu-cp38-cp38-linux_x86_64.whl
+transformers==4.28.1
+onnx==1.9.0
+onnxruntime==1.10.0
+fastt5==0.0.4
+psutil==6.0.0
+fastapi==0.63.0
+pydantic==1.8.1
+
+

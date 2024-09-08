@@ -1,0 +1,27 @@
+# Ignore Python cache files
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore the model file if you want to avoid copying large files into the image (optional)
+# exam_score_predictor.pkl
+
+# Ignore environment variable files
+.env
+
+# Ignore virtual environments
+venv/
+ENV/
+.venv/
+
+# Ignore logs
+*.log
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore other OS-specific or editor-specific files
+.DS_Store
+.idea
+.vscode

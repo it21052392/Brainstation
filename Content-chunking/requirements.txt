@@ -1,0 +1,9 @@
+fastapi
+python-pptx
+openai==0.28
+asyncio
+nest_asyncio
+python-dotenv
+uvicorn
+python-dotenv
+python-multipart
