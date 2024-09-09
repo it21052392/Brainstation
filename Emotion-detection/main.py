@@ -110,15 +110,30 @@ def smooth_yaw(current_yaw, smoothed_yaw, alpha=YAW_SMOOTHING_ALPHA):
         return current_yaw
     return alpha * smoothed_yaw + (1 - alpha) * current_yaw
 
-# Async function to process frames (this can be expanded for real-time video processing)
+# Optimize Emotion Detection by batching
 async def process_frame(frame, session_data):
     gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     faces = detector(gray_frame)
 
-    # Default value for movement_type
-    movement_type = 'smooth'  # Default value when no face is detected
-    
+    # Initialize movement_type before processing faces
+    movement_type = 'smooth'  # Default movement type in case no faces are detected
+
+    if not faces:
+        return session_data
+
+    # Batch process emotion detections
+    faces_data = []
     for face in faces:
+        x, y, w, h = face.left(), face.top(), face.width(), face.height()
+        roi_gray_frame = gray_frame[y:y + h, x:x + w]
+        cropped_img = np.expand_dims(np.expand_dims(cv2.resize(roi_gray_frame, (48, 48)), -1), 0)
+        faces_data.append(cropped_img)
+
+    # Predict emotions in a batch
+    if faces_data:
+        predictions = emotion_model.predict(np.vstack(faces_data))
+
+    for i, face in enumerate(faces):
         landmarks = predictor(gray_frame, face)
         landmark_points = np.array([
             (landmarks.part(30).x, landmarks.part(30).y),  # Nose tip
@@ -128,38 +143,34 @@ async def process_frame(frame, session_data):
             (landmarks.part(48).x, landmarks.part(48).y),  # Left mouth corner
             (landmarks.part(54).x, landmarks.part(54).y)   # Right mouth corner
         ], dtype="double")
-        
+
         # Head movement and pose
         rotation_vector, translation_vector, camera_matrix, dist_coeffs = get_head_pose(landmark_points, frame.shape)
         rotation_matrix, _ = cv2.Rodrigues(rotation_vector)
         yaw = np.arctan2(rotation_matrix[1][0], rotation_matrix[0][0]) * 180.0 / np.pi
         smoothed_yaw = smooth_yaw(yaw, session_data["smoothed_yaw"])
         head_direction = classify_head_direction(smoothed_yaw)
-        
+
         # Detect movements (smooth/erratic)
         if session_data["prev_landmark_points"] is not None:
-            movement_vectors = np.linalg.norm(landmark_points - session_data["prev_landmark_points"], axis=1)
+            movement_vectors = np.abs(landmark_points - session_data["prev_landmark_points"]).sum(axis=1)  # Optimized movement detection
             avg_movement_vector = np.mean(movement_vectors)
             session_data["movement_history"].append(avg_movement_vector)
             smoothed_movement = np.mean(session_data["movement_history"])
             movement_type = "erratic" if smoothed_movement > MOVEMENT_THRESHOLD else "smooth"
             session_data["movement_data"][movement_type] += 1
-        
+
         session_data["prev_landmark_points"] = landmark_points
-        
-        # Emotion detection
-        x, y, w, h = face.left(), face.top(), face.width(), face.height()
-        roi_gray_frame = gray_frame[y:y + h, x:x + w]
-        cropped_img = np.expand_dims(np.expand_dims(cv2.resize(roi_gray_frame, (48, 48)), -1), 0)
-        emotion_prediction = emotion_model.predict(cropped_img)
-        maxindex = int(np.argmax(emotion_prediction))
+
+        # Emotion detection from the batch
+        maxindex = int(np.argmax(predictions[i]))
         emotion = emotion_dict[maxindex]
         session_data["emotion_data"][emotion] += 1
 
         # Focus time tracking
         if movement_type == 'smooth' and emotion in ['Neutral', 'Happy']:
             session_data["focus_time"] += 1 / 30  # Assuming 30 FPS
-        
+
         # Look away detection
         if head_direction != "Looking Forward":
             if not session_data["looking_away"]:
@@ -169,7 +180,7 @@ async def process_frame(frame, session_data):
                 session_data["movement_data"]['erratic'] += 1
         else:
             session_data["looking_away"] = False
-        
+
     return session_data
 
 # API Endpoint to start session
@@ -180,6 +191,7 @@ async def start_session(websocket: WebSocket):
     await websocket.accept()
     session_data["running"] = True
     session_data["interval_start_time"] = time.time()
+    frame_counter = 0
 
     try:
         while session_data["running"]:
@@ -188,7 +200,11 @@ async def start_session(websocket: WebSocket):
             nparr = np.frombuffer(frame_data, np.uint8)
             frame = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
 
-            session_data = await process_frame(frame, session_data)
+            # Process every 3rd frame to improve performance
+            if frame_counter % 3 == 0:
+                session_data = await process_frame(frame, session_data)
+
+            frame_counter += 1
 
             # Check for interval completion
             if time.time() - session_data["interval_start_time"] >= INTERVAL_DURATION:
