@@ -1,6 +1,7 @@
 import express from 'express';
 import { tracedAsyncHandler } from '@sliit-foss/functions';
 import { Segments, celebrate } from 'celebrate';
+import { generateQuestionsController } from '@/controllers/openai';
 import {
   bulkInsertQuestions,
   createQuestion,
@@ -12,14 +13,15 @@ import {
   updateQuestion,
   viewQuestions
 } from '@/controllers/question';
-import { generateQuestionsController } from '@/controllers/questionGenerator';
 import { authorizer } from '@/middleware/auth';
 import { bulkInsertQuestionsSchema, questionCreateSchema, questionIdSchema } from '@/validations/question';
 
 const questionRouter = express.Router();
 
+// Generate questions
 questionRouter.post('/generate-questions', authorizer(['ADMIN']), tracedAsyncHandler(generateQuestionsController));
 
+// CRUD routes for questions
 questionRouter.post(
   '/',
   authorizer(['ADMIN']),
@@ -33,15 +35,18 @@ questionRouter.post(
   celebrate({ [Segments.BODY]: bulkInsertQuestionsSchema }),
   tracedAsyncHandler(bulkInsertQuestions)
 );
-questionRouter.get('/flagged', authorizer(['ADMIN']), tracedAsyncHandler(getFlaggedQuestions));
-
-questionRouter.post('/:id/flag', celebrate({ [Segments.PARAMS]: questionIdSchema }), tracedAsyncHandler(flagQuestion));
 
 questionRouter.get('/', tracedAsyncHandler(viewQuestions));
 
+// Flagged questions
+// REVOKED!
+questionRouter.get('/flagged', authorizer(['ADMIN']), tracedAsyncHandler(getFlaggedQuestions));
+
+// Individual question routes
+questionRouter.get('/:id', celebrate({ [Segments.PARAMS]: questionIdSchema }), tracedAsyncHandler(getQuestionById));
 questionRouter.get('/one', tracedAsyncHandler(getOneQuestion));
 
-questionRouter.get('/:id', celebrate({ [Segments.PARAMS]: questionIdSchema }), tracedAsyncHandler(getQuestionById));
+questionRouter.post('/:id/flag', celebrate({ [Segments.PARAMS]: questionIdSchema }), tracedAsyncHandler(flagQuestion));
 
 questionRouter.patch(
   '/:id',

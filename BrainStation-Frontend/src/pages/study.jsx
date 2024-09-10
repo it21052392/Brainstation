@@ -1,17 +1,23 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import SurveyModal from "@/components/asrs-form";
 import ContentCard from "@/components/cards/content-card";
 import BottomBar from "@/components/layout/bottom-bar";
 import MCQPane from "@/components/quiz/mcq-pane";
 import { switchView } from "@/store/lecturesSlice";
 import { hideMCQPane } from "@/store/mcqSlice";
 
+// Assuming SurveyModal is located here
+
 const Study = () => {
   const dispatch = useDispatch();
   const isMCQPaneVisible = useSelector((state) => state.mcq.isMCQPaneVisible);
 
+  // State to control the visibility of the survey popup
+  const [isPopupVisible, setIsPopupVisible] = useState(true);
+
   useEffect(() => {
-    dispatch(switchView("lecturer")); // Set side panel back to "lecturer" view when this component mounts
+    dispatch(switchView("lecturer"));
   }, [dispatch]);
 
   const currentSlide = useSelector((state) => {
@@ -21,8 +27,17 @@ const Study = () => {
     );
   });
 
+  const currentLectureTitle = useSelector((state) => {
+    const currentLecture = state.lectures.lectures.find((lecture) => lecture.id === state.lectures.currentLectureId);
+    return currentLecture?.title;
+  });
+
   const handleCloseMCQPane = () => {
     dispatch(hideMCQPane());
+  };
+
+  const handleClosePopup = () => {
+    setIsPopupVisible(false);
   };
 
   return (
@@ -36,7 +51,10 @@ const Study = () => {
       </div>
 
       {/* MCQ Pane Modal */}
-      <MCQPane isVisible={isMCQPaneVisible} onClose={handleCloseMCQPane} />
+      <MCQPane isVisible={isMCQPaneVisible} onClose={handleCloseMCQPane} lectureTitle={currentLectureTitle} />
+
+      {/* Survey Modal */}
+      <SurveyModal isVisible={isPopupVisible} onClose={handleClosePopup} />
     </div>
   );
 };

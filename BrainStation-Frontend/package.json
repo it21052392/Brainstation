@@ -1,5 +1,5 @@
 {
-  "name": "arqs-frontend-admin",
+  "name": "brain-station",
   "private": true,
   "version": "0.0.0",
   "description": "ARQS constructions website backend",
@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "2.2.7",
+    "axios": "1.6.7",
     "framer-motion": "11.3.22",
     "husky": "9.0.11",
     "lodash": "^4.17.21",

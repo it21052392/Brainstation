@@ -8,6 +8,7 @@ import compression from 'compression';
 import cors from 'cors';
 import helmet from 'helmet';
 import { pick } from 'lodash';
+import { initializeChangeStreams } from './services/changeStream';
 import { default as connectDB } from '@/database';
 import { errorHandler, queryMapper, responseInterceptor } from '@/middleware';
 import { default as routes } from '@/routes/index.routes';
@@ -54,7 +55,7 @@ app.use(
 
 app.use(queryMapper);
 
-app.get('/', (_, res) => res.status(200).json({ message: 'Server Up and Running OD 1' }));
+app.get('/', (_, res) => res.status(200).json({ message: 'Server Up and Running' }));
 
 app.use('/api', routes);
 
@@ -62,7 +63,9 @@ app.use(responseInterceptor);
 
 app.use(errorHandler);
 
-connectDB();
+connectDB().then(() => {
+  initializeChangeStreams();
+});
 
 global.__basedir = __dirname;
 
