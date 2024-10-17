@@ -8,18 +8,15 @@ services:
     env_file:
       - ./BrainStation-Backend/.env
     volumes:
-      - ./BrainStation-Backend/config/serviceAccountKey.json:/app/config/serviceAccountKey.json  # Mount serviceAccountKey.json
+      - ./BrainStation-Backend/config/serviceAccountKey.json:/app/config/serviceAccountKey.json
 
-frontend:
-  build: ./BrainStation-Frontend
-  container_name: brainstation_frontend
-  ports:
-    - "5173:5173"
-  env_file:
-    - ./BrainStation-Frontend/.env
-  volumes:
-    - ./BrainStation-Frontend/vm.crt:/app/vm.crt
-    - ./BrainStation-Frontend/vm.key:/app/vm.key
+  frontend:
+    build: ./BrainStation-Frontend
+    container_name: brainstation_frontend
+    ports:
+      - "5173:5173"
+    env_file:
+      - ./BrainStation-Frontend/.env
 
   content_chunking:
     build: ./Content-chunking
