@@ -26,7 +26,7 @@ services:
     build: ./Emotion-detection
     container_name: emotion_detection
     ports:
-      - "443:443" 
+      - "443:443"  # Exposing HTTPS port 443
     volumes:
       - /etc/ssl/certs/selfsigned.crt:/etc/ssl/certs/selfsigned.crt
       - /etc/ssl/private/selfsigned.key:/etc/ssl/private/selfsigned.key
