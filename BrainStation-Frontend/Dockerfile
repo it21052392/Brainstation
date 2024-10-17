@@ -13,11 +13,15 @@ RUN npm install
 # Step 5: Copy the rest of the application to the container
 COPY . .
 
-# Step 6: Expose port 5173 (default Vite port)
+# Step 6: Copy the VM IP SSL certificates into the container
+COPY ./vm.crt /app/vm.crt
+COPY ./vm.key /app/vm.key
+
+# Step 7: Expose port 5173 (default Vite port)
 EXPOSE 5173
 
-# Step 7: Build the application (optional if you want to serve static files)
+# Step 8: Build the application (optional if you want to serve static files)
 RUN npm run build
 
-# Step 8: Run the Vite development server
-CMD ["npm", "run", "dev"]
+# Step 9: Run the Vite development server with HTTPS
+CMD ["npm", "run", "dev", "--", "--https", "--cert", "/app/vm.crt", "--key", "/app/vm.key"]

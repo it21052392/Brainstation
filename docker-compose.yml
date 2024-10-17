@@ -10,14 +10,16 @@ services:
     volumes:
       - ./BrainStation-Backend/config/serviceAccountKey.json:/app/config/serviceAccountKey.json  # Mount serviceAccountKey.json
 
-  frontend:
-    build: ./BrainStation-Frontend
-    container_name: brainstation_frontend
-    ports:
-      - "5173:5173"
-    env_file:
-      - ./BrainStation-Frontend/.env
-
+frontend:
+  build: ./BrainStation-Frontend
+  container_name: brainstation_frontend
+  ports:
+    - "5173:5173"
+  env_file:
+    - ./BrainStation-Frontend/.env
+  volumes:
+    - ./BrainStation-Frontend/vm.crt:/app/vm.crt
+    - ./BrainStation-Frontend/vm.key:/app/vm.key
 
   content_chunking:
     build: ./Content-chunking
