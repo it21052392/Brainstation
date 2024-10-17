@@ -17,6 +17,9 @@ services:
       - "5173:5173"
     env_file:
       - ./BrainStation-Frontend/.env
+    volumes:
+      - ./vm.crt:/app/vm.crt
+      - ./vm.key:/app/vm.key
 
   content_chunking:
     build: ./Content-chunking
