@@ -26,7 +26,10 @@ services:
     build: ./Emotion-detection
     container_name: emotion_detection
     ports:
-      - "9001:9001"
+      - "443:443" 
+    volumes:
+      - /etc/ssl/certs/selfsigned.crt:/etc/ssl/certs/selfsigned.crt
+      - /etc/ssl/private/selfsigned.key:/etc/ssl/private/selfsigned.key
 
   exam_prediction:
     build: ./Exam-predictor
