@@ -10,6 +10,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from starlette.websockets import WebSocketDisconnect
 from pydantic import BaseModel
 import asyncio
+import urllib.request
 
 app = FastAPI()
 
@@ -31,9 +32,15 @@ emotion_model = model_from_json(loaded_model_json)
 emotion_model.load_weights("model/emotion_model.h5")
 print("Loaded emotion model from disk")
 
+# Download the facial landmark predictor model file
+url = 'https://github.com/italojs/facial-landmarks-recognition/raw/master/shape_predictor_68_face_landmarks.dat'
+landmark_file = 'shape_predictor_68_face_landmarks.dat'
+urllib.request.urlretrieve(url, landmark_file)
+print("Downloaded shape_predictor_68_face_landmarks.dat")
+
 # Initialize dlib's face detector and create a face predictor for head movement detection
 detector = dlib.get_frontal_face_detector()
-predictor = dlib.shape_predictor('shape_predictor_68_face_landmarks.dat')  # Ensure you have this file
+predictor = dlib.shape_predictor(landmark_file)  # Use the downloaded file
 
 # Define 3D model points of the face for head pose estimation
 model_points = np.array([
