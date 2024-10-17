@@ -7,12 +7,17 @@ services:
       - "3000:3000"
     env_file:
       - ./BrainStation-Backend/.env
+    volumes:
+      - ./BrainStation-Backend/config/serviceAccountKey.json:/app/config/serviceAccountKey.json  # Mount serviceAccountKey.json
 
   frontend:
     build: ./BrainStation-Frontend
     container_name: brainstation_frontend
     ports:
       - "5173:5173"
+    env_file:
+      - ./BrainStation-Frontend/.env
+
 
   content_chunking:
     build: ./Content-chunking
