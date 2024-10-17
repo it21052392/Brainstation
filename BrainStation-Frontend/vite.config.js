@@ -1,29 +1,28 @@
 import react from "@vitejs/plugin-react";
-import path from "path";
 import { defineConfig } from "vite";
-import fs from "fs";
+import path from "path";
 
 export default defineConfig({
   plugins: [react()],
-  base: "./",
+  base: "./", // Base public path
   resolve: {
     alias: {
-      "@/": path.resolve(__dirname, "src") + "/",
+      "@": path.resolve(__dirname, "src"), // Alias '@/' to 'src' directory
     },
   },
   optimizeDeps: {
     esbuildOptions: {
       define: {
-        global: "globalThis",
+        global: "globalThis", // Defining global for compatibility
       },
     },
   },
   server: {
     https: {
-      key: fs.readFileSync(path.resolve(__dirname, "vm.key")),
-      cert: fs.readFileSync(path.resolve(__dirname, "vm.crt")),
+      key: fs.readFileSync('/app/localhost.key'),
+      cert: fs.readFileSync('/app/localhost.crt'),
     },
-    host: "0.0.0.0", // Allow external access
-    port: 5173,
+    host: '0.0.0.0',  // Expose the server to external devices
+    port: 5173,       // Default port for Vite
   },
 });
