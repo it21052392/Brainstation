@@ -16,5 +16,5 @@ COPY . .
 # Step 6: Expose port 5173 (default Vite port)
 EXPOSE 5173
 
-# Step 7: Run the Vite development server (without the --https and cert options)
+# Step 7: Run the Vite development server (HTTPS is now configured in vite.config.js)
 CMD ["npm", "run", "dev"]
