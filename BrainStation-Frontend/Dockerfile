@@ -12,8 +12,8 @@ RUN npm install
 
 # Step 5: Copy SSL certificates (Make sure they are in the correct directory)
 # These lines assume the vm.crt and vm.key are in the same directory as the Dockerfile.
-COPY ./vm.crt /app/vm.crt
-COPY ./vm.key /app/vm.key
+COPY ./localhost.crt /app/localhost.crt
+COPY ./localhost.key /app/localhost.key
 
 # Step 6: Copy the rest of the application to the container
 COPY . .

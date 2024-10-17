@@ -18,8 +18,8 @@ services:
     env_file:
       - ./BrainStation-Frontend/.env
     volumes:
-      - ./vm.crt:/app/vm.crt
-      - ./vm.key:/app/vm.key
+      - ./localhost.crt:/app/localhost.crt
+      - ./localhost.key:/app/localhost.key
 
   content_chunking:
     build: ./Content-chunking
