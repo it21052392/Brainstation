@@ -7,19 +7,12 @@ services:
       - "3000:3000"
     env_file:
       - ./BrainStation-Backend/.env
-    volumes:
-      - ./BrainStation-Backend/config/serviceAccountKey.json:/app/config/serviceAccountKey.json
 
   frontend:
     build: ./BrainStation-Frontend
     container_name: brainstation_frontend
     ports:
       - "5173:5173"
-    env_file:
-      - ./BrainStation-Frontend/.env
-    volumes:
-      - /home/it21052392/localhost.crt:/app/localhost.crt
-      - /home/it21052392/localhost.key:/app/localhost.key
 
   content_chunking:
     build: ./Content-chunking
