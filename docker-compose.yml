@@ -7,6 +7,8 @@ services:
       - "3000:3000"
     env_file:
       - ./BrainStation-Backend/.env
+    volumes:
+      - ./BrainStation-Backend/config/serviceAccountKey.json:/app/config/serviceAccountKey.json
 
   frontend:
     build: ./BrainStation-Frontend
