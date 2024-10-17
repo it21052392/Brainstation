@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { Bar, Pie } from "react-chartjs-2";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ArcElement, BarElement, CategoryScale, Chart as ChartJS, Legend, LinearScale, Title, Tooltip } from "chart.js";
 
@@ -26,7 +25,7 @@ function Progress() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://34.30.64.175:9002/predict/", {
+      const response = await fetch("http://localhost:8000/predict/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

@@ -1,12 +1,13 @@
-import { Suspense } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
-import { DefaultLayout, Loader } from "@/components";
+import { DefaultLayout } from "@/components";
 import { Main, Study } from "@/pages";
 import NotFound from "@/pages/404";
-import QuizDeck from "@/pages/quiz-deck";
 import Progress from "@/pages/Progress";
-import support from "@/pages/support";
 import analysis from "@/pages/analysis";
+import Signin from "@/pages/login";
+import QuizDeck from "@/pages/quiz-deck";
+import Signup from "@/pages/signup";
+import support from "@/pages/support";
 
 // Ensure Loader is imported correctly
 
@@ -17,7 +18,7 @@ const coreRoutes = [
     component: Main
   },
   {
-    path: "/study",
+    path: "/study/:moduleId",
     title: "study",
     component: Study
   },
@@ -49,21 +50,13 @@ const CustomRoutes = () => {
   return (
     <Routes location={location}>
       {/* Routes with DefaultLayout */}
+      <Route path="/signin" element={<Signin />} />
+      <Route path="/signup" element={<Signup />} />
       <Route element={<DefaultLayout />}>
         {coreRoutes.map((route, index) => {
           const { path, component: Component } = route;
 
-          return (
-            <Route
-              key={index}
-              path={path}
-              element={
-                <Suspense fallback={<Loader />}>
-                  <Component />
-                </Suspense>
-              }
-            />
-          );
+          return <Route key={index} path={path} element={<Component />} />;
         })}
       </Route>
       <Route path="*" element={<NotFound />} />
