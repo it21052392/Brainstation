@@ -7,16 +7,12 @@ services:
       - "3000:3000"
     env_file:
       - ./BrainStation-Backend/.env
-    volumes:
-      - ./BrainStation-Backend/config/serviceAccountKey.json:/app/config/serviceAccountKey.json
 
   frontend:
     build: ./BrainStation-Frontend
     container_name: brainstation_frontend
     ports:
       - "5173:5173"
-    env_file:
-      - ./BrainStation-Frontend/.env  
 
   content_chunking:
     build: ./Content-chunking
@@ -30,10 +26,7 @@ services:
     build: ./Emotion-detection
     container_name: emotion_detection
     ports:
-      - "443:443"
-    volumes:
-      - /etc/ssl/certs/selfsigned.crt:/etc/ssl/certs/selfsigned.crt
-      - /etc/ssl/private/selfsigned.key:/etc/ssl/private/selfsigned.key
+      - "9001:9001"
 
   exam_prediction:
     build: ./Exam-predictor
