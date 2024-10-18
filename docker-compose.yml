@@ -1,67 +1,49 @@
 version: "3.8"
 services:
-  nginx:
-    image: nginx:latest
-    container_name: nginx_proxy
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf   # Correct file mount path
-      - /etc/letsencrypt:/etc/letsencrypt:ro
-    depends_on:
-      - backend
-      - frontend
-      - content_chunking
-      - emotion_detection
-      - exam_prediction
-      - question_generation
-      - generate_ontology
-
   backend:
     build: ./BrainStation-Backend
     container_name: brainstation_backend
-    expose:
-      - "3000"  # Expose port for internal networking
+    ports:
+      - "3000:3000"
     env_file:
       - ./BrainStation-Backend/.env
 
   frontend:
     build: ./BrainStation-Frontend
     container_name: brainstation_frontend
-    expose:
-      - "5173"  # Expose port for internal networking
+    ports:
+      - "5173:5173"
 
   content_chunking:
     build: ./Content-chunking
     container_name: content_chunking
-    expose:
-      - "9000"
+    ports:
+      - "9000:9000"
     env_file:
       - ./Content-chunking/.env
 
   emotion_detection:
     build: ./Emotion-detection
     container_name: emotion_detection
-    expose:
-      - "9001"
+    ports:
+      - "9001:9001"
 
   exam_prediction:
     build: ./Exam-predictor
     container_name: exam_prediction
-    expose:
-      - "9002"
+    ports:
+      - "9002:9002"
 
   question_generation:
     build: ./Question-generation
     container_name: question_generation
-    expose:
-      - "9003"
+    ports:
+      - "9003:9003"
 
   generate_ontology:
     build: ./Generate-ontology
     container_name: generate_ontology
-    expose:
-      - "9004"
+    ports:
+      - "9004:9004"
     env_file:
       - ./Generate-ontology/.env
