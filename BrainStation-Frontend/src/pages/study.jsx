@@ -115,7 +115,7 @@ const Study = () => {
       setWebSocket(ws);
 
       ws.onopen = () => {
-        console.log("WebSocket connection established oshada.");
+        console.log("WebSocket connection established.");
         setSessionStatus("Monitoring");
         setDotColor("green");
 
