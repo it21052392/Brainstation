@@ -39,7 +39,7 @@ const Study = () => {
   const [sessionDate, setSessionDate] = useState(null); // Today's date for the session
 
   const baseURL = import.meta.env.VITE_BRAINSTATION_EMOTIONURL;
-  const userId = "66d97b6fc30a1f78cf41b615"; // Replace this with the actual user ID
+  const userId = "66d97b6fc30a1f78cf41b610"; // Replace this with the actual user ID
 
   useEffect(() => {
     dispatch(switchView("lecturer"));
@@ -160,7 +160,7 @@ const Study = () => {
       const response = await axios.post(`${baseURL}stop_session`);
       const sessionData = {
         ...response.data, // Use data from the stop_session response
-        userId: "66d97b6fc30a1f78cf41b615", // Replace with actual user ID
+        userId: "66d97b6fc30a1f78cf41b610", // Replace with actual user ID
         moduleId: "66eea15243421e0263b960bc", // Replace with actual module ID
         startTime: startTime,
         stopTime: stopTime,
