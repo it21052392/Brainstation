@@ -6,7 +6,7 @@ import CompletedTasks from "@/pages/completed-tasks";
 import Dashboard from "@/pages/dashboard";
 import Signin from "@/pages/login";
 import Ontology from "@/pages/ontology";
-// import Progress from "@/pages/progress";
+import Progress from "@/pages/progress";
 import QuizDeck from "@/pages/quiz-deck";
 import Signup from "@/pages/signup";
 import support from "@/pages/support";
@@ -29,6 +29,11 @@ const coreRoutes = [
     path: "/quiz-deck",
     title: "quiz-deck",
     component: QuizDeck
+  },
+  {
+    path: "/Progress",
+    title: "Progress",
+    component: Progress
   },
   {
     path: "/support",
