@@ -8,7 +8,7 @@ import { switchView } from "@/store/lecturesSlice";
 import { showMCQPane } from "@/store/mcqSlice";
 import { setDueQuizzes } from "@/store/quizzesDueSlice";
 import DueQuizCard from "../cards/due-quiz-card";
-import Tabs from "../common/Tabs";
+import Tabs from "../common/tabs";
 import Button from "../common/button";
 import ScrollView from "../common/scrollable-view";
 import LeftArrowLongIcon from "../icons/left-arrow-long-icon";
