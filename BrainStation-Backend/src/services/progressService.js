@@ -53,13 +53,14 @@ export const predictExamScore = async (studentData) => {
 
   // Prepare input data for the Python service
   const inputData = {
-    focus_level: studentData.Focus_Level,
+    focus_level: Math.round(studentData.focusLevel),
     cumulative_average: cumulativeAverage,
-    time_spent_studying: parseInt(studentData.Time_Spent_Studying, 10) // Convert to integer
+    time_spent_studying: parseInt(studentData.timeSpentStudying, 10) // Convert to integer
   };
 
   try {
     const response = await axios.post('http://localhost:8000/predict_exam_score/', inputData);
+
     const predicted_exam_score = response.data.predicted_exam_score;
 
     return {
@@ -68,7 +69,7 @@ export const predictExamScore = async (studentData) => {
       performer_type: performer_type
     };
   } catch (error) {
-    throw new Error('Failed to get prediction from Python service');
+    throw new Error(`Failed to get prediction from Python service- ${error}`);
   }
 };
 

@@ -10,7 +10,7 @@ router = APIRouter()
 async def generate_mindmap_from_slides(data: SlideData):
     try:
         # Concatenate the content from all the slides
-        concatenated_content = "\n\n".join([f"## {slide.title}\n\n{slide.content}" for slide in data.slides])
+        concatenated_content = "\n\n".join([f"## {slide.title}\n\n{slide.content}" for slide in data.__root__])
 
         # Call the GPT-4 function to generate the mindmap
         mindmap_md = await generate_mindmap(concatenated_content)

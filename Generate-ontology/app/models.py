@@ -1,13 +1,13 @@
 # app/models.py
 from pydantic import BaseModel
-from typing import List
+from typing import List, Optional
 
 # Define the input slide model
 class Slide(BaseModel):
     id: int
-    title: str
+    title: Optional[str] = "Untitled"
     content: str
 
 # Define the input data model which is a list of slides
 class SlideData(BaseModel):
-    slides: List[Slide]
+    __root__: List[Slide]
