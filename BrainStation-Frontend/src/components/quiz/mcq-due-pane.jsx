@@ -1,19 +1,17 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useParams } from "react-router-dom";
 import { shuffleArray } from "@/helper/shuffleArray";
 import { respondToQuiz } from "@/service/quiz";
 import { addPracticeResult, clearPracticeHistory } from "@/store/practiceSlice";
-import { nextQuiz, resetQuizSession } from "@/store/quizzesSlice";
+import { nextDueQuiz, resetDueQuizSession } from "@/store/quizzesDueSlice";
 import MCQCard from "./mcq-card";
 import QuizSummery from "./summery";
 
-const MCQPane = ({ isVisible = true, onClose, lectureTitle }) => {
+const MCQDuePane = ({ isVisible = true, onClose }) => {
   const dispatch = useDispatch();
-  const quizzes = useSelector((state) => state.quizzes.quizzes);
-  const currentQuizIndex = useSelector((state) => state.quizzes.currentQuizIndex);
-  const currentQuiz = quizzes ? quizzes[currentQuizIndex] : null;
-  const { currentLectureId } = useSelector((state) => state.lectures);
+  const dueQuizzes = useSelector((state) => state.quizzesDue.dueQuizzes);
+  const currentQuizIndex = useSelector((state) => state.quizzesDue.currentQuizIndex);
+  const currentQuiz = dueQuizzes ? dueQuizzes[currentQuizIndex] : null;
   const practiceHistory = useSelector((state) => state.practice.practiceHistory);
 
   const [shuffledAnswers, setShuffledAnswers] = useState([]);
@@ -22,11 +20,13 @@ const MCQPane = ({ isVisible = true, onClose, lectureTitle }) => {
   const [isCorrect, setIsCorrect] = useState(false);
   const [showSummery, setShowSummery] = useState(false);
 
-  const { moduleId } = useParams();
+  useEffect(() => {
+    console.log("currentQuiz", currentQuiz);
+  }, [currentQuiz]);
 
   useEffect(() => {
     if (isVisible) {
-      dispatch(resetQuizSession());
+      dispatch(resetDueQuizSession());
       dispatch(clearPracticeHistory());
       setShowSummery(false);
     }
@@ -34,17 +34,19 @@ const MCQPane = ({ isVisible = true, onClose, lectureTitle }) => {
 
   useEffect(() => {
     if (currentQuiz) {
-      const distractors = Array.isArray(currentQuiz.distractors) ? currentQuiz.distractors : [];
-      const answers = shuffleArray([currentQuiz.answer, ...distractors]);
+      const distractors = Array.isArray(currentQuiz.questionDetails.distractors)
+        ? currentQuiz.questionDetails.distractors
+        : [];
+      const answers = shuffleArray([currentQuiz.questionDetails.answer, ...distractors]);
       setShuffledAnswers(answers);
     }
   }, [currentQuiz]);
 
   const sendQuizResponse = (response) => {
     const data = {
-      lectureId: currentLectureId,
-      questionId: currentQuiz._id,
-      moduleId,
+      questionId: currentQuiz.questionId,
+      lectureId: currentQuiz.lectureId,
+      moduleId: currentQuiz.moduleId,
       response
     };
 
@@ -60,8 +62,8 @@ const MCQPane = ({ isVisible = true, onClose, lectureTitle }) => {
     dispatch(
       addPracticeResult({
         id: currentQuiz._id,
-        question: currentQuiz.question,
-        correctAnswer: currentQuiz.answer,
+        question: currentQuiz.questionDetails.question,
+        correctAnswer: currentQuiz.questionDetails.answer,
         difficulty: response
       })
     );
@@ -71,7 +73,7 @@ const MCQPane = ({ isVisible = true, onClose, lectureTitle }) => {
     if (!isAnswered) {
       setSelectedAnswer(answer);
       setIsAnswered(true);
-      const isCorrectAnswer = answer === currentQuiz.answer;
+      const isCorrectAnswer = answer === currentQuiz.questionDetails.answer;
       setIsCorrect(isCorrectAnswer);
 
       // Immediately send "wrong" response if the answer is incorrect
@@ -86,8 +88,8 @@ const MCQPane = ({ isVisible = true, onClose, lectureTitle }) => {
     setIsAnswered(false);
     setIsCorrect(false);
 
-    if (currentQuizIndex < quizzes.length - 1) {
-      dispatch(nextQuiz());
+    if (currentQuizIndex < dueQuizzes.length - 1) {
+      dispatch(nextDueQuiz());
     } else {
       setShowSummery(true);
     }
@@ -99,36 +101,29 @@ const MCQPane = ({ isVisible = true, onClose, lectureTitle }) => {
   };
 
   const handleSummeryClose = () => {
-    dispatch(resetQuizSession());
+    dispatch(resetDueQuizSession());
     onClose();
     setTimeout(() => setShowSummery(false), 300);
   };
 
-  if (!currentQuiz || quizzes.length === 0) {
+  if (!currentQuiz || dueQuizzes.length === 0) {
     return null;
   }
 
-  const progressPercentage = ((currentQuizIndex + 1) / quizzes.length) * 100;
+  const progressPercentage = ((currentQuizIndex + 1) / dueQuizzes.length) * 100;
 
   if (showSummery) {
     return (
       <div
-        className={`fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[100] transition-opacity duration-300 ${
-          isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
-        }`}
+        className={`fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[100] transition-opacity duration-300 ${isVisible ? "opacity-100" : "opacity-0 pointer-events-none"}`}
       >
         <div
-          className={`bg-white relative rounded-xl shadow-lg w-[90%] h-[90%] p-6 transform transition-all duration-300 ${
-            isVisible ? "scale-100" : "scale-90"
-          }`}
+          className={`bg-white relative rounded-xl shadow-lg w-[90%] h-[90%] p-6 transform transition-all duration-300 ${isVisible ? "scale-100" : "scale-90"}`}
         >
           <QuizSummery
             onClose={handleSummeryClose}
-            summeryData={{
-              title: lectureTitle,
-              feedback: "This is some feedback",
-              tableData: practiceHistory
-            }}
+            summeryData={{ title: "", feedback: "Well Done!", tableData: practiceHistory }}
+            isFromDue={true}
           />
         </div>
       </div>
@@ -137,19 +132,14 @@ const MCQPane = ({ isVisible = true, onClose, lectureTitle }) => {
 
   return (
     <div
-      className={`fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[100] transition-opacity duration-300 ${
-        isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
-      }`}
+      className={`fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[100] transition-opacity duration-300 ${isVisible ? "opacity-100" : "opacity-0 pointer-events-none"}`}
     >
       <div
-        className={`bg-white relative rounded-xl shadow-lg w-[90%] h-[90%]  transform transition-all duration-300 ${
-          isVisible ? "scale-100" : "scale-90"
-        }`}
+        className={`bg-white relative rounded-xl shadow-lg w-[90%] h-[90%]  transform transition-all duration-300 ${isVisible ? "scale-100" : "scale-90"}`}
         style={{ transitionProperty: "transform, opacity" }}
       >
         <div className="h-full w-full relative p-6">
-          <p className="text-sm text-[#A4A4A4]">{lectureTitle}</p>
-          <p className="mt-2 text-[24px] font-inter font-semibold">{currentQuiz.question}</p>
+          <p className="mt-2 text-[24px] font-inter font-semibold">{currentQuiz.questionDetails.question}</p>
           <div className="flex items-center h-[calc(100%-150px)]">
             <div className="w-full grid grid-cols-2 gap-2 md:gap-4 items-center my-4">
               {shuffledAnswers.map((answer, index) => {
@@ -161,7 +151,7 @@ const MCQPane = ({ isVisible = true, onClose, lectureTitle }) => {
 
                 let borderColorClass = "";
                 if (isAnswered) {
-                  if (answer === currentQuiz.answer) {
+                  if (answer === currentQuiz.questionDetails.answer) {
                     borderColorClass = "border-4 border-green-500";
                   } else if (answer === selectedAnswer) {
                     borderColorClass = "border-4 border-red-500";
@@ -220,15 +210,12 @@ const MCQPane = ({ isVisible = true, onClose, lectureTitle }) => {
           <div className="absolute bottom-[0.05px] left-0 right-0 rounded-bl-xl rounded-br-xl w-full h-2 bg-gray-200 overflow-hidden">
             <div
               className="h-full bg-blue-600"
-              style={{
-                width: `${progressPercentage}%`,
-                transition: "width 0.3s ease"
-              }}
+              style={{ width: `${progressPercentage}%`, transition: "width 0.3s ease" }}
             ></div>
           </div>
 
           <div className="absolute bottom-4 right-6 text-sm font-semibold text-gray-600">
-            {currentQuizIndex + 1} of {quizzes.length}
+            {currentQuizIndex + 1} of {dueQuizzes.length}
           </div>
         </div>
       </div>
@@ -236,4 +223,4 @@ const MCQPane = ({ isVisible = true, onClose, lectureTitle }) => {
   );
 };
 
-export default MCQPane;
+export default MCQDuePane;

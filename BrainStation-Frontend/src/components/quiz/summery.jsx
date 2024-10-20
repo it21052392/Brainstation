@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
-import Scrollbars from "react-custom-scrollbars-2";
 import { useSelector } from "react-redux";
 import { getQuizFeedback, getQuizzes } from "@/service/quiz";
 import FeedbackCard from "../cards/feedback-card";
 import DonutChart from "../charts/donut-chart";
 import AnimatingDots from "../common/animating-dots";
+import ScrollView from "../common/scrollable-view";
 import SummeryTable from "./summery-table";
 
-const QuizSummery = ({ onClose, summeryData }) => {
+const QuizSummery = ({ onClose, summeryData, isFromDue = false }) => {
   const practiceHistory = useSelector((state) => state.practice.practiceHistory);
   const { currentLectureId } = useSelector((state) => state.lectures);
   const userId = "66d97b6fc30a1f78cf41b620";
@@ -23,11 +23,17 @@ const QuizSummery = ({ onClose, summeryData }) => {
       const feedbackResponse = await getQuizFeedback({ practiceHistory });
       setFeedback(feedbackResponse.data[0] || { strength: [], weakness: [] }); // Ensure feedback has valid arrays
 
-      // Fetch quiz data from the quizzes API
-      const quizResponse = await getQuizzes({
+      const filters = {
         "filter[userId]": userId,
         "filter[lectureId]": currentLectureId
-      });
+      };
+
+      if (isFromDue) {
+        delete filters["filter[lectureId]"];
+      }
+
+      // Fetch quiz data from the quizzes API
+      const quizResponse = await getQuizzes(filters);
 
       const quizzes = quizResponse.data.docs;
 
@@ -38,7 +44,9 @@ const QuizSummery = ({ onClose, summeryData }) => {
         return {
           ...practice,
           status: matchedQuiz ? matchedQuiz.status : "N/A",
-          nextReviewDate: matchedQuiz ? matchedQuiz.next_review_date : "N/A"
+          nextReviewDate: matchedQuiz ? matchedQuiz.next_review_date : "N/A",
+          currentStep: matchedQuiz ? matchedQuiz.current_step : "N/A",
+          learningSteps: matchedQuiz ? matchedQuiz.learningSteps : "N/A"
         };
       });
 
@@ -78,17 +86,7 @@ const QuizSummery = ({ onClose, summeryData }) => {
         &times;
       </button>
       <h2 className="text-xl font-semibold">Quiz Summary</h2>
-      <Scrollbars
-        autoHide
-        autoHideTimeout={1000}
-        autoHideDuration={200}
-        autoHeight
-        autoHeightMin={0}
-        autoHeightMax={"calc(100vh - 150px)"}
-        thumbMinSize={30}
-        universal={true}
-        className="rounded-lg"
-      >
+      <ScrollView initialMaxHeight={"140px"}>
         <div className="w-full h-full flex flex-col gap-4 items-center mt-5">
           <DonutChart data={donutData} />
           <p className="text-lg font-inter">{summeryData?.title}</p>
@@ -116,7 +114,7 @@ const QuizSummery = ({ onClose, summeryData }) => {
             <SummeryTable tableData={mergedData} />
           </div>
         </div>
-      </Scrollbars>
+      </ScrollView>
     </div>
   );
 };
