@@ -24,7 +24,6 @@ class LearningPhase {
         this.moveToReviewPhase();
       }
     }
-    console.log('toda date>>>>>>>>>>>', new Date(Date.now() + this.learning_steps[this.current_step] * 60 * 1000));
 
     // Update next review date based on learning steps in minutes
     this.quiz.next_review_date = new Date(Date.now() + this.learning_steps[this.current_step] * 60 * 1000);
@@ -33,6 +32,8 @@ class LearningPhase {
 
   moveToReviewPhase() {
     logger.info(`Quiz ${this.quiz.id} has completed the learning phase. Moving to regular review cycles.`);
+
+    this.quiz.current_step = 0;
 
     // Check if the card is new or lapsed
     if (this.quiz.status === 'new') {
