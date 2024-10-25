@@ -7,6 +7,7 @@ import {
   enrollModuleController,
   getAll,
   getById,
+  getUserEnrollModulesController,
   saveFcmToken,
   unenrollModuleController,
   update
@@ -23,6 +24,13 @@ userRouter.post(
   tracedAsyncHandler(createAdmin)
 );
 userRouter.get('/', authorizer(['ADMIN']), tracedAsyncHandler(getAll));
+
+userRouter.get(
+  '/user-modules',
+  authorizer(['STUDENT', 'LECTURER', 'ADMIN']),
+  tracedAsyncHandler(getUserEnrollModulesController)
+);
+
 userRouter.get(
   '/:id',
   authorizer(['ADMIN']),
@@ -37,14 +45,15 @@ userRouter.patch(
   celebrate({ [Segments.BODY]: changePasswordSchema }),
   tracedAsyncHandler(changeAdminPassword)
 );
+
+userRouter.post('/enroll', authorizer(['STUDENT', 'LECTURER', 'ADMIN']), enrollModuleController);
+
+userRouter.delete('/unenroll', authorizer(['STUDENT', 'LECTURER', 'ADMIN']), unenrollModuleController);
+
 userRouter.patch(
   '/:id',
   celebrate({ [Segments.PARAMS]: userIdSchema, [Segments.BODY]: updateSchema }),
   tracedAsyncHandler(update)
 );
-
-userRouter.post('/enroll', authorizer(['STUDENT', 'LECTURER', 'ADMIN']), enrollModuleController);
-
-userRouter.delete('/unenroll', authorizer(['STUDENT', 'LECTURER', 'ADMIN']), unenrollModuleController);
 
 export default userRouter;

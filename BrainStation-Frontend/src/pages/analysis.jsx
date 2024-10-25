@@ -1,236 +1,138 @@
-import {
-  Bar,
-  BarChart,
-  CartesianGrid,
-  Cell,
-  Legend,
-  Line,
-  LineChart,
-  Pie,
-  PieChart,
-  ResponsiveContainer,
-  Tooltip,
-  XAxis,
-  YAxis
-} from "recharts";
+import ScrollView from "@/components/common/scrollable-view";
+import AppUsageProgress from "../components/charts/AppUsageProgress";
+import ChapterPerformence from "../components/charts/ChapterPerformence";
+import CurrentProgressGauge from "../components/charts/CurrentProgressGauge";
+import DailyAverage from "../components/charts/DailyAverage";
+import ExamReadinessGauge from "../components/charts/ExamReadinessGauge";
+import MarksComparison from "../components/charts/MarksComparison";
+import QuizMarksLatestAttempt from "../components/charts/QuizMarksLatestAttempt";
+import TimeSpentChapter from "../components/charts/TimeSpentChapter";
 
-// Sample data for the charts
-const progressData = [
-  { name: "Progress", value: 50 },
-  { name: "Remaining", value: 50 }
-];
-const taskCompletionData = [
-  { name: "First Week", uv: 40 },
-  { name: "Current Week", uv: 60 }
-];
-const quizMarksData = [
-  { name: "Mon", uv: 2 },
-  { name: "Tue", uv: 3 },
-  { name: "Wed", uv: 5 },
-  { name: "Thu", uv: 4 },
-  { name: "Fri", uv: 5 },
-  { name: "Sat", uv: 4 },
-  { name: "Sun", uv: 3 }
-];
-const focusStudyComparisonData = [
-  { name: "Week 1", focusLevel: 50, studyHours: 5, avgMarks: 60 },
-  { name: "Week 2", focusLevel: 60, studyHours: 50, avgMarks: 70 },
-  { name: "Week 3", focusLevel: 70, studyHours: 60, avgMarks: 50 },
-  { name: "Week 4", focusLevel: 80, studyHours: 70, avgMarks: 90 }
-];
-const chapterFocusStudyData = [
-  { name: "Chapter 1", focusLevel: 60, studyHours: 30 },
-  { name: "Chapter 2", focusLevel: 70, studyHours: 40 },
-  { name: "Chapter 3", focusLevel: 80, studyHours: 50 },
-  { name: "Chapter 4", focusLevel: 90, studyHours: 60 }
-];
-const chapterPerformanceData = [
-  { name: "Chapter 1", value: 25 },
-  { name: "Chapter 2", value: 25 },
-  { name: "Chapter 3", value: 25 },
-  { name: "Chapter 4", value: 25 }
-];
-const timeSpentData = [
-  { name: "Chapter 1", value: 30 },
-  { name: "Chapter 2", value: 20 },
-  { name: "Chapter 3", value: 25 },
-  { name: "Chapter 4", value: 25 }
-];
-
-const COLORS = ["#003366", "#FFCC00"]; // Dark blue and dark yellow colors
-
-const Analysis = () => {
+const analysis = () => {
   return (
-    <div style={{ padding: "20px", display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "20px" }}>
-      {/* Your Current Progress */}
-      <div
-        style={{
-          gridColumn: "span 1",
-          textAlign: "center",
-          padding: "10px",
-          border: "1px solid #ddd",
-          borderRadius: "8px"
-        }}
-      >
-        <h3>Your Current Progress</h3>
-        <ResponsiveContainer width="100%" height={200}>
-          <PieChart>
-            <Pie data={progressData} dataKey="value" outerRadius={70} fill={COLORS[0]}>
-              {progressData.map((entry, index) => (
-                <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-              ))}
-            </Pie>
-          </PieChart>
-        </ResponsiveContainer>
-        <p>50%</p>
-      </div>
+    <div className="p-4 px-6">
+      <h1 className="font-inter font-bold text-2xl p-3">Analysis Dashboard</h1>
 
-      {/* Task Completion Status */}
-      <div
-        style={{
-          gridColumn: "span 1",
-          textAlign: "center",
-          padding: "10px",
-          border: "1px solid #ddd",
-          borderRadius: "8px"
-        }}
-      >
-        <h3>Task Completion Status: 4</h3>
-        <button
-          style={{
-            backgroundColor: COLORS[1],
-            color: "white",
-            border: "none",
-            padding: "5px 10px",
-            borderRadius: "5px",
-            cursor: "pointer"
-          }}
-        >
-          View
-        </button>
-        <p>Pending: 4 | Completed: 2</p>
-        <ResponsiveContainer width="100%" height={200}>
-          <BarChart data={taskCompletionData}>
-            <XAxis dataKey="name" />
-            <YAxis />
-            <Bar dataKey="uv" fill={COLORS[0]} />
-          </BarChart>
-        </ResponsiveContainer>
-      </div>
+      <ScrollView>
+        <div className="h-screen flex flex-col md:flex-row gap-10">
+          <div className="md:w-1/2 w-full ">
+            {/* Flexbox for Left Side Split */}
+            <div className="flex gap-10">
+              {/* Left Side */}
+              <div className="w-1/2 flex flex-col ">
+                <div className="h-full p-6 bg-white border border-gray-200 rounded-lg flex flex-col items-center gap-10 ">
+                  <div className="flex flex-col items-center ">
+                    <h6 className="mb-3 font-bold">Your Current Progress</h6>
+                    <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                      <CurrentProgressGauge />
+                    </div>
+                  </div>
 
-      {/* Quiz Marks Comparison */}
-      <div
-        style={{
-          gridColumn: "span 1",
-          textAlign: "center",
-          padding: "10px",
-          border: "1px solid #ddd",
-          borderRadius: "8px"
-        }}
-      >
-        <h3>Quiz Marks Comparison</h3>
-        <ResponsiveContainer width="100%" height={200}>
-          <BarChart data={quizMarksData}>
-            <XAxis dataKey="name" />
-            <YAxis />
-            <Bar dataKey="uv" fill={COLORS[0]} />
-          </BarChart>
-        </ResponsiveContainer>
-      </div>
+                  <div className="flex flex-col items-center justify-center">
+                    <h6 className="mb-3 font-bold">Exam Readiness</h6>
+                    <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                      <ExamReadinessGauge />
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-      {/* Focus Level, Study Hours & Average Chapter Marks Comparison */}
-      <div
-        style={{
-          gridColumn: "span 2",
-          textAlign: "center",
-          padding: "10px",
-          border: "1px solid #ddd",
-          borderRadius: "8px"
-        }}
-      >
-        <h3>Focus Level, Study Hours & Average Chapter Marks Comparison</h3>
-        <ResponsiveContainer width="100%" height={250}>
-          <LineChart data={focusStudyComparisonData}>
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="name" />
-            <YAxis />
-            <Tooltip />
-            <Legend />
-            <Line type="monotone" dataKey="focusLevel" stroke={COLORS[0]} />
-            <Line type="monotone" dataKey="studyHours" stroke={COLORS[1]} />
-            <Line type="monotone" dataKey="avgMarks" stroke="#82ca9d" />
-          </LineChart>
-        </ResponsiveContainer>
-      </div>
+              {/* Right Side */}
+              <div className="w-full flex flex-col">
+                <div className="h-full p-6 bg-white border border-gray-200 rounded-lg flex flex-col justify-center items-center">
+                  <h6 className="mb-3 font-bold">Task Completion Status</h6>
 
-      {/* Chapter-wise Focus Level & Study Hours */}
-      <div
-        style={{
-          gridColumn: "span 1",
-          textAlign: "center",
-          padding: "10px",
-          border: "1px solid #ddd",
-          borderRadius: "8px"
-        }}
-      >
-        <h3>Chapter-wise Focus Level & Study Hours</h3>
-        <ResponsiveContainer width="100%" height={250}>
-          <BarChart data={chapterFocusStudyData}>
-            <XAxis dataKey="name" />
-            <YAxis />
-            <Tooltip />
-            <Legend />
-            <Bar dataKey="focusLevel" fill={COLORS[0]} />
-            <Bar dataKey="studyHours" fill={COLORS[1]} />
-          </BarChart>
-        </ResponsiveContainer>
-      </div>
+                  <div className="w-full p-5 bg-white border border-gray-200 rounded-lg flex justify-center flex-col gap-2">
+                    <div>
+                      <p>Completed Tasks = 20</p>
+                    </div>
 
-      {/* Chapter Performance */}
-      <div
-        style={{
-          gridColumn: "span 1",
-          textAlign: "center",
-          padding: "10px",
-          border: "1px solid #ddd",
-          borderRadius: "8px"
-        }}
-      >
-        <h3>Chapter Performance</h3>
-        <ResponsiveContainer width="100%" height={200}>
-          <PieChart>
-            <Pie data={chapterPerformanceData} dataKey="value" outerRadius={70} fill={COLORS[0]} label>
-              {chapterPerformanceData.map((entry, index) => (
-                <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-              ))}
-            </Pie>
-          </PieChart>
-        </ResponsiveContainer>
-      </div>
+                    <div className="flex gap-2">
+                      <div>Current Task group Tasks =</div>
+                      <div>
+                        <div className="rounded-md bg-blue-100 text-blue-800 font-bold py-0.5 px-2.5 border border-transparent text-sm transition-all">
+                          View
+                        </div>
+                      </div>
+                    </div>
 
-      {/* Time Spent on Each Chapter (Quiz) */}
-      <div
-        style={{
-          gridColumn: "span 1",
-          textAlign: "center",
-          padding: "10px",
-          border: "1px solid #ddd",
-          borderRadius: "8px"
-        }}
-      >
-        <h3>Time Spent on Each Chapter (Quiz)</h3>
-        <ResponsiveContainer width="100%" height={200}>
-          <PieChart>
-            <Pie data={timeSpentData} dataKey="value" outerRadius={70} fill={COLORS[1]} label>
-              {timeSpentData.map((entry, index) => (
-                <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-              ))}
-            </Pie>
-          </PieChart>
-        </ResponsiveContainer>
-      </div>
+                    <div className="flex justify-between gap-2 mt-2">
+                      <div className="rounded-md bg-blue-100 font-bold py-0.5 px-2.5 border border-transparent text-sm text-slate-600 transition-all">
+                        Pending = 4
+                      </div>
+                      <div className="rounded-md bg-blue-100 font-bold py-0.5 px-2.5 border border-transparent text-sm text-slate-600 transition-all">
+                        Completed = 2
+                      </div>
+                    </div>
+                  </div>
+
+                  <h6 className="mb-3 mt-5 font-bold">App usage Progress</h6>
+                  <div className="h-72">
+                    <AppUsageProgress />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Full-Width Bottom Section */}
+            <div className="mt-4">
+              <div className="w-full h-full bg-white border border-gray-200 rounded-lg p-8">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p>Daily Average (Study Hours with focus)</p>
+                    <h2 className="text-2xl font-bold">2h 20m</h2>
+                  </div>
+                  <div>
+                    <span className="text-orange-600 mx-1">+30m</span> this week
+                  </div>
+                </div>
+
+                <div className="h-96 w-full mt-3">
+                  <DailyAverage />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="md:w-1/2 w-full h-full">
+            <div className="p-6 bg-white border border-gray-200 rounded-lg">
+              <div className="flex">
+                <div className="w-1/2 p-4">
+                  <h2 className="text-center font-bold mb-3">Quiz Marks vs Latest Attempt</h2>
+                  <QuizMarksLatestAttempt />
+                </div>
+
+                <div className="w-1/2 p-4">
+                  <div className="flex items-center justify-between flex-col gap-5">
+                    <h2 className="text-center font-bold">Time Spent on Each Chapter</h2>
+                    <div className="w-full h-72 flex justify-center">
+                      <TimeSpentChapter />
+                    </div>
+                  </div>
+
+                  <div className="flex items-center justify-between flex-col gap-5 mt-5 align-baseline">
+                    <h2 className="text-center font-bold">Chapter Performance</h2>
+                    <div className="w-full h-72 flex justify-center">
+                      <ChapterPerformence />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-5">
+                <h2 className="text-center font-bold mb-2">
+                  Focus Level, Study Hours & Average Chapter Marks Comparison
+                </h2>
+                <div className="h-96 w-full">
+                  <MarksComparison />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ScrollView>
     </div>
   );
 };
 
-export default Analysis;
+export default analysis;
