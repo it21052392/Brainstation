@@ -57,3 +57,11 @@ services:
       - "9005:9005"
     env_file:
       - ./adhd-level-feedback/.env
+
+  asrs_question_generation:
+    build: ./asrs-question-generation
+    container_name: asrs_question_generation
+    ports:
+      - "9006:9006"
+    env_file:
+      - ./asrs-question-generation/.env
