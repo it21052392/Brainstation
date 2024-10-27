@@ -14,7 +14,7 @@ services:
     ports:
       - "5173:5173"
     env_file:
-    - ./BrainStation-Frontend/.env
+      - ./BrainStation-Frontend/.env
 
   content_chunking:
     build: ./Content-chunking
@@ -49,3 +49,11 @@ services:
       - "9004:9004"
     env_file:
       - ./Generate-ontology/.env
+
+  adhd_feedback:
+    build: ./adhd-level-feedback
+    container_name: adhd_feedback
+    ports:
+      - "9005:9005"
+    env_file:
+      - ./adhd-level-feedback/.env

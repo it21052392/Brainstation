@@ -1,7 +1,14 @@
 import mongoose from 'mongoose';
-import { buildQuizAggregation } from '@/helpers/buildQuizAggregation';
+import {
+  buildLectureQuizSummaryAggregation,
+  buildQuizAggregation,
+  buildUserQuizzesDueDetailsAggregation
+} from '@/helpers/buildAggregations';
 import { convertToObjectId } from '@/helpers/convertToObjectId';
+import Module from '@/models/module';
+import Question from '@/models/question';
 import Quiz from '@/models/quiz';
+import { QuizFeedback } from '@/models/quiz-feedback';
 
 export const saveQuiz = async (quizData) => {
   const { questionId, userId } = quizData;
@@ -135,4 +142,51 @@ export const getUserQuizzesDueByToday = async ({
 
   const aggregate = buildQuizAggregation(filter, sort);
   return await Quiz.aggregatePaginate(aggregate, { page, limit });
+};
+
+export const getUserQuizzesDueDetails = async (userId) => {
+  const aggregationPipeline = buildUserQuizzesDueDetailsAggregation(userId);
+  const result = await Quiz.aggregate(aggregationPipeline);
+
+  return {
+    dueTodayCount: result[0]?.dueTodayCount || 0,
+    learningPhaseCount: result[0]?.learningPhaseCount || 0
+  };
+};
+
+export const getAttemptQuizIndex = async (userId, lectureId) => {
+  const quizzes = await Quiz.find({ userId, lectureId }).sort({ attempt_question: -1 });
+
+  // Map the result to the desired format
+  const quizArray = quizzes.map((quiz) => ({
+    questionId: quiz.questionId,
+    attempt_question: quiz.attempt_question
+  }));
+
+  return quizArray;
+};
+
+export const saveQuizFeedback = async (userId, lectureId, feedbackData) => {
+  const existingFeedback = await QuizFeedback.findOne({ userId, lectureId });
+
+  if (existingFeedback) {
+    return await QuizFeedback.findByIdAndUpdate(existingFeedback._id, feedbackData, { new: true });
+  }
+
+  const newFeedback = new QuizFeedback({ ...feedbackData, userId, lectureId });
+  return await newFeedback.save();
+};
+
+export const getLectureQuizSummary = async (userId, moduleId) => {
+  const convertedModuleId = new mongoose.Types.ObjectId(moduleId);
+  const module = await Module.findById(convertedModuleId).populate('lectures', '_id title');
+  if (!module) {
+    return [];
+  }
+
+  const lectureIds = module.lectures.map((lecture) => lecture._id);
+  const aggregationPipeline = buildLectureQuizSummaryAggregation(userId, lectureIds);
+  const summaryData = await Question.aggregate(aggregationPipeline);
+
+  return summaryData;
 };
