@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 // Import DialogBox component
 import { deleteQuestion as deleteQuestionService } from "@/service/question";
 import { removeQuestion } from "@/store/questionSlice";
-import DialogBox from "../common/dialogBox";
+import DialogBox from "../common/DialogBox";
 import DeleteIcon from "../icons/delete-icon";
 import EditIcon from "../icons/edit-icon";
 import EditPopup from "../popups/edit-quizzes";

@@ -1,10 +1,14 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
 import { logout } from "@/service/auth";
+import { resetModules } from "@/store/moduleSlice";
 
 const UserDropdown = () => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
-  const navigate = useNavigate();
+
+  const dispatch = useDispatch();
+
+  const name = localStorage.getItem("userName")?.split(" ")[0] || "User";
 
   const toggleDropdown = () => {
     setDropdownVisible(!dropdownVisible);
@@ -17,7 +21,9 @@ const UserDropdown = () => {
       localStorage.removeItem("token");
       localStorage.removeItem("refresh_token");
 
-      navigate("/login");
+      dispatch(resetModules());
+
+      window.location.reload("/");
     } catch (error) {
       console.error("Logout failed:", error);
     }
@@ -27,7 +33,7 @@ const UserDropdown = () => {
     <div className="relative">
       <div className="flex items-center cursor-pointer gap-2" onClick={toggleDropdown}>
         <img src="https://cdn-icons-png.freepik.com/512/219/219966.png" alt="User" className="w-8 h-8 rounded-full" />
-        <span className="font-josfin-sans text-sm">Hi, Danuja</span>
+        <span className="font-josfin-sans text-sm">Hi, {name}</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

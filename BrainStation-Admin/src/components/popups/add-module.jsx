@@ -1,30 +1,37 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 import { addModule } from "@/service/module";
 
 const AddModule = ({ onClose }) => {
   const [moduleName, setModuleName] = useState("");
   const [moduleCode, setModuleCode] = useState("");
   const [description, setDescription] = useState("");
+  const navigate = useNavigate();
 
   const handleAddModule = async () => {
+    if (!moduleName || !moduleCode || !description) {
+      toast.error("Please fill out all fields to add the module.");
+      return;
+    }
+
     const moduleData = {
       name: moduleName,
       moduleCode: moduleCode,
       description: description
     };
-    console.log(moduleData);
+
     try {
       const response = await addModule(moduleData);
-      console.log(response);
       if (response.success) {
-        alert("Module added successfully!");
+        toast.success("Module added successfully!");
         onClose();
+        navigate(0);
       } else {
-        alert("Failed to add module. Please try again.");
+        toast.error("Failed to add module. Please try again later.");
       }
     } catch (error) {
-      console.error("Error adding module:", error);
-      alert("An error occurred while adding the module.");
+      toast.error("Failed to add module. Please try again later.");
     }
   };
 

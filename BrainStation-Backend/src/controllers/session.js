@@ -1,5 +1,7 @@
 import {
   addSession,
+  countDistinctSessionDaysByUserId,
+  countSessionsByUserId,
   findAllSessionsByUserId,
   findAverageFocusTimeByUser,
   findAverageFocusTimeofUsersModule,
@@ -9,7 +11,8 @@ import {
   findTotalFocusTimeOfUsersModule,
   findTotalSessionDurationByUser,
   getAdhdClassificationFeedbackService,
-  getSessionData
+  getSessionData,
+  getStudentsDataService
 } from '@/services/focus-record';
 import { makeResponse } from '@/utils/response';
 
@@ -43,7 +46,7 @@ export const getSessionByIdController = async (req, res) => {
 };
 
 export const getSessionByUserController = async (req, res) => {
-  const userId = req.user._id;
+  const userId = req.params.id;
 
   const data = await findAllSessionsByUserId(userId, req.query);
 
@@ -125,8 +128,7 @@ export const getTotalSessionDurationByUserController = async (req, res) => {
 
 export const getSessionDataController = async (req, res) => {
   try {
-    const userId = req.user._id;
-
+    const userId = req.params.id;
     const data = await getSessionData(userId);
 
     return makeResponse({ res, data, message: 'Sessions retrieved successfully' });
@@ -141,4 +143,38 @@ export const getAdhdClassificationFeedbackController = async (req, res) => {
   const data = await getAdhdClassificationFeedbackService(userId);
 
   return makeResponse({ res, data: data, message: 'feedback generated successfully' });
+};
+
+export const getSessionDataOfStudentsController = async (req, res) => {
+  const data = await getStudentsDataService();
+
+  return makeResponse({ res, data: data, message: 'Sessions retrieved successfully' });
+};
+
+export const getSessionCountByUserIdController = async (req, res) => {
+  try {
+    const userId = req.query.userId; // Get userId from query parameters
+
+    const sessionCount = await countSessionsByUserId(userId); // Call the service to count sessions
+
+    return makeResponse({ res, data: { sessionCount }, message: 'Session count retrieved successfully' });
+  } catch (error) {
+    return res.status(500).json({ message: 'Internal Server Error' });
+  }
+};
+
+export const getDistinctSessionDaysByUserIdController = async (req, res) => {
+  try {
+    const userId = req.query.userId;
+
+    if (!userId) {
+      return res.status(400).json({ message: 'userId is required' });
+    }
+
+    const daysCount = await countDistinctSessionDaysByUserId(userId);
+
+    return makeResponse({ res, data: { daysCount }, message: 'Distinct session days count retrieved successfully' });
+  } catch (error) {
+    return res.status(500).json({ message: 'Internal Server Error' });
+  }
 };

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Bar, BarChart, Cell, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 // Adjust this import path if needed
 import { getSessionDataByUser, getSessionsByUser } from "@/service/SessionService";
 // Ensure this path is correct
@@ -10,7 +11,7 @@ import image05 from "../badges/05.png";
 import image06 from "../badges/06.png";
 import image07 from "../badges/07.png";
 import image08 from "../badges/08.png";
-import BarChart from "../charts/bar-chart";
+// import BarChart from "../charts/bar-chart";
 import PieChart from "../charts/pie-chart";
 import ScrollView from "../common/scrollable-view";
 import SessionLogs from "../popups/session-logs";
@@ -101,7 +102,7 @@ const ToggleTabs = ({ userId }) => {
       </div>
 
       {/* Tab Content */}
-      <div className="w-full max-w-fill">
+      <div className="w-full ">
         {/* Session Overview Tab */}
         {activeTab === "Session Overview" && (
           <>
@@ -116,34 +117,52 @@ const ToggleTabs = ({ userId }) => {
                 <ScrollView initialMaxHeight="18rem">
                   {" "}
                   {/* Add ScrollView here */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-4">
                     {/* Bar chart for Study Time and Focus Time */}
-                    <div className="bg-white p-4 rounded-lg shadow-md">
-                      <h3 className="text-lg font-semibold mb-2">Study vs Focus Time</h3>
-                      <BarChart
-                        data={[
-                          {
-                            label: "Total Study Time (hrs)",
-                            value: (sessionOverview.totalStudyTime / 3600).toFixed(2)
-                          },
-                          { label: "Total Focus Time (hrs)", value: (sessionOverview.totalFocusTime / 3600).toFixed(2) }
-                        ]}
-                      />
+                    <div className="bg-blue-50 p-6 rounded-lg shadow-lg">
+                      <h3 className="text-xl font-semibold mb-4 text-gray-800">Study vs Focus Time</h3>
+                      <ResponsiveContainer width="100%" height={250}>
+                        <BarChart
+                          data={[
+                            { name: "Study Time (hrs)", value: (sessionOverview.totalStudyTime / 3600).toFixed(2) },
+                            { name: "Focus Time (hrs)", value: (sessionOverview.totalFocusTime / 3600).toFixed(2) }
+                          ]}
+                        >
+                          <XAxis dataKey="name" tick={{ fill: "#4A5568", fontSize: 12 }} />
+                          <YAxis tick={{ fill: "#4A5568", fontSize: 12 }} />
+                          <Tooltip />
+                          <Bar dataKey="value" fill="#3B82F6" radius={[8, 8, 0, 0]}>
+                            <Cell key="study" fill="#60A5FA" />
+                            <Cell key="focus" fill="#1D4ED8" />
+                          </Bar>
+                        </BarChart>
+                      </ResponsiveContainer>
                     </div>
 
                     {/* Bar chart for Movements */}
-                    <div className="bg-white p-4 rounded-lg shadow-md">
-                      <h3 className="text-lg font-semibold mb-2">Movements Overview</h3>
-                      <BarChart
-                        data={[
-                          { label: "Total Movements", value: sessionOverview.totalMovements },
-                          { label: "Total Erratic Movements", value: sessionOverview.totalErraticMovements }
-                        ]}
-                      />
+
+                    <div className="bg-purple-50 p-6 rounded-lg shadow-md">
+                      <h3 className="text-xl font-semibold mb-4 text-gray-800">Movements Overview</h3>
+                      <ResponsiveContainer width="100%" height={250}>
+                        <BarChart
+                          data={[
+                            { name: "Total Movements", value: sessionOverview.totalMovements },
+                            { name: "Erratic Movements", value: sessionOverview.totalErraticMovements }
+                          ]}
+                        >
+                          <XAxis dataKey="name" tick={{ fill: "#4A5568", fontSize: 12 }} />
+                          <YAxis tick={{ fill: "#4A5568", fontSize: 12 }} />
+                          <Tooltip />
+                          <Bar dataKey="value" fill="#F87171" radius={[8, 8, 0, 0]}>
+                            <Cell key="total" fill="#F87171" />
+                            <Cell key="erratic" fill="#DC2626" />
+                          </Bar>
+                        </BarChart>
+                      </ResponsiveContainer>
                     </div>
 
                     {/* ADHD Classification Image */}
-                    <div className="flex justify-center items-center bg-white p-4 rounded-lg shadow-md col-span-1 md:col-span-2">
+                    <div className=" grid-col-2 col-span-2 flex bg-green-50 justify-center items-center  p-4 rounded-lg shadow-lg w-[100%]">
                       <h3 className="text-lg font-semibold mb-2">ADHD Classification:</h3>
                       <img
                         src={getImageSource(sessionOverview.adhdClassification)}
