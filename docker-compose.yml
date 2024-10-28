@@ -65,3 +65,17 @@ services:
       - "9006:9006"
     env_file:
       - ./asrs-question-generation/.env
+
+  feedback_predict:
+    build: ./feedback_predict
+    container_name: feedback_predict
+    ports:
+      - "9007:9007"
+    env_file:
+      - ./feedback_predict/.env
+
+  exam_score:
+    build: ./Exam-score
+    container_name: exam_score
+    ports:
+      - "9008:9008"
