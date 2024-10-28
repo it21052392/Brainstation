@@ -6,4 +6,3 @@ nest_asyncio
 python-dotenv
 uvicorn
 python-dotenv
-python-multipart

@@ -52,9 +52,7 @@ async def extract_and_expand_content(pptx_data: BytesIO):
 
     expanded_points = []
     for batch in batches:
-        print('in extract_and_expand_content before expand_content_batch')
         expanded_points.extend(await expand_content_batch(batch))
-        print('in extract_and_expand_content after expand_content_batch')
 
     point_index = 0
     for slide in slides_content:

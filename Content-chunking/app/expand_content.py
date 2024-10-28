@@ -23,13 +23,16 @@ async def expand_content_with_gpt(content):
         response = await openai.ChatCompletion.acreate(
             model="gpt-4o-mini",
             messages=[
-                {"role": "system", "content": "You are a highly proficient technical expert in computer science and information technology. Provide concise, textbook-style explanations in plain text with proper formatting and dont breakdown explanations into sub bullet points."},
-                {"role": "user", "content": f"Explain this in the context of computer science and information technology in maximum of 50 words: {content}"}
+                {"role": "system", "content": "You are a highly proficient technical expert in computer science and information technology who ia an educator for undergraduate students with ADHD students."},
+                {"role": "system", "content": "You have to Provide concise, textbook-style explanations in plain text with proper formatting"},
+                {"role": "system", "content": "You have to avoid breaking the explanations into sub bullet points"},
+                {"role": "system", "content": "All the explanations you give must be limited to a maximum of 40 words"},
+                {"role": "system", "content": "All the explanations should be ADHD friendly"},
+                {"role": "user", "content": f"Explain this: {content}"}
             ],
             max_tokens=300,
             temperature=0.7
         )
-        print('in expand_content_with_gpt after openai')
         result = response['choices'][0]['message']['content'].strip()
         gpt_content_cache[content] = result
         return result
@@ -37,9 +40,7 @@ async def expand_content_with_gpt(content):
         return f"Error: {str(e)}. Original: {content}"
 
 async def expand_content_batch(batch):
-    print('in expand_content_batch before expand_single_content')
     tasks = [expand_single_content(content) for content in batch]
-    print('in expand_content_batch after expand_single_content')
     return await asyncio.gather(*tasks)
 
 async def expand_single_content(content):
@@ -47,8 +48,6 @@ async def expand_single_content(content):
         return content_cache[content]  # If it's already processed, return the cached content
 
     # We run the expansion process only once for each content
-    print('in expand_single_content before expand_content_with_gpt')
     expanded_content = await expand_content_with_gpt(content)
-    print('in expand_single_content after expand_content_with_gpt')
     content_cache[content] = expanded_content  # Cache the result to avoid reuse issues
     return expanded_content
