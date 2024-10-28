@@ -13,8 +13,8 @@ RUN npm install
 # Step 5: Copy the rest of the application to the container
 COPY . .
 
-# Step 6: Expose port 5173 (default Vite port)
-EXPOSE 5173
+# Step 6: Expose port 5173
+EXPOSE 9009
 
 # Step 7: Build the application (optional if you want to serve static files)
 RUN npm run build
