@@ -8,13 +8,21 @@ services:
     env_file:
       - ./BrainStation-Backend/.env
 
-  frontend:
+  brainstation_frontend:
     build: ./BrainStation-Frontend
     container_name: brainstation_frontend
     ports:
       - "5173:5173"
     env_file:
       - ./BrainStation-Frontend/.env
+
+  brainstation_admin:
+    build: ./BrainStation-Admin
+    container_name: brainstation_admin
+    ports:
+      - "9009:9009"
+    env_file:
+      - ./BrainStation-Admin/.env
 
   content_chunking:
     build: ./Content-chunking
