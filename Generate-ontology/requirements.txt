@@ -2,3 +2,4 @@ fastapi==0.85.0
 uvicorn==0.18.3
 openai==0.28
 pydantic==1.10.2
+python-dotenv
