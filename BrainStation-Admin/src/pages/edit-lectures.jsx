@@ -3,7 +3,7 @@ import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import { useParams } from "react-router-dom";
 import { toast } from "react-toastify";
-import DialogBox from "@/components/common/DialogBox";
+import DialogBox from "@/components/common/dialogBox";
 import ScrollView from "@/components/common/scrollable-view";
 import { getLectureById, updateLecture } from "@/service/lecture";
 import module from "@/utils/quillTextModules";
