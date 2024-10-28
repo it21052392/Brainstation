@@ -75,7 +75,7 @@ services:
       - ./feedback_predict/.env
 
   exam_score:
-    build: ./Exam-score
+    build: ./exam_score
     container_name: exam_score
     ports:
       - "9008:9008"
