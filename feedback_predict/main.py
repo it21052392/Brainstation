@@ -18,7 +18,7 @@ def get_openai_description(chapter_name):
     
     try:
         response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",  # Using GPT-3.5 Turbo
+            model="gpt-4o-mini",
             messages=[
                 {"role": "system", "content": "You are a helpful assistant that generates ADHD-friendly descriptions."},
                 {"role": "user", "content": prompt}
