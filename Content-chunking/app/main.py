@@ -5,12 +5,12 @@ from app.pptx_processor import extract_and_expand_content, format_notes_to_json
 
 app = FastAPI()
 
-# Configure CORS to allow requests from https://brainstation.me
+# Configure CORS settings
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://brainstation.me"],  # Update to your new URL
+    allow_origins=["https://admin.brainstation.me"],  # Allow both domains
     allow_credentials=True,
-    allow_methods=["*"],  # Allow all HTTP methods (GET, POST, etc.)
+    allow_methods=["*"],  # Allow all HTTP methods
     allow_headers=["*"],  # Allow all headers
 )
 
