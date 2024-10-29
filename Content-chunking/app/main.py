@@ -1,8 +1,18 @@
 from fastapi import FastAPI, UploadFile, File, HTTPException
+from fastapi.middleware.cors import CORSMiddleware  # Import CORS middleware
 from io import BytesIO
 from app.pptx_processor import extract_and_expand_content, format_notes_to_json
 
 app = FastAPI()
+
+# Configure CORS settings
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://34.30.64.175:9009"],  # Add your development URL here
+    allow_credentials=True,
+    allow_methods=["*"],  # Allow all HTTP methods (GET, POST, etc.)
+    allow_headers=["*"],  # Allow all headers
+)
 
 @app.post("/upload/")
 async def upload_pptx(file: UploadFile = File(...)):
