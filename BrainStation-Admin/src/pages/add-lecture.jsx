@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
-import Loader from "@/components/common/Loader";
+import Loader from "@/components/common/loader";
 import { generateLecture } from "@/service/lecture";
 
 function AddLecture() {
