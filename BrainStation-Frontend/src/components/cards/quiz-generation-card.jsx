@@ -1,69 +1,36 @@
 import { useState } from "react";
-import { useDispatch } from "react-redux";
-import { useLocation } from "react-router-dom";
-// Import DialogBox component
-import { deleteQuestion as deleteQuestionService } from "@/service/question";
-import { removeQuestion } from "@/store/questionSlice";
-import DialogBox from "../common/DialogBox";
 import DeleteIcon from "../icons/delete-icon";
 import EditIcon from "../icons/edit-icon";
-import EditPopup from "../popups/edit-quizzes";
+import EditGeneratedPopup from "../popups/edit-generated-quizzes";
 
-// Assumes a removeQuestion action exists in the slice
-
-const AllQuizCard = ({
-  questionId,
+const QuizGenerationCard = ({
   questionNumber,
   question,
   answer,
   distractors,
-  disableBtns = false,
   alternativeQuestions,
-  context,
-  lectureId
+  index,
+  onEdit,
+  onDelete,
+  disableBtns = false
 }) => {
-  const dispatch = useDispatch();
-  const location = useLocation();
   const [showEditPopup, setShowEditPopup] = useState(false);
-  const [showDeleteDialog, setShowDeleteDialog] = useState(false); // State for dialog visibility
   const [showAlternatives, setShowAlternatives] = useState(false);
   const [showDistractors, setShowDistractors] = useState(false);
 
-  const isSpecialPage = location.pathname === "/admin-portal/flagged-quiz";
-
-  const handleEditClick = () => {
-    setShowEditPopup(true);
-  };
-
-  const handleCloseEditPopup = () => {
-    setShowEditPopup(false);
-  };
-
+  const handleEditClick = () => setShowEditPopup(true);
+  const handleCloseEditPopup = () => setShowEditPopup(false);
   const toggleAlternatives = () => setShowAlternatives(!showAlternatives);
   const toggleDistractors = () => setShowDistractors(!showDistractors);
 
-  const handleDeleteClick = () => {
-    setShowDeleteDialog(true); // Show confirmation dialog
-  };
-
-  const confirmDelete = async () => {
-    console.log("questionId", questionId);
-
-    try {
-      const response = await deleteQuestionService(questionId);
-      if (response.success) {
-        dispatch(removeQuestion({ _id: questionId }));
-      }
-      setShowDeleteDialog(false); // Close dialog after deletion
-    } catch (error) {
-      console.error("Error deleting question:", error);
-      setShowDeleteDialog(false); // Ensure dialog closes even if there's an error
-    }
+  const handleSaveChanges = (updatedQuiz) => {
+    onEdit({ ...updatedQuiz, index });
+    setShowEditPopup(false);
   };
 
   return (
     <div
-      className={`relative rounded-xl p-8 mx-1.5 my-4 ${isSpecialPage ? "bg-red-100" : "bg-white"}`}
+      className="relative rounded-xl p-8 mx-1.5 my-4 bg-white shadow-md"
       style={{ boxShadow: "0px 0px 4.4px rgba(0, 0, 0, 0.15)" }}
     >
       <p className="uppercase text-xs text-green-500 font-semibold absolute bottom-2 right-3">AI Generated</p>
@@ -98,7 +65,7 @@ const AllQuizCard = ({
         )}
       </div>
 
-      <div>
+      <div className="mb-4">
         <div
           onClick={toggleDistractors}
           className="flex justify-between items-center cursor-pointer bg-gray-200 p-2 rounded-md"
@@ -118,40 +85,24 @@ const AllQuizCard = ({
       </div>
 
       {!disableBtns && (
-        <>
-          <div className="absolute top-2 right-2">
-            <div className="flex ">
-              <EditIcon onClick={handleEditClick} />
-              <DeleteIcon onClick={handleDeleteClick} />
-            </div>
-          </div>
-          {showEditPopup && (
-            <EditPopup
-              onClose={handleCloseEditPopup}
-              questionId={questionId}
-              question={question}
-              answer={answer}
-              alternativeQuestions={alternativeQuestions}
-              distractors={distractors}
-              context={context}
-              lectureId={lectureId}
-            />
-          )}
-        </>
+        <div className="absolute top-2 right-2 flex space-x-2">
+          <EditIcon onClick={handleEditClick} className="cursor-pointer" />
+          <DeleteIcon onClick={() => onDelete(index)} className="cursor-pointer" />
+        </div>
       )}
 
-      {/* DialogBox for delete confirmation */}
-      <DialogBox
-        isVisible={showDeleteDialog}
-        title="Confirm Deletion"
-        message="Are you sure you want to delete this quiz question?"
-        onOkay={confirmDelete}
-        onCancel={() => setShowDeleteDialog(false)}
-        okayLabel="Delete"
-        cancelLabel="Cancel"
-      />
+      {showEditPopup && (
+        <EditGeneratedPopup
+          onClose={handleCloseEditPopup}
+          onSave={handleSaveChanges}
+          question={question}
+          answer={answer}
+          alternativeQuestions={alternativeQuestions}
+          distractors={distractors}
+        />
+      )}
     </div>
   );
 };
 
-export default AllQuizCard;
+export default QuizGenerationCard;

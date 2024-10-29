@@ -17,9 +17,6 @@ export default () => {
           global: "globalThis"
         }
       }
-    },
-    server: {
-      port: 9009
     }
   });
 };
